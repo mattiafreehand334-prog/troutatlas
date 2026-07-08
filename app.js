@@ -1,1 +1,55 @@
-fetch('database.json').then(r=>r.json()).then(db=>{const c=document.getElementById('cards'),q=document.getElementById('q');function d(f=''){c.innerHTML='';db.filter(x=>x.name.toLowerCase().includes(f.toLowerCase())).forEach(x=>c.innerHTML+=`<div class='card'><h2>${x.name}</h2><p>📍 ${x.region}</p><p>🐟 ${x.species.join(', ')}</p><p>🎫 ${x.permit}</p><p>🥾 ${x.difficulty}/5</p><p>🪱 ${x.lure}</p></div>`)}q.oninput=()=>d(q.value);d();});
+fetch("database.json")
+  .then(response => response.json())
+  .then(rivers => {
+
+    const container = document.getElementById("river-list");
+    const search = document.getElementById("search");
+
+    function render(filter = "") {
+
+      container.innerHTML = "";
+
+      rivers
+        .filter(river =>
+          river.name.toLowerCase().includes(filter.toLowerCase())
+        )
+        .forEach(river => {
+
+          const card = document.createElement("div");
+          card.className = "river-card";
+
+          card.innerHTML = `
+            <h2>${river.name}</h2>
+
+            <p>📍 ${river.region} - ${river.province}</p>
+
+            <p>🗺️ ${river.zone}</p>
+
+            <p>🐟 ${river.species.join(", ")}</p>
+
+            <p>🥾 Difficoltà: ${river.difficulty}/5</p>
+
+            <button onclick="openRiver('${river.id}')">
+              Apri scheda
+            </button>
+          `;
+
+          container.appendChild(card);
+
+        });
+
+    }
+
+    search.addEventListener("input", e => {
+      render(e.target.value);
+    });
+
+    render();
+
+});
+
+function openRiver(id){
+
+    window.location.href = `river.html?id=${id}`;
+
+}

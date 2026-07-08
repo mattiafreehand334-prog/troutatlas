@@ -1,44 +1,39 @@
 [
   {
+    "id": "sesia",
     "name": "Sesia",
     "region": "Piemonte",
+    "province": "Vercelli",
+    "zone": "Valsesia",
     "species": [
-      "Fario",
+      "Trota Fario",
       "Temolo"
     ],
-    "permit": "Valsesia",
     "difficulty": 3,
-    "lure": "Spoon 2-4 g"
+    "recommendedRod": "1.68 m - 0.2/5 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": [
+      "Spoon 2 g",
+      "Spoon 3 g",
+      "Minnow 45 mm"
+    ],
+    "image": "images/sesia.jpg"
   },
   {
+    "id": "cervo",
     "name": "Cervo",
     "region": "Piemonte",
+    "province": "Biella",
+    "zone": "Biellese",
     "species": [
-      "Fario"
+      "Trota Fario"
     ],
-    "permit": "Biella",
     "difficulty": 2,
-    "lure": "Minnow 45 mm"
-  },
-  {
-    "name": "Mastallone",
-    "region": "Piemonte",
-    "species": [
-      "Fario"
+    "recommendedRod": "1.68 m - 0.2/5 g",
+    "recommendedLine": "Trecciato PE 0.3",
+    "recommendedLures": [
+      "Minnow 45 mm"
     ],
-    "permit": "Valsesia",
-    "difficulty": 4,
-    "lure": "Spoon 3 g"
-  },
-  {
-    "name": "Lys",
-    "region": "Valle d'Aosta",
-    "species": [
-      "Fario",
-      "Salmerino"
-    ],
-    "permit": "Valle d'Aosta",
-    "difficulty": 2,
-    "lure": "Rotante #1"
+    "image": "images/cervo.jpg"
   }
 ]

@@ -1,1 +1,57 @@
 body{margin:0;font-family:-apple-system;background:#0f1720;color:#fff}header{padding:24px;background:#16202c}.card{background:#1f2937;border-radius:16px;padding:16px;margin:14px}input{margin:16px;width:calc(100% - 32px);padding:14px;border:none;border-radius:12px}
+header{
+    padding:24px;
+    background:linear-gradient(180deg,#21466d,#101820);
+    color:white;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    opacity:.8;
+    margin-top:6px;
+}
+
+main{
+    padding:20px;
+}
+
+#river-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.river-card{
+    background:#1d2635;
+    border-radius:18px;
+    padding:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.river-card h2{
+    margin-top:0;
+}
+
+button{
+    width:100%;
+    margin-top:16px;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:#2f80ed;
+    color:white;
+    font-weight:600;
+    font-size:16px;
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+h2{
+    margin-top:28px;
+}
