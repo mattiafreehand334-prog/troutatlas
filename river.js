@@ -13,6 +13,7 @@ fetch("database.json")
     }
 
     document.getElementById("river-name").textContent = river.name;
+    document.getElementById("river-image").src = river.image;
     document.getElementById("river-location").textContent =
       `${river.region} • ${river.province} • ${river.zone}`;
 
