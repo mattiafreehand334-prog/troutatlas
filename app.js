@@ -1,0 +1,1 @@
+fetch('database.json').then(r=>r.json()).then(db=>{const l=document.getElementById('list'),q=document.getElementById('q');function render(f=''){l.innerHTML='';db.filter(x=>x.name.toLowerCase().includes(f.toLowerCase())).forEach(x=>{let li=document.createElement('li');li.textContent=`${x.name} - ${x.region}`;l.appendChild(li);});}q.oninput=()=>render(q.value);render();});

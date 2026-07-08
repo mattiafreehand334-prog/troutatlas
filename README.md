@@ -1,1 +1,1 @@
-# troutatlas
+Versione iniziale TroutAtlas.
