@@ -1,0 +1,7 @@
+body{margin:0;background:#0b1220;color:#fff;font-family:-apple-system}
+.hero{padding:26px;background:linear-gradient(180deg,#18314f,#0b1220)}
+.container{padding:18px;padding-bottom:90px}
+input{width:100%;padding:14px;border-radius:14px;border:none;font-size:16px}
+.river-card{display:block;text-decoration:none;color:white;background:#1b2433;border-radius:18px;padding:18px;margin-top:18px}
+.tabbar{position:fixed;bottom:0;left:0;right:0;background:#121a27;display:flex;justify-content:space-around;padding:14px}
+.photo{height:220px;border-radius:18px;background:#263246;display:flex;align-items:center;justify-content:center}
