@@ -1,1 +1,44 @@
-[{"name":"Sesia","region":"Piemonte"},{"name":"Cervo","region":"Piemonte"}]
+[
+  {
+    "name": "Sesia",
+    "region": "Piemonte",
+    "species": [
+      "Fario",
+      "Temolo"
+    ],
+    "permit": "Valsesia",
+    "difficulty": 3,
+    "lure": "Spoon 2-4 g"
+  },
+  {
+    "name": "Cervo",
+    "region": "Piemonte",
+    "species": [
+      "Fario"
+    ],
+    "permit": "Biella",
+    "difficulty": 2,
+    "lure": "Minnow 45 mm"
+  },
+  {
+    "name": "Mastallone",
+    "region": "Piemonte",
+    "species": [
+      "Fario"
+    ],
+    "permit": "Valsesia",
+    "difficulty": 4,
+    "lure": "Spoon 3 g"
+  },
+  {
+    "name": "Lys",
+    "region": "Valle d'Aosta",
+    "species": [
+      "Fario",
+      "Salmerino"
+    ],
+    "permit": "Valle d'Aosta",
+    "difficulty": 2,
+    "lure": "Rotante #1"
+  }
+]
