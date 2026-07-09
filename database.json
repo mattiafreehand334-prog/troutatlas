@@ -17,7 +17,11 @@
       "Spoon 3 g",
       "Minnow 45 mm"
     ],
-    "image": "images/sesia.jpg"
+    "images": [
+  "sesia_1.jpeg",
+  "sesia_2.jpeg",
+  "sesia_3.jpeg"
+]
   },
   {
     "id": "cervo",

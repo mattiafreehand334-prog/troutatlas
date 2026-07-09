@@ -13,7 +13,18 @@ fetch("database.json")
     }
 
     document.getElementById("river-name").textContent = river.name;
-    document.getElementById("river-image").src = river.image;
+    const riverImage = document.getElementById("river-image");
+const galleryDots = document.getElementById("gallery-dots");
+
+riverImage.src = river.images[0];
+
+galleryDots.innerHTML = "";
+
+river.images.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.className = index === 0 ? "dot active" : "dot";
+    galleryDots.appendChild(dot);
+});
     document.getElementById("river-location").textContent =
       `${river.region} • ${river.province} • ${river.zone}`;
 
