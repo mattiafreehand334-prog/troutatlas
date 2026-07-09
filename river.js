@@ -16,7 +16,7 @@ fetch("database.json")
     const riverImage = document.getElementById("river-image");
 const galleryDots = document.getElementById("gallery-dots");
 
-riverImage.src = river.images[0];
+riverImage.src = "./" + river.images[0];
 
 galleryDots.innerHTML = "";
 
