@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torrente — TroutAtlas</title>
+  <link rel="stylesheet" href="style.css">
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Torrente</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <!-- Leaflet map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
-
 <body>
 
-<header>
+<div class="river-header">
+  <a class="back-btn" href="index.html">← Tutti i torrenti</a>
 
-<h1 id="river-name"></h1>
+  <!-- Swipeable gallery -->
+  <div class="gallery-wrap" id="gallery-wrap">
+    <div class="gallery-track" id="gallery-track"></div>
+    <button class="gallery-prev" id="gallery-prev" aria-label="Precedente">‹</button>
+    <button class="gallery-next" id="gallery-next" aria-label="Successivo">›</button>
+    <div class="gallery-dots" id="gallery-dots"></div>
+  </div>
 
-<img id="river-image" class="river-image" src="" alt="Foto del torrente">
-<div id="gallery-dots" class="gallery-dots"></div>
-<p id="river-location"></p>
+  <div class="river-title">
+    <h1 id="river-name"></h1>
+    <p class="location" id="river-location"></p>
+  </div>
+</div>
 
-</header>
+<div class="detail-main">
 
-<main>
+  <div class="detail-section">
+    <h2>🐟 Specie presenti</h2>
+    <p id="river-species"></p>
+  </div>
 
-<h2>🐟 Specie presenti</h2>
-<p id="river-species"></p>
+  <div class="detail-section">
+    <h2>🎣 Canna consigliata</h2>
+    <p id="river-rod"></p>
+  </div>
 
-<h2>🎣 Canna consigliata</h2>
-<p id="river-rod"></p>
+  <div class="detail-section">
+    <h2>🧵 Lenza consigliata</h2>
+    <p id="river-line"></p>
+  </div>
 
-<h2>🧵 Lenza consigliata</h2>
-<p id="river-line"></p>
+  <div class="detail-section">
+    <h2>🪱 Artificiali consigliati</h2>
+    <div class="lures-list" id="river-lures"></div>
+  </div>
 
-<h2>🪱 Artificiali consigliati</h2>
-<p id="river-lures"></p>
+  <div class="detail-section">
+    <h2>🥾 Difficoltà</h2>
+    <div class="difficulty" id="river-difficulty"></div>
+  </div>
 
-<h2>🥾 Difficoltà</h2>
-<p id="river-difficulty"></p>
+  <!-- Map + Google Maps button -->
+  <div class="detail-section">
+    <h2>📍 Posizione</h2>
+    <div id="map"></div>
+    <a id="gmaps-btn" class="btn btn-maps" target="_blank" rel="noopener">
+      🧭 Portami qui
+    </a>
+  </div>
 
-</main>
+</div>
 
 <script src="river.js"></script>
-
 </body>
-
 </html>

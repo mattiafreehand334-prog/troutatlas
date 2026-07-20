@@ -5,23 +5,13 @@
     "region": "Piemonte",
     "province": "Vercelli",
     "zone": "Valsesia",
-    "species": [
-      "Trota Fario",
-      "Temolo"
-    ],
+    "species": ["Trota Fario", "Temolo"],
     "difficulty": 3,
-    "recommendedRod": "1.68 m - 0.2/5 g",
+    "recommendedRod": "1.68 m — 0.2/5 g",
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
-    "recommendedLures": [
-      "Spoon 2 g",
-      "Spoon 3 g",
-      "Minnow 45 mm"
-    ],
-    "images": [
-  "sesia_1.jpeg",
-  "sesia_2.jpeg",
-  "sesia_3.jpeg"
-]
+    "recommendedLures": ["Spoon 2 g", "Spoon 3 g", "Minnow 45 mm"],
+    "images": ["sesia_1.jpeg", "sesia_2.jpeg", "sesia_3.jpeg"],
+    "coordinates": { "lat": 45.818, "lng": 8.236 }
   },
   {
     "id": "cervo",
@@ -29,15 +19,12 @@
     "region": "Piemonte",
     "province": "Biella",
     "zone": "Biellese",
-    "species": [
-      "Trota Fario"
-    ],
+    "species": ["Trota Fario"],
     "difficulty": 2,
-    "recommendedRod": "1.68 m - 0.2/5 g",
+    "recommendedRod": "1.68 m — 0.2/5 g",
     "recommendedLine": "Trecciato PE 0.3",
-    "recommendedLures": [
-      "Minnow 45 mm"
-    ],
-    "image": "images/cervo.jpg"
+    "recommendedLures": ["Minnow 45 mm"],
+    "images": ["sesia_1.jpeg"],
+    "coordinates": { "lat": 45.568, "lng": 8.058 }
   }
 ]
