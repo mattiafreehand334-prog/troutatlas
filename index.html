@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<header>
+<header class="top-header">
   <div class="header-inner">
     <div class="logo">
       <span class="logo-icon">🎣</span>
@@ -17,25 +17,44 @@
         <h1>TroutAtlas</h1>
         <p>Trova il torrente perfetto</p>
       </div>
+      <span class="header-offline">📵 Offline</span>
     </div>
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
-      <input id="search" type="text" placeholder="Cerca un torrente...">
+      <input id="search" type="text" placeholder="Cerca torrente, zona…">
     </div>
   </div>
 </header>
 
-<!-- Tab bar -->
-<nav class="tab-bar">
-  <button class="tab active" data-tab="all">🎣 Tutti</button>
-  <button class="tab" data-tab="fav">❤️ Preferiti</button>
-  <a class="tab tab-link" href="mappa.html">🗺️ La tua mappa</a>
-</nav>
+<div style="max-width:640px;margin:0 auto">
+  <div class="tab-bar">
+    <button class="tab active" data-tab="all">🎣 Tutti</button>
+    <button class="tab" data-tab="fav">❤️ Preferiti</button>
+    <button class="tab" data-tab="lago">🏔️ Laghi</button>
+    <button class="tab" data-tab="fly">🪰 A mosca</button>
+  </div>
+</div>
 
 <main>
   <div id="river-list"></div>
 </main>
 
+<nav class="bottom-nav">
+  <a class="bnav-item active" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi & Mosche</a>
+  <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item" href="mappa.html"><span class="bnav-icon">🗺️</span>La tua mappa</a>
+</nav>
+
 <script src="app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+  window.addEventListener('online',  () => document.body.classList.remove('offline'));
+  window.addEventListener('offline', () => document.body.classList.add('offline'));
+  if (!navigator.onLine) document.body.classList.add('offline');
+</script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pescasport-biella",
+    "name": "Pesca Sport Biella",
+    "type": "Negozio di pesca",
+    "address": "Via Torino 12, Biella",
+    "phone": "+39 015 123456",
+    "speciality": "Spinning, mosca, attrezzatura completa",
+    "coordinates": { "lat": 45.562, "lng": 8.058 }
+  },
+  {
+    "id": "flyvallata",
+    "name": "Fly Shop La Vallata",
+    "type": "Fly shop specializzato",
+    "address": "Via Marconi 5, Borgosesia (VC)",
+    "phone": "+39 0163 21234",
+    "speciality": "Mosche artificiali artigianali, canne da mosca, corsi di lancio",
+    "coordinates": { "lat": 45.717, "lng": 8.275 }
+  },
+  {
+    "id": "ilpescatore-vercelli",
+    "name": "Il Pescatore",
+    "type": "Negozio di pesca",
+    "address": "Corso Libertà 34, Vercelli",
+    "phone": "+39 0161 987654",
+    "speciality": "Tutto per la pesca, licenze FIPSAS, esche",
+    "coordinates": { "lat": 45.326, "lng": 8.423 }
+  },
+  {
+    "id": "alpsfishing",
+    "name": "Alps Fishing & Store",
+    "type": "Fly shop e attrezzatura alpina",
+    "address": "Via Monte Rosa 8, Varallo Sesia (VC)",
+    "phone": "+39 0163 54321",
+    "speciality": "Mosca, spinning leggero, abbigliamento tecnico, guide locali",
+    "coordinates": { "lat": 45.815, "lng": 8.253 }
+  },
+  {
+    "id": "pescaoropa",
+    "name": "Tutto Pesca Oropa",
+    "type": "Negozio di pesca e noleggio",
+    "address": "Via Santuario di Oropa 3, Biella",
+    "phone": "+39 015 890123",
+    "speciality": "Licenze giornaliere, noleggio waders e stivali, mosche locali",
+    "coordinates": { "lat": 45.631, "lng": 8.000 }
+  },
+  {
+    "id": "spinningpro-ivrea",
+    "name": "Spinning Pro Ivrea",
+    "type": "Negozio di pesca",
+    "address": "Via Aosta 22, Ivrea (TO)",
+    "phone": "+39 0125 44567",
+    "speciality": "Spinning tecnico, artificiali per trota, abbigliamento da pesca",
+    "coordinates": { "lat": 45.467, "lng": 7.874 }
+  }
+]

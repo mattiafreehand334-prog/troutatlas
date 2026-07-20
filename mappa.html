@@ -8,24 +8,27 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
-<body class="mappa-page">
+<body class="mappa-page no-bottom-pad">
 
-<div class="river-header">
-  <a class="back-btn" href="index.html">← Tutti i torrenti</a>
-  <div class="river-title" style="padding-bottom:16px">
-    <h1 style="font-size:24px">🗺️ La tua mappa</h1>
-    <p class="location">I posti dove hai pescato</p>
+<div class="page-header">
+  <div class="page-header-inner">
+    <h1>🗺️ La tua mappa</h1>
+    <p>I posti dove hai pescato</p>
   </div>
 </div>
 
-<!-- Full map -->
 <div id="user-map"></div>
 
-<!-- Floating add button -->
-<button class="fab" id="fab-add" title="Aggiungi uno spot">＋</button>
-
-<!-- Spot count -->
+<button class="fab" id="fab-add" title="Aggiungi spot">＋</button>
 <div class="spot-count" id="spot-count"></div>
+
+<nav class="bottom-nav">
+  <a class="bnav-item" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi & Mosche</a>
+  <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item active" href="mappa.html"><span class="bnav-icon">🗺️</span>La tua mappa</a>
+</nav>
 
 <!-- Add spot modal -->
 <div class="modal-overlay" id="add-modal">
@@ -36,25 +39,19 @@
     </div>
     <div class="modal-body">
       <p class="modal-hint" id="map-hint">Tocca la mappa per scegliere la posizione, poi compila i dettagli.</p>
-
       <label class="form-label">Nome dello spot *</label>
       <input class="form-input" id="spot-name" type="text" placeholder="Es. Curva del mulinello">
-
       <label class="form-label">Specie catturata</label>
       <input class="form-input" id="spot-species" type="text" placeholder="Es. Trota Fario 38 cm">
-
       <label class="form-label">Descrizione</label>
-      <textarea class="form-input form-textarea" id="spot-desc" placeholder="Fondo ghiaioso, corrente moderata, profondo circa 60 cm…"></textarea>
-
+      <textarea class="form-input form-textarea" id="spot-desc" placeholder="Fondo ghiaioso, corrente moderata…"></textarea>
       <label class="form-label">Foto del pescato</label>
       <label class="photo-upload" id="photo-label">
         <span id="photo-text">📷 Tocca per aggiungere una foto</span>
         <input type="file" id="spot-photo" accept="image/*" capture="environment" style="display:none">
         <img id="photo-preview" class="photo-preview-img" style="display:none">
       </label>
-
       <div class="coord-display" id="coord-display">📍 Posizione non selezionata</div>
-
       <button class="btn btn-primary" id="save-spot-btn" style="margin-top:16px">Salva spot</button>
     </div>
   </div>
@@ -72,5 +69,6 @@
 </div>
 
 <script src="mappa.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>

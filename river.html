@@ -11,61 +11,43 @@
 <body>
 
 <div class="river-header">
-  <a class="back-btn" href="index.html">← Tutti i torrenti</a>
-
+  <a class="back-btn" href="index.html" style="padding:12px 16px;display:inline-flex;align-items:center;gap:6px;color:var(--accent);text-decoration:none;font-size:13px;font-weight:600">← Tutti i torrenti</a>
   <div class="gallery-wrap" id="gallery-wrap">
     <div class="gallery-track" id="gallery-track"></div>
-    <button class="gallery-prev" id="gallery-prev" aria-label="Precedente">‹</button>
-    <button class="gallery-next" id="gallery-next" aria-label="Successivo">›</button>
+    <button class="gallery-prev" id="gallery-prev">‹</button>
+    <button class="gallery-next" id="gallery-next">›</button>
     <div class="gallery-dots" id="gallery-dots"></div>
   </div>
-
   <div class="river-title">
     <div class="river-title-row">
       <h1 id="river-name"></h1>
-      <button class="fav-btn-detail" id="fav-btn-detail" title="Aggiungi ai preferiti">🤍</button>
+      <button class="fav-btn-detail" id="fav-btn-detail">🤍</button>
     </div>
     <p class="location" id="river-location"></p>
   </div>
 </div>
 
 <div class="detail-main">
-
-  <div class="detail-section">
-    <h2>🐟 Specie presenti</h2>
-    <p id="river-species"></p>
-  </div>
-
-  <div class="detail-section">
-    <h2>🎣 Canna consigliata</h2>
-    <p id="river-rod"></p>
-  </div>
-
-  <div class="detail-section">
-    <h2>🧵 Lenza consigliata</h2>
-    <p id="river-line"></p>
-  </div>
-
-  <div class="detail-section">
-    <h2>🪱 Artificiali consigliati</h2>
-    <div class="lures-list" id="river-lures"></div>
-  </div>
-
-  <div class="detail-section">
-    <h2>🥾 Difficoltà</h2>
-    <div class="difficulty" id="river-difficulty"></div>
-  </div>
-
+  <div class="detail-section"><h2>🐟 Specie presenti</h2><p id="river-species"></p></div>
+  <div class="detail-section"><h2>🎣 Canna consigliata</h2><p id="river-rod"></p></div>
+  <div class="detail-section"><h2>🧵 Lenza consigliata</h2><p id="river-line"></p></div>
+  <div class="detail-section"><h2>🪱 Artificiali consigliati</h2><div class="lures-list" id="river-lures"></div></div>
+  <div class="detail-section"><h2>🥾 Difficoltà</h2><div class="difficulty" id="river-difficulty"></div></div>
   <div class="detail-section">
     <h2>📍 Posizione</h2>
     <div id="map"></div>
-    <a id="gmaps-btn" class="btn btn-maps" target="_blank" rel="noopener">
-      🧭 Portami qui
-    </a>
+    <a id="gmaps-btn" class="btn btn-maps" target="_blank" rel="noopener">🧭 Portami qui</a>
     <button id="reg-btn" class="btn btn-regs">📋 Regolamenti della zona</button>
   </div>
-
 </div>
+
+<nav class="bottom-nav">
+  <a class="bnav-item" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi & Mosche</a>
+  <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item" href="mappa.html"><span class="bnav-icon">🗺️</span>La tua mappa</a>
+</nav>
 
 <!-- Regulations modal -->
 <div class="modal-overlay" id="modal-overlay">
@@ -79,5 +61,6 @@
 </div>
 
 <script src="river.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>
