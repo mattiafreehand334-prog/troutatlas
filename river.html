@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Torrente — TroutAtlas</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Leaflet map -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
@@ -15,7 +13,6 @@
 <div class="river-header">
   <a class="back-btn" href="index.html">← Tutti i torrenti</a>
 
-  <!-- Swipeable gallery -->
   <div class="gallery-wrap" id="gallery-wrap">
     <div class="gallery-track" id="gallery-track"></div>
     <button class="gallery-prev" id="gallery-prev" aria-label="Precedente">‹</button>
@@ -24,7 +21,10 @@
   </div>
 
   <div class="river-title">
-    <h1 id="river-name"></h1>
+    <div class="river-title-row">
+      <h1 id="river-name"></h1>
+      <button class="fav-btn-detail" id="fav-btn-detail" title="Aggiungi ai preferiti">🤍</button>
+    </div>
     <p class="location" id="river-location"></p>
   </div>
 </div>
@@ -56,15 +56,26 @@
     <div class="difficulty" id="river-difficulty"></div>
   </div>
 
-  <!-- Map + Google Maps button -->
   <div class="detail-section">
     <h2>📍 Posizione</h2>
     <div id="map"></div>
     <a id="gmaps-btn" class="btn btn-maps" target="_blank" rel="noopener">
       🧭 Portami qui
     </a>
+    <button id="reg-btn" class="btn btn-regs">📋 Regolamenti della zona</button>
   </div>
 
+</div>
+
+<!-- Regulations modal -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>📋 Regolamenti della zona</h3>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
 </div>
 
 <script src="river.js"></script>

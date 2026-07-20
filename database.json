@@ -11,7 +11,13 @@
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
     "recommendedLures": ["Spoon 2 g", "Spoon 3 g", "Minnow 45 mm"],
     "images": ["sesia_1.jpeg", "sesia_2.jpeg", "sesia_3.jpeg"],
-    "coordinates": { "lat": 45.818, "lng": 8.236 }
+    "coordinates": { "lat": 45.818, "lng": 8.236 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte + Segnaline zona Valsesia",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "rules": ["Limite giornaliero: 5 trote, 2 temoli", "Anzini vietati", "Esche naturali vietate in alcuni tratti", "Catch & release consigliato per il Temolo"]
+    }
   },
   {
     "id": "cervo",
@@ -22,9 +28,115 @@
     "species": ["Trota Fario"],
     "difficulty": 2,
     "recommendedRod": "1.68 m — 0.2/5 g",
-    "recommendedLine": "Trecciato PE 0.3",
-    "recommendedLures": ["Minnow 45 mm"],
-    "images": ["sesia_1.jpeg"],
-    "coordinates": { "lat": 45.568, "lng": 8.058 }
+    "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.14",
+    "recommendedLures": ["Minnow 45 mm", "Spoon 1.5 g", "Cucchiaino 2 g"],
+    "images": ["cervo_1.jpeg", "cervo_2.jpeg", "cervo_3.jpeg"],
+    "coordinates": { "lat": 45.568, "lng": 8.058 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 22 cm",
+      "rules": ["Limite giornaliero: 5 trote", "Vietata la pesca con esche vive", "Obbligatorio guado con stivali o waders", "Rispettare le zone di divieto segnalate"]
+    }
+  },
+  {
+    "id": "sessera",
+    "name": "Sessera",
+    "region": "Piemonte",
+    "province": "Biella",
+    "zone": "Valle del Sessera",
+    "species": ["Trota Fario"],
+    "difficulty": 2,
+    "recommendedRod": "1.53 m — 0.5/4 g",
+    "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.12",
+    "recommendedLures": ["Minnow 40 mm", "Spoon 1 g", "Micro Jig 1.5 g"],
+    "images": ["sesia_2.jpeg"],
+    "coordinates": { "lat": 45.703, "lng": 8.143 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 22 cm",
+      "rules": ["Limite giornaliero: 3 trote", "Torrente a ridotta portata: massimo rispetto della fauna", "Catch & release fortemente consigliato", "Vietato l'uso di piombi al piombo"]
+    }
+  },
+  {
+    "id": "elvo",
+    "name": "Elvo",
+    "region": "Piemonte",
+    "province": "Biella",
+    "zone": "Bassa Biellese",
+    "species": ["Trota Fario", "Trota Iridea"],
+    "difficulty": 1,
+    "recommendedRod": "1.80 m — 3/14 g",
+    "recommendedLine": "Monofilo 0.20 + Fluorocarbon 0.18",
+    "recommendedLures": ["Spoon 3 g", "Minnow 55 mm", "Chatterbait 5 g"],
+    "images": ["sesia_3.jpeg"],
+    "coordinates": { "lat": 45.516, "lng": 8.133 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 22 cm | Trota Iridea: 25 cm",
+      "rules": ["Limite giornaliero: 5 trote", "Accesso da sentieri segnalati", "Vietata la pesca notturna", "Pesca consentita solo con canna e lenza"]
+    }
+  },
+  {
+    "id": "strona",
+    "name": "Strona di Mosso",
+    "region": "Piemonte",
+    "province": "Biella",
+    "zone": "Valle Mosso",
+    "species": ["Trota Fario", "Temolo"],
+    "difficulty": 2,
+    "recommendedRod": "1.68 m — 0.5/5 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": ["Spoon 2 g", "Minnow 45 mm", "Nymph a mosca"],
+    "images": ["cervo_1.jpeg"],
+    "coordinates": { "lat": 45.698, "lng": 8.119 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "rules": ["Limite giornaliero: 5 trote, 2 temoli", "Tratto a mosca artificiale solo nel tratto superiore", "Obbligatorio riportare il Temolo in acqua", "Vietato l'amo triplo"]
+    }
+  },
+  {
+    "id": "mastallone",
+    "name": "Mastallone",
+    "region": "Piemonte",
+    "province": "Vercelli",
+    "zone": "Valsesia",
+    "species": ["Trota Fario", "Temolo"],
+    "difficulty": 4,
+    "recommendedRod": "1.68 m — 0.2/7 g",
+    "recommendedLine": "Trecciato PE 0.6 + Fluorocarbon 0.20",
+    "recommendedLures": ["Spoon 4 g", "Minnow 65 mm", "Ondulante 5 g"],
+    "images": ["cervo_2.jpeg"],
+    "coordinates": { "lat": 45.872, "lng": 8.118 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte + Segnaline zona Valsesia",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "rules": ["Limite giornaliero: 5 trote, 2 temoli", "Torrente impervio: obbligatorio giubbotto di sicurezza", "Vietata la pesca in solitaria nei tratti di gola", "Esche naturali vietate"]
+    }
+  },
+  {
+    "id": "orco",
+    "name": "Orco",
+    "region": "Piemonte",
+    "province": "Torino",
+    "zone": "Canavese",
+    "species": ["Trota Fario", "Trota Iridea"],
+    "difficulty": 3,
+    "recommendedRod": "1.80 m — 2/10 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.18",
+    "recommendedLures": ["Spoon 3 g", "Minnow 55 mm", "Cucchiaino articolato 4 g"],
+    "images": ["cervo_3.jpeg"],
+    "coordinates": { "lat": 45.470, "lng": 7.640 },
+    "regulations": {
+      "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
+      "season": "2ª domenica di marzo – 30 settembre",
+      "minSize": "Trota Fario: 20 cm | Trota Iridea: 25 cm",
+      "rules": ["Limite giornaliero: 5 trote", "Rispettare le zone protette del Parco Nazionale Gran Paradiso", "Vietata la pesca a 200 m dagli impianti idroelettrici", "Obbligo di rilascio nelle Zone di Protezione"]
+    }
   }
 ]
