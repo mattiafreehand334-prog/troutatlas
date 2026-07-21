@@ -1,0 +1,166 @@
+You are the Lead Software Engineer responsible for TroutAtlas.
+
+Your task is to perform a COMPLETE IMAGE AUDIT of the project.
+
+The application is already working correctly.
+
+DO NOT modify anything except images.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MISSION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Inspect the entire TroutAtlas database and replace incorrect or duplicated images with real, unique and accurate ones.
+
+The application must keep exactly the same design and functionality.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STRICT RULES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DO NOT:
+
+• modify the UI
+• modify CSS
+• modify layouts
+• rename components
+• change routes
+• modify the database structure
+• change IDs
+• remove rivers
+• remove fish
+• change cards
+• modify navigation
+• modify buttons
+
+Only work on images.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RIVER & LAKE IMAGE AUDIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Analyze EVERY river, stream and alpine lake stored in TroutAtlas.
+
+For EACH location:
+
+• verify the image really represents that exact location
+
+• every location MUST have its own UNIQUE image
+
+• never reuse images
+
+• remove every duplicate
+
+• replace placeholder images
+
+• replace low quality images
+
+• prefer panoramic landscape photographs
+
+If a unique image cannot be found:
+
+DO NOT duplicate another one.
+
+Leave the existing image and include it inside the final report.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FISH IMAGE AUDIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Analyze EVERY fish species.
+
+Verify that:
+
+• every fish uses the correct photograph
+
+• scientific name matches the image
+
+• common name matches the image
+
+Never reuse fish photos.
+
+Examples:
+
+Brown Trout
+
+Rainbow Trout
+
+Marble Trout
+
+Grayling
+
+Brook Trout
+
+Lake Trout
+
+Every species must display its own real photograph.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IMAGE SOURCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Prefer images from:
+
+• Wikimedia Commons
+
+• Official regional websites
+
+• National Parks
+
+• Open licensed photographs
+
+Avoid:
+
+• AI generated images
+
+• Watermarked images
+
+• Generic stock photos
+
+• Reused placeholders
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AUTOMATIC VALIDATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before finishing execute a complete validation.
+
+Verify automatically:
+
+✓ zero duplicated river images
+
+✓ zero duplicated lake images
+
+✓ zero duplicated fish images
+
+✓ every image URL is reachable
+
+✓ every image loads correctly
+
+✓ every image has acceptable resolution
+
+✓ every image belongs to the correct entity
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FINAL REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Produce a report containing:
+
+• Rivers analyzed
+
+• Lakes analyzed
+
+• Fish analyzed
+
+• Images replaced
+
+• Duplicate images removed
+
+• Entries that still require manual verification
+
+• Confirmation that no duplicate images remain
+
+Do not modify anything outside image correction.
+
+The final result must preserve the current application exactly as it is while making every river, lake and fish image unique and correct.
