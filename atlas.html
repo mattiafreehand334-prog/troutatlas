@@ -8,50 +8,103 @@
 </head>
 <body class="atlas-body">
 
-<div class="atlas-header-bar">
-  <div class="atlas-header-inner">
-    <div class="atlas-logo">
-      <span class="atlas-logo-icon">🤖</span>
+<!-- Top bar -->
+<div class="atlas-topbar">
+  <div class="atlas-topbar-inner">
+    <div class="atlas-topbar-brand">
+      <span class="atlas-topbar-icon">🤖</span>
       <div>
-        <div class="atlas-logo-title">ATLAS AI</div>
-        <div class="atlas-logo-sub">Il tuo assistente intelligente per la pesca alla trota.</div>
+        <div class="atlas-topbar-title">ATLAS AI</div>
+        <div class="atlas-topbar-sub">Assistente intelligente per la trota</div>
       </div>
     </div>
     <button class="atlas-clear-btn" id="atlas-clear-btn" title="Nuova conversazione">↺</button>
   </div>
 </div>
 
-<!-- Chat messages -->
+<!-- Chat / Dashboard area -->
 <div class="atlas-chat" id="atlas-chat">
-  <div class="atlas-welcome" id="atlas-welcome">
-    <div class="atlas-welcome-icon">🎣</div>
-    <div class="atlas-welcome-text">
-      Ciao! Sono <strong>ATLAS AI</strong>, il tuo esperto di pesca alla trota.<br>
-      Posso aiutarti a scegliere dove pescare, quale tecnica usare, interpretare le condizioni e molto altro.
-    </div>
-    <div class="atlas-chips-label">Domande rapide</div>
-    <div class="atlas-chips" id="atlas-chips">
-      <button class="atlas-chip" data-q="Dove pescare oggi?">🎣 Dove pescare oggi?</button>
-      <button class="atlas-chip" data-q="Quale mosca usare adesso?">🪰 Quale mosca usare?</button>
-      <button class="atlas-chip" data-q="Com'è il Sesia in questo periodo?">🌊 Com'è il Sesia adesso?</button>
-      <button class="atlas-chip" data-q="Trova lo spot migliore per me">📍 Trova uno spot</button>
-      <button class="atlas-chip" data-q="Dove trovo le trote adesso?">🐟 Dove trovare le trote?</button>
-      <button class="atlas-chip" data-q="Spiegami la pesca a ninfa">📚 Spiegami una tecnica</button>
-    </div>
-  </div>
-</div>
 
-<!-- Input area -->
+  <!-- Welcome dashboard (hidden once conversation starts) -->
+  <div class="atlas-welcome" id="atlas-welcome">
+
+    <!-- Hero intro card -->
+    <div class="atlas-hero-card">
+      <div class="atlas-hero-head">
+        <div class="atlas-hero-icon">🤖</div>
+        <div class="atlas-hero-meta">
+          <div class="atlas-hero-name">ATLAS AI</div>
+          <div class="atlas-hero-powered">Powered by TroutAtlas Intelligence</div>
+        </div>
+      </div>
+      <p class="atlas-hero-desc">
+        ATLAS AI analizza meteo, torrenti, condizioni dell'acqua, tecniche e dati di TroutAtlas
+        per aiutarti a prendere la decisione migliore sulla tua prossima uscita.
+      </p>
+      <div class="atlas-hero-pills">
+        <span class="atlas-hero-pill">🌊 Condizioni in tempo reale</span>
+        <span class="atlas-hero-pill">🪰 Consigli tecnica</span>
+        <span class="atlas-hero-pill">📍 Spot migliori</span>
+      </div>
+    </div>
+
+    <!-- Quick action grid -->
+    <div class="atlas-qgrid-label">Domande rapide</div>
+    <div class="atlas-qgrid" id="atlas-chips">
+
+      <button class="atlas-qcard" data-q="Dove pescare oggi?">
+        <span class="atlas-qcard-icon">🎣</span>
+        <div class="atlas-qcard-title">Dove pescare oggi?</div>
+        <div class="atlas-qcard-desc">Analizza le condizioni migliori adesso.</div>
+      </button>
+
+      <button class="atlas-qcard" data-q="Quale mosca usare adesso?">
+        <span class="atlas-qcard-icon">🪰</span>
+        <div class="atlas-qcard-title">Quale mosca usare?</div>
+        <div class="atlas-qcard-desc">Ricevi il consiglio tecnico migliore.</div>
+      </button>
+
+      <button class="atlas-qcard" data-q="Com'è il Sesia in questo periodo?">
+        <span class="atlas-qcard-icon">🌊</span>
+        <div class="atlas-qcard-title">Com'è il Sesia?</div>
+        <div class="atlas-qcard-desc">Analisi condizioni del fiume.</div>
+      </button>
+
+      <button class="atlas-qcard" data-q="Trova lo spot migliore per me">
+        <span class="atlas-qcard-icon">📍</span>
+        <div class="atlas-qcard-title">Trova uno spot</div>
+        <div class="atlas-qcard-desc">Trova il punto migliore vicino a te.</div>
+      </button>
+
+      <button class="atlas-qcard" data-q="Dove trovo le trote adesso?">
+        <span class="atlas-qcard-icon">🐟</span>
+        <div class="atlas-qcard-title">Dove trovare le trote?</div>
+        <div class="atlas-qcard-desc">Scopri dove cercarle in questa stagione.</div>
+      </button>
+
+      <button class="atlas-qcard" data-q="Spiegami la pesca a ninfa">
+        <span class="atlas-qcard-icon">📚</span>
+        <div class="atlas-qcard-title">Impara una tecnica</div>
+        <div class="atlas-qcard-desc">Consigli pratici e spiegazioni.</div>
+      </button>
+
+    </div>
+  </div><!-- /atlas-welcome -->
+
+</div><!-- /atlas-chat -->
+
+<!-- Input bar -->
 <div class="atlas-input-bar">
-  <div class="atlas-input-inner">
+  <div class="atlas-input-card">
+    <span class="atlas-input-pfx">🤖</span>
     <textarea
       id="atlas-input"
       class="atlas-textarea"
-      placeholder="Chiedi qualsiasi cosa sulla pesca…"
+      placeholder="Fai una domanda ad ATLAS AI…"
       rows="1"
       maxlength="500"
     ></textarea>
-    <button class="atlas-send-btn" id="atlas-send-btn">
+    <button class="atlas-send-btn" id="atlas-send-btn" disabled>
       <span class="atlas-send-icon">↑</span>
     </button>
   </div>

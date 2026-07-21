@@ -706,10 +706,39 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 /* ── §5 AtlasUI ──────────────────────────────────────────────────── */
 function renderMarkdown(text) {
-  return text
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/_(.+?)_/g, "<em>$1</em>")
-    .replace(/\n/g, "<br>");
+  // Split into lines and render each with semantic structure
+  const lines = text.split('\n');
+  let html = '';
+  for(let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    // Empty line → small spacer
+    if(!line.trim()) {
+      if(i > 0 && i < lines.length - 1) html += '<div style="height:5px"></div>';
+      continue;
+    }
+    // Section header: starts with non-letter (emoji, symbol) and contains **bold**
+    if(!/^[a-zA-ZÀ-ÿ•·▸\-]/.test(line) && /\*\*/.test(line)) {
+      const content = line
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/_(.+?)_/g,       '<em>$1</em>');
+      html += `<div class="atlas-resp-section">${content}</div>`;
+      continue;
+    }
+    // Bullet point
+    if(/^[•·▸\-]\s/.test(line)) {
+      const inner = line.replace(/^[•·▸\-]\s*/,'')
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/_(.+?)_/g,       '<em>$1</em>');
+      html += `<div class="atlas-resp-bullet"><span class="atlas-bullet-dot">•</span><span>${inner}</span></div>`;
+      continue;
+    }
+    // Normal paragraph line
+    const content = line
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/_(.+?)_/g,       '<em>$1</em>');
+    html += `<p class="atlas-resp-p">${content}</p>`;
+  }
+  return html;
 }
 
 function scrollChat() {
@@ -718,47 +747,58 @@ function scrollChat() {
 }
 
 function addMessage(role, text) {
-  const chat = document.getElementById("atlas-chat");
-  // Hide welcome on first real message
+  const chat    = document.getElementById("atlas-chat");
   const welcome = document.getElementById("atlas-welcome");
   if(welcome) welcome.style.display = "none";
 
-  const div = document.createElement("div");
-  div.className = `atlas-msg atlas-msg-${role}`;
+  const now  = new Date();
+  const time = now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
+
+  const wrap = document.createElement("div");
+  wrap.className = "atlas-msg-in";
 
   if(role === "ai") {
-    div.innerHTML = `
-      <div class="atlas-msg-icon">🤖</div>
-      <div class="atlas-msg-body">
-        <div class="atlas-msg-text">${renderMarkdown(text)}</div>
-        <div class="atlas-msg-actions">
-          <button class="atlas-action-btn" onclick="copyMsg(this)" title="Copia">📋 Copia</button>
-          <button class="atlas-action-btn" onclick="newQuestion()" title="Nuova domanda">✏️ Nuova</button>
+    wrap.innerHTML = `
+      <div class="atlas-ai-card">
+        <div class="atlas-ai-header">
+          <span class="atlas-ai-hicon">🤖</span>
+          <span class="atlas-ai-hname">ATLAS AI</span>
+          <span class="atlas-ai-htime">${time}</span>
+        </div>
+        <div class="atlas-ai-body">${renderMarkdown(text)}</div>
+        <div class="atlas-ai-actions">
+          <button class="atlas-action-btn" onclick="copyMsg(this)" title="Copia risposta">📋 Copia</button>
+          <button class="atlas-action-btn" onclick="newQuestion()" title="Nuova domanda">✏️ Nuova domanda</button>
         </div>
       </div>`;
   } else {
-    div.innerHTML = `<div class="atlas-msg-text">${escHtml(text)}</div>`;
+    wrap.innerHTML = `<div class="atlas-user-msg"><div class="atlas-user-bubble">${escHtml(text)}</div></div>`;
   }
-  chat.appendChild(div);
+  chat.appendChild(wrap);
   scrollChat();
-  return div;
+  return wrap;
 }
 
 function addLoading() {
-  const chat = document.getElementById("atlas-chat");
+  const chat    = document.getElementById("atlas-chat");
   const welcome = document.getElementById("atlas-welcome");
   if(welcome) welcome.style.display = "none";
 
   const div = document.createElement("div");
-  div.className = "atlas-msg atlas-msg-ai atlas-msg-loading";
+  div.className = "atlas-msg-in";
   div.id = "atlas-loading";
   div.innerHTML = `
-    <div class="atlas-msg-icon">🤖</div>
-    <div class="atlas-msg-body">
-      <div class="atlas-loading-dots">
-        <span></span><span></span><span></span>
+    <div class="atlas-skeleton-card">
+      <div class="atlas-skeleton-hdr">
+        <div class="atlas-sk-icon"></div>
+        <div class="atlas-sk-name"></div>
       </div>
-      <div class="atlas-loading-label">ATLAS AI sta analizzando le condizioni…</div>
+      <div class="atlas-skeleton-body">
+        <div class="atlas-sk-line"></div>
+        <div class="atlas-sk-line"></div>
+        <div class="atlas-sk-line"></div>
+      </div>
+      <div class="atlas-skeleton-label">🤖 ATLAS AI sta analizzando le condizioni…</div>
     </div>`;
   chat.appendChild(div);
   scrollChat();
@@ -775,10 +815,11 @@ function escHtml(s) {
 }
 
 window.copyMsg = function(btn) {
-  const text = btn.closest(".atlas-msg-body").querySelector(".atlas-msg-text").innerText;
+  const body = btn.closest(".atlas-ai-card").querySelector(".atlas-ai-body");
+  const text = body ? body.innerText : "";
   navigator.clipboard.writeText(text).then(() => {
     btn.textContent = "✅ Copiato";
-    setTimeout(() => btn.textContent = "📋 Copia", 2000);
+    setTimeout(() => { btn.textContent = "📋 Copia"; }, 2000);
   }).catch(() => {});
 };
 
@@ -820,7 +861,7 @@ function initUI() {
   const input   = document.getElementById("atlas-input");
   const sendBtn = document.getElementById("atlas-send-btn");
   const clearBtn = document.getElementById("atlas-clear-btn");
-  const chips   = document.querySelectorAll(".atlas-chip");
+  const chips   = document.querySelectorAll(".atlas-qcard");
   const chat    = document.getElementById("atlas-chat");
 
   // Auto-resize textarea
@@ -835,6 +876,11 @@ function initUI() {
       e.preventDefault();
       sendMessage(input.value.trim());
     }
+  });
+
+  // Enable send button when input has text
+  input.addEventListener("input", () => {
+    sendBtn.disabled = !input.value.trim();
   });
 
   sendBtn.addEventListener("click", () => sendMessage(input.value.trim()));

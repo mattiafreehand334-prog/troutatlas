@@ -1,0 +1,281 @@
+# TROUTATLAS – RESTYLING COMPLETO DI ATLAS AI
+
+L'attuale schermata di ATLAS AI è funzionale ma non è coerente con il design premium di TroutAtlas.
+
+NON modificare il funzionamento dell'assistente.
+
+NON modificare la logica della chat.
+
+NON modificare il backend.
+
+Intervenire ESCLUSIVAMENTE sull'interfaccia grafica e sull'esperienza utente.
+
+L'obiettivo è fare in modo che ATLAS AI sembri una funzionalità nativa di TroutAtlas e non una semplice pagina HTML con testo e pulsanti.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## DESIGN GENERALE
+
+Utilizzare esattamente lo stesso linguaggio grafico già presente nelle sezioni:
+
+• Fishing Intelligence
+
+• Meteo Professionale
+
+• Condizioni Idriche
+
+• Tecniche Consigliate
+
+• Fishing Score AI
+
+Mantenere quindi:
+
+- sfondo blu scuro
+- card premium
+- bordi arrotondati
+- ombre leggere
+- colori coerenti
+- tipografia identica
+- spaziature uniformi
+
+Nessun elemento deve sembrare esterno all'app.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## HEADER
+
+Creare una grande card introduttiva.
+
+🤖 ATLAS AI
+
+Sottotitolo:
+
+"Il tuo assistente intelligente per la pesca alla trota"
+
+Aggiungere una breve descrizione elegante.
+
+Esempio:
+
+"ATLAS AI analizza meteo, torrenti, condizioni dell'acqua, tecniche e dati di TroutAtlas per aiutarti a prendere la decisione migliore."
+
+La card deve essere identica nello stile alle card presenti nella sezione Fishing Intelligence.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## HOME DI ATLAS AI
+
+NON mostrare immediatamente una chat vuota.
+
+Realizzare invece una dashboard iniziale.
+
+Mostrare una card di benvenuto.
+
+Successivamente mostrare una griglia moderna di domande rapide.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## DOMANDE RAPIDE
+
+Eliminare completamente gli attuali pulsanti bianchi.
+
+Sostituirli con vere card premium.
+
+Ogni card deve avere:
+
+• icona grande
+
+• titolo
+
+• breve descrizione
+
+• effetto pressione
+
+• animazione al tocco
+
+Layout consigliato:
+
+2 colonne
+
+3 righe
+
+Domande:
+
+🎣 Dove pescare oggi?
+
+"Analizza le condizioni migliori."
+
+🪰 Quale mosca usare?
+
+"Ricevi il consiglio migliore."
+
+🌊 Com'è il Sesia?
+
+"Analizza il fiume."
+
+📍 Trova uno spot
+
+"Trova il punto migliore."
+
+🐟 Dove trovare le trote?
+
+"Scopri dove cercarle."
+
+📚 Impara una tecnica
+
+"Consigli e spiegazioni."
+
+Le card devono avere lo stesso stile delle altre sezioni dell'app.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## BARRA DI RICERCA
+
+La barra di input deve diventare una card moderna.
+
+Molto arrotondata.
+
+Stesso stile della barra di ricerca presente nella Home.
+
+Placeholder:
+
+"Fai una domanda ad ATLAS AI..."
+
+A sinistra:
+
+🤖
+
+A destra:
+
+Pulsante Invia
+
+oppure
+
+icona freccia.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## CONVERSAZIONE
+
+Quando l'utente invia una domanda deve aprirsi la conversazione.
+
+NON utilizzare semplice testo.
+
+Ogni messaggio deve essere contenuto in una card.
+
+Messaggi utente:
+
+card blu.
+
+Messaggi ATLAS AI:
+
+card leggermente più chiara.
+
+Ogni risposta deve mostrare:
+
+🤖 icona
+
+ATLAS AI
+
+ora
+
+testo
+
+pulsante copia
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## FORMATTAZIONE RISPOSTE
+
+Le risposte devono sembrare dei mini report.
+
+Utilizzare:
+
+Titoli
+
+Sottotitoli
+
+Elenchi
+
+Badge
+
+Separatori
+
+Card interne
+
+Esempio:
+
+🎣 Tecnica consigliata
+
+🌊 Condizioni acqua
+
+🟢 Fishing Score
+
+🪰 Mosca consigliata
+
+📍 Spot suggerito
+
+🧠 Motivazione AI
+
+In questo modo la risposta sarà molto più leggibile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ANIMAZIONI
+
+Aggiungere:
+
+Skeleton Loading
+
+Animazione di digitazione
+
+"ATLAS AI sta analizzando..."
+
+Animazioni morbide
+
+Transizioni fluide
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## COLORI
+
+Utilizzare esclusivamente la palette di TroutAtlas.
+
+Eliminare completamente:
+
+- pulsanti bianchi
+
+- elementi stile browser
+
+- testo senza contenitore
+
+Tutto deve essere inserito dentro card premium.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ESPERIENZA PREMIUM
+
+L'utente deve avere la sensazione di utilizzare un assistente AI professionale.
+
+L'interfaccia deve ricordare la qualità grafica di ChatGPT, Perplexity e Claude, ma reinterpretata nello stile di TroutAtlas.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## RESPONSIVE
+
+Ottimizzare perfettamente la schermata per smartphone.
+
+Curare:
+
+- margini
+- spaziature
+- dimensione pulsanti
+- leggibilità
+- fluidità dello scrolling
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## OBIETTIVO FINALE
+
+ATLAS AI deve diventare una delle sezioni più belle dell'intera applicazione.
+
+L'utente non deve percepirla come una semplice chat, ma come un assistente premium completamente integrato nell'ecosistema TroutAtlas, con la stessa qualità grafica, lo stesso linguaggio visivo e la stessa esperienza utente del resto dell'app.

@@ -10,7 +10,7 @@ description: The correct SW pattern for TroutAtlas — no clients.claim(), cache
 - **Never** use `clients.claim()` — was causing race conditions (page loaded before new SW activated)
 
 ## Current cache key
-`troutatlas-v11` — must be bumped after every asset change
+`troutatlas-v13` — must be bumped after every asset change
 
 **Why:** stale cache with wrong version serves old files silently. Bump = users get fresh assets on next visit.
 
