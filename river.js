@@ -19,6 +19,8 @@ fetch("database.json")
     }
 
     document.title = `${river.name} — TroutAtlas`;
+    // Store last viewed river for ATLAS AI context
+    localStorage.setItem("atlas_last_river", river.id);
 
     /* ── Gallery ──────────────────────────────────────────── */
     const track    = document.getElementById("gallery-track");

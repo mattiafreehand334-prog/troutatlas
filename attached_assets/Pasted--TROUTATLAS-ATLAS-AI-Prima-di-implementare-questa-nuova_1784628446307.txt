@@ -1,0 +1,252 @@
+# TROUTATLAS – ATLAS AI
+
+Prima di implementare questa nuova funzionalità, correggere il bug che impedisce la visualizzazione delle immagini delle specie ittiche.
+
+Verificare e correggere:
+
+- percorsi delle immagini
+- nomi dei file
+- estensioni (.jpg, .jpeg, .png, .webp)
+- import delle immagini
+- mapping del database
+- rendering React
+- cache
+- lazy loading
+- eventuali errori introdotti dagli ultimi aggiornamenti
+
+L'obiettivo è ripristinare tutte le fotografie senza modificare il resto dell'applicazione.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## NUOVA FUNZIONALITÀ
+
+Creare una nuova sezione chiamata
+
+🤖 ATLAS AI
+
+ATLAS AI dovrà essere un assistente intelligente integrato in TroutAtlas.
+
+Non dovrà essere una semplice chat generica, ma un assistente specializzato nella pesca alla trota e perfettamente integrato con i dati dell'app.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## INTERFACCIA
+
+Creare una schermata dedicata.
+
+In alto visualizzare:
+
+🤖 ATLAS AI
+
+Sottotitolo:
+
+"Il tuo assistente intelligente per la pesca alla trota."
+
+Inserire una barra moderna con placeholder:
+
+"Chiedi qualsiasi cosa sulla pesca..."
+
+Pulsante:
+
+Invia
+
+Aggiungere anche pulsanti rapidi.
+
+Esempi:
+
+🎣 Dove pescare oggi?
+
+🪰 Quale mosca usare?
+
+🌊 Com'è il Sesia oggi?
+
+📍 Trova uno spot
+
+🐟 Dove trovare le trote?
+
+📚 Spiegami una tecnica
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ESPERIENZA UTENTE
+
+Le risposte devono comparire in una card elegante.
+
+Durante l'attesa mostrare:
+
+"ATLAS AI sta analizzando le condizioni..."
+
+Aggiungere:
+
+- animazione di caricamento
+- pulsante copia
+- pulsante nuova domanda
+- cronologia delle conversazioni
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## CONTESTO
+
+Quando possibile ATLAS AI deve utilizzare automaticamente i dati presenti nell'app.
+
+Ad esempio:
+
+- Fishing Score
+
+- meteo
+
+- qualità dell'acqua
+
+- livello idrometrico
+
+- portata
+
+- temperatura acqua
+
+- pressione
+
+- torrente aperto
+
+- località selezionata
+
+- spot selezionato
+
+In questo modo le risposte saranno contestuali.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ESEMPI
+
+Se l'utente scrive:
+
+"Dove mi consigli di pescare oggi?"
+
+ATLAS AI dovrà utilizzare i dati disponibili per fornire un consiglio personalizzato.
+
+Se scrive:
+
+"Quale mosca usare sul Sesia?"
+
+dovrà considerare:
+
+- stagione
+
+- meteo
+
+- temperatura
+
+- limpidezza
+
+- dati disponibili
+
+Se l'utente apre Scopello e chiede:
+
+"Dove mi conviene iniziare?"
+
+ATLAS AI dovrà utilizzare il contesto della località aperta.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## CONOSCENZA
+
+ATLAS AI dovrà essere ottimizzato per rispondere su:
+
+- pesca a mosca
+
+- spinning
+
+- ninfa
+
+- secca
+
+- streamer
+
+- lettura del fiume
+
+- comportamento delle trote
+
+- attrezzatura
+
+- nodi
+
+- stagionalità
+
+- meteo
+
+- idrologia
+
+- regolamenti
+
+- tecniche
+
+- sicurezza
+
+- spot presenti in TroutAtlas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## MEMORIA DEL CONTESTO
+
+Durante la conversazione mantenere il contesto.
+
+Esempio:
+
+Utente:
+
+"Quale mosca useresti?"
+
+Poi:
+
+"E di pomeriggio?"
+
+ATLAS AI deve capire che si sta ancora parlando dello stesso torrente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ARCHITETTURA
+
+Progettare il sistema in modo modulare.
+
+Separare:
+
+- interfaccia
+
+- gestione conversazione
+
+- provider AI
+
+- memoria della conversazione
+
+- servizi
+
+In futuro dovrà essere possibile collegare facilmente OpenAI o altri modelli AI senza modificare l'interfaccia.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## DESIGN
+
+Mantenere lo stile premium di TroutAtlas.
+
+Utilizzare:
+
+- card moderne
+
+- animazioni leggere
+
+- colori coerenti
+
+- icone moderne
+
+- perfetta ottimizzazione mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## OBIETTIVO FINALE
+
+ATLAS AI dovrà diventare il cuore intelligente di TroutAtlas.
+
+L'utente dovrà percepirlo come un vero esperto di pesca alla trota, capace di utilizzare i dati dell'app per fornire consigli personalizzati e contestuali, andando oltre una semplice chat generica.
+
+IMPORTANTE:
+
+Per questa prima versione, creare tutta l'interfaccia, la struttura dell'assistente e la gestione della conversazione in modo completo, ma utilizzare risposte simulate o un provider temporaneo se necessario. L'architettura dovrà essere pronta per l'integrazione futura con un modello AI reale (ad esempio OpenAI), senza dover riprogettare l'applicazione.

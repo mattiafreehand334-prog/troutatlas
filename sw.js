@@ -1,4 +1,4 @@
-const CACHE = "troutatlas-v11";
+const CACHE = "troutatlas-v12";
 
 // Core app shell cached on install (small, fast)
 const SHELL = [
@@ -15,6 +15,8 @@ const SHELL = [
   "/knots.js",
   "/negozi.js",
   "/trote.js",
+  "/atlas.html",
+  "/atlas.js",
   "/style.css",
   "/database.json",
   "/negozi.json",
