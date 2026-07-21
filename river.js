@@ -96,7 +96,7 @@ fetch("database.json")
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18}).addTo(map);
       const icon = L.divIcon({html:'<div style="font-size:26px;line-height:1">🎣</div>',className:"",iconSize:[32,32],iconAnchor:[16,28]});
       L.marker([lat,lng],{icon}).addTo(map).bindPopup(`<strong>${river.name}</strong><br>${river.zone}`).openPopup();
-      document.getElementById("gmaps-btn").href = `geo:0,0?q=${lat},${lng}`;
+      document.getElementById("gmaps-btn").href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
     } else {
       document.getElementById("gmaps-btn").style.display = "none";
       document.getElementById("map").style.display = "none";
