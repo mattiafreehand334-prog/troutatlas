@@ -36,7 +36,7 @@ function openDetail(i) {
     <div class="reg-item"><span class="reg-label">📍 Coordinate</span><span class="reg-value">${spot.lat.toFixed(5)}, ${spot.lng.toFixed(5)}</span></div>
     <div class="reg-item"><span class="reg-label">📅 Salvato il</span><span class="reg-value">${new Date(spot.savedAt).toLocaleDateString("it-IT",{day:"2-digit",month:"long",year:"numeric"})}</span></div>
     <a class="btn btn-maps" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px"
-       href="https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}" target="_blank">🧭 Portami qui</a>
+       href="geo:0,0?q=${spot.lat},${spot.lng}">🧭 Portami qui</a>
     <button class="btn btn-danger" onclick="deleteSpot(${i})">🗑️ Elimina spot</button>`;
   document.getElementById("detail-modal").classList.add("open");
 }

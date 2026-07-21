@@ -33,7 +33,7 @@ fetch("negozi.json")
           <div class="shop-spec">🎣 ${s.speciality}</div>
           <div class="shop-btns">
             <a class="btn-sm btn-sm-green"
-               href="https://www.google.com/maps/dir/?api=1&destination=${s.coordinates.lat},${s.coordinates.lng}"
+               href="geo:0,0?q=${s.coordinates.lat},${s.coordinates.lng}"
                target="_blank" rel="noopener">🧭 Portami qui</a>
             ${s.phone ? `<a class="btn-sm btn-sm-blue" href="tel:${s.phone}">📞 Chiama</a>` : ""}
           </div>
