@@ -39,6 +39,8 @@
     <a id="gmaps-btn" class="btn btn-maps">🧭 Portami qui</a>
     <button id="reg-btn" class="btn btn-regs">📋 Regolamenti della zona</button>
   </div>
+  <!-- Fishing Intelligence section (populated by intelligence.js) -->
+  <div id="intel-section"></div>
 </div>
 
 <nav class="bottom-nav">
@@ -60,6 +62,7 @@
   </div>
 </div>
 
+<script src="intelligence.js"></script>
 <script src="river.js"></script>
 <script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script>
 </body>

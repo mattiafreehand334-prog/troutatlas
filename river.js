@@ -138,4 +138,7 @@ fetch("database.json")
     regBtn.addEventListener("click", () => overlay.classList.add("open"));
     modalClose.addEventListener("click", () => overlay.classList.remove("open"));
     overlay.addEventListener("click", e => { if (e.target===overlay) overlay.classList.remove("open"); });
+
+    /* ── Fishing Intelligence ─────────────────────────────── */
+    loadFishingIntelligence(river);
   });

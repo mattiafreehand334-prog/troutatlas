@@ -1,0 +1,186 @@
+You are the Lead Software Engineer of TroutAtlas.
+
+MISSION
+
+Implement a new "Fishing Intelligence" section on every river, stream and lake detail page.
+
+The new section must be modern, mobile-first, visually consistent with the existing TroutAtlas design and must not alter any existing functionality.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 1 — LIVE WEATHER
+
+Display live weather for the selected fishing location.
+
+Include:
+
+• Air temperature (°C)
+• Weather condition
+• Humidity
+• Wind speed
+• Wind direction
+• Atmospheric pressure (hPa)
+• Visibility
+• Cloud coverage
+
+Use a reliable weather API.
+
+The weather must update automatically.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 2 — WATER CONDITIONS
+
+Display:
+
+• Water temperature (if available)
+• River level
+• River discharge / flow
+• Trend:
+
+⬆ Rising
+➡ Stable
+⬇ Falling
+
+If official hydrometric data is unavailable for a specific location, display:
+
+"Hydrometric data not available."
+
+Do not generate fake values.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 3 — AI WATER ANALYSIS
+
+Create an intelligent estimation of water conditions.
+
+Use weather history, rainfall, river level, season and temperature.
+
+Display one status:
+
+🟢 Crystal clear
+
+🟢 Clear
+
+🟡 Slightly stained
+
+🟠 Stained
+
+🔴 Muddy
+
+Also display a confidence percentage.
+
+Explain briefly why this prediction was generated.
+
+Example:
+
+"Heavy rain during the last 24 hours combined with rising river levels suggests slightly stained water."
+
+Do NOT invent random values.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 4 — FISHING CONDITIONS
+
+Generate an overall fishing score.
+
+Excellent
+
+Good
+
+Average
+
+Poor
+
+Very Poor
+
+Evaluate using:
+
+• Weather
+• Atmospheric pressure
+• Water level
+• Water clarity
+• Season
+• River characteristics
+
+Display a color indicator.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 5 — BEST TECHNIQUE TODAY
+
+Recommend the best fishing techniques.
+
+Possible values:
+
+• Dry Fly
+• Nymph
+• Streamer
+• Spinning
+• Spoon
+• Minnow
+• Soft Baits
+
+Each technique must include:
+
+★★★★★ rating
+
+Short explanation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 6 — BEST FISH ACTIVITY TIMES
+
+Predict fish activity.
+
+Morning
+
+Afternoon
+
+Evening
+
+Night
+
+Show a timeline with activity level.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 7 — USER EXPERIENCE
+
+Everything must:
+
+• load asynchronously
+
+• never freeze the interface
+
+• show loading placeholders
+
+• cache recent data
+
+• gracefully handle API failures
+
+• remain fully responsive on iPhone
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DO NOT
+
+• modify existing pages
+
+• modify database structure unless necessary
+
+• remove existing features
+
+• break current navigation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+At the end provide:
+
+• files modified
+
+• APIs used
+
+• new architecture
+
+• future improvements.
