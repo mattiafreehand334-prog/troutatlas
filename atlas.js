@@ -37,6 +37,68 @@ const AtlasDB = {
   rivers() { return _rivers; }
 };
 
+/* ── §1.5 AtlasSpots ─────────────────────────────────────────────── */
+// Spot search, filter, and criteria parsing across all rivers
+const AtlasSpots = {
+  // Flatten all spots from all rivers into one array with _river back-ref
+  all() {
+    const out = [];
+    for(const r of _rivers) {
+      if(Array.isArray(r.spots)) {
+        r.spots.forEach(s => out.push(Object.assign({}, s, { _river: r })));
+      }
+    }
+    return out;
+  },
+  // Filter spots by criteria object
+  find(criteria = {}) {
+    return this.all().filter(s => {
+      if(criteria.riverId      && s._river.id !== criteria.riverId)   return false;
+      if(criteria.familyFriendly && !s.familyFriendly)                return false;
+      if(criteria.scenicView     && !s.scenicView)                    return false;
+      if(criteria.bigFish        && !s.bigFish)                       return false;
+      if(criteria.stocking       && !s.stocking)                      return false;
+      if(criteria.lowCrowd       && s.crowded)                        return false;
+      if(criteria.maxDifficulty  && s.difficulty > criteria.maxDifficulty) return false;
+      if(criteria.maxWalk != null && s.walkingMinutes > criteria.maxWalk)  return false;
+      if(criteria.technique && !s.techniques.includes(criteria.technique)) return false;
+      if(criteria.type      && s.type !== criteria.type)              return false;
+      return true;
+    });
+  },
+  // Best N spots sorted by fishingScore
+  best(criteria = {}, n = 3) {
+    return this.find(criteria)
+      .sort((a,b) => (b.fishingScore||0) - (a.fishingScore||0))
+      .slice(0, n);
+  },
+  // Parse natural-language criteria from user message
+  parseCriteria(msg, hintRiver) {
+    const m = msg.toLowerCase();
+    const c = {};
+    if(hintRiver) c.riverId = hintRiver.id;
+    if(/facil|bambin|figlio|famiglia|principiant|semplice|sicur/.test(m))     { c.maxDifficulty = 2; c.familyFriendly = true; }
+    if(/poco cammin|camminare poco|vicino|raggiungib|senza fatica|min.*cammino/.test(m)) c.maxWalk = 10;
+    if(/panoram|vista|bello|scenic|fotogenico/.test(m))                        c.scenicView   = true;
+    if(/gross[ae] trot|taglia|trofeo|grande trot|monster|record/.test(m))      c.bigFish      = true;
+    if(/poco frequentat|solitudi|tranquillo|nessuno|isolat/.test(m))           c.lowCrowd     = true;
+    if(/ripopolat|stocking|immission/.test(m))                                  c.stocking     = true;
+    if(/ninfa|nymph/.test(m))                                                   c.technique    = "ninfa";
+    if(/\bsecca\b|dry fly/.test(m))                                             c.technique    = "secca";
+    if(/streamer/.test(m))                                                      c.technique    = "streamer";
+    if(/spinning|spoon|minnow|artificiale/.test(m))                             c.technique    = "spinning";
+    if(/buca profond|\bbuca\b|pool\b|vasca/.test(m))                            c.type         = "buca";
+    if(/raschio|riffle/.test(m))                                                c.type         = "raschio";
+    if(/cascata|salto|waterfall/.test(m))                                       c.type         = "salto";
+    return c;
+  },
+  // Build spot map-action tag (rendered as card in AI response)
+  spotTag(spot) {
+    const s = spot.fishingScore || 0;
+    return `[[SPOT:${spot._river.id}:${spot.id}:${spot.name}:${s}]]`;
+  }
+};
+
 /* ── §2 AtlasContext ─────────────────────────────────────────────── */
 const AtlasContext = {
   build() {
@@ -87,6 +149,21 @@ const AtlasMemory = {
   }
 };
 
+/* ── §3.5 AtlasPrefs ─────────────────────────────────────────────── */
+// User preference storage — for future personalization of AI advice
+const AtlasPrefs = {
+  KEY:      "atlas_prefs",
+  DEFAULTS: { technique: null, maxWalkMin: 60, level: "intermedio", goal: "divertimento" },
+  load() {
+    try { return Object.assign({}, this.DEFAULTS, JSON.parse(localStorage.getItem(this.KEY) || "{}")); }
+    catch(_) { return Object.assign({}, this.DEFAULTS); }
+  },
+  save(updates) {
+    const cur = this.load();
+    localStorage.setItem(this.KEY, JSON.stringify(Object.assign(cur, updates)));
+  }
+};
+
 /* ── §4 AtlasProvider ────────────────────────────────────────────── */
 // Interface contract (for future OpenAI swap):
 //   provider.respond(userMessage, context, history) → Promise<string>
@@ -115,6 +192,10 @@ function detectIntent(msg, history) {
   if(/condizioni|com[\'è e] il|come sta|livello|portata|torbid|limpid|traspar|acqua alta|acqua bassa/.test(m)) return "condizioni";
   if(/pomeriggio|mattina|alba|tramonto|notte|quando|orario|ore|momento migliore|miglior momento/.test(m)) return "orario";
   if(/dove trovo|dove sono|comportamento|abitudini|habitat|dove si nascon/.test(m)) return "trote_habitat";
+  if(/trova uno spot|trovami uno spot|spot facile|spot panoramico|spot poco|spot per|buca profond|tratto facile|tratto poco|zona ripopolat|dove pesco.*con mio|dove mi consigli.*and|mostrami.*spot|fammi vedere.*spot|dimmi.*spot|spot.*ninfa|spot.*secca|spot.*spinning|dove posso.*con mio figlio|dove posso.*bambino/.test(m)) return "trova_spot";
+  if(/parcheg|dove mi fermo|dove parcheggio|dove lascio.*auto|dove metto.*auto/.test(m)) return "parcheggio";
+  if(/itinerario|come arrivo|come raggiungo|come si arriva|come ci arrivo|come andare|percorso per arrivare|indicazioni per/.test(m)) return "itinerario";
+  if(/cosa c.è.*map|marker|strutture.*torrent|strutture.*fiume|ponti.*torrent|cascate.*torrent|servizi.*torrent|sentieri.*torrent|cosa trovo|cosa c.è sul/.test(m)) return "marker_info";
   if(/dove pesco|dove andare|spot|torrente migliore|miglior torrente|consigli|suggerisci|dove mi conviene|dove ti|consiglio|trova/.test(m)) return "dove_pescare";
   if(/meteo|tempo|pioggia|temperatura|pressione|vento|previsioni/.test(m)) return "meteo";
   // Fallback: if the last message was a topic question, this might be a follow-up
@@ -234,6 +315,10 @@ function generateResponse(intent, msg, ctx, river, history) {
     case "regolamenti":   return respRegolamenti(river, ctx);
     case "attrezzatura":  return respAttrezzatura(ctx, msg);
     case "meteo":         return respMeteo(ctx, river);
+    case "trova_spot":    return respTrovaSpot(ctx, river, msg);
+    case "parcheggio":    return respParcheggio(ctx, river, msg);
+    case "itinerario":    return respItinerario(ctx, river, msg);
+    case "marker_info":   return respMarkerInfo(ctx, river);
     case "followup":      return respFollowup(msg, ctx, river, history);
     default:              return respGenerico(msg, ctx, river);
   }
@@ -679,6 +764,161 @@ function respFollowup(msg, ctx, river, history) {
   return respGenerico(msg, ctx, river);
 }
 
+/* ── §4.4 Spot-aware response generators ────────────────────────── */
+
+function respTrovaSpot(ctx, hintRiver, msg) {
+  const { season, isSeasonOpen } = ctx;
+  if(!isSeasonOpen) {
+    return `⚠️ **Stagione chiusa.** La stagione regolare è chiusa — gli spot non sono accessibili per la pesca regolamentata.
+
+Puoi comunque esplorare i percorsi e pianificare la prossima uscita. Chiedi "Mostrami uno spot sul Sesia" per vedere il percorso di accesso.`;
+  }
+
+  const criteria = AtlasSpots.parseCriteria(msg, hintRiver);
+  const spots    = AtlasSpots.best(criteria, 3);
+
+  if(spots.length === 0) {
+    // Fallback: best spots overall if no match
+    const all = AtlasSpots.best({}, 3);
+    if(all.length === 0) {
+      return `Non ho trovato spot specifici per la tua ricerca. Prova a chiedermi "Dove pescare oggi?" per i torrenti migliori in ${SEASON_DATA[season].label}.`;
+    }
+    return `Non ho trovato spot con esattamente quei criteri, ma ecco i migliori disponibili in ${SEASON_DATA[season].label}:\n\n` + _formatSpotList(all, ctx);
+  }
+
+  const criteriaDesc = _describeCriteria(criteria);
+  return `In **${SEASON_DATA[season].label}**${criteriaDesc}, ecco i migliori spot per te:
+
+${_formatSpotList(spots, ctx)}
+
+Scrivi **"Come arrivo a [nome spot]"** per l'itinerario dettagliato, o **"Mostrami il parcheggio"** per trovare dove lasciare l'auto.`;
+}
+
+function _describeCriteria(c) {
+  const parts = [];
+  if(c.familyFriendly) parts.push("adatti alle famiglie");
+  if(c.scenicView)     parts.push("panoramici");
+  if(c.bigFish)        parts.push("con trote di taglia");
+  if(c.stocking)       parts.push("ripopolati");
+  if(c.lowCrowd)       parts.push("poco frequentati");
+  if(c.technique)      parts.push(`per la ${c.technique}`);
+  if(c.maxWalk != null && c.maxWalk <= 10) parts.push("facilmente raggiungibili");
+  if(c.type)           parts.push(`tipo ${c.type}`);
+  return parts.length ? ` (${parts.join(", ")})` : "";
+}
+
+function _formatSpotList(spots, ctx) {
+  return spots.map((s, i) => {
+    const num   = ["1️⃣","2️⃣","3️⃣"][i] || `${i+1}.`;
+    const score = s.fishingScore ? ` — 🟢 Score ${s.fishingScore}/100` : "";
+    const walk  = s.walkingMinutes <= 5 ? "⚡ Vicinissimo" : s.walkingMinutes <= 15 ? `🥾 ${s.walkingMinutes} min a piedi` : `🥾 ${s.walkingMinutes} min (escursione)`;
+    const tags  = [];
+    if(s.familyFriendly) tags.push("👨‍👩‍👧 Famiglia");
+    if(s.scenicView)     tags.push("📸 Panoramico");
+    if(s.bigFish)        tags.push("🏆 Trote di taglia");
+    if(s.stocking)       tags.push("🐟 Ripopolato");
+    if(!s.crowded)       tags.push("🔇 Poco frequentato");
+    const tagStr = tags.length ? `\n   ${tags.join(" · ")}` : "";
+    const techs  = s.techniques.join(", ");
+    return `${num} **${s.name}** — *${s._river.name}*${score}
+   ${walk} · Difficoltà: ${"⭐".repeat(s.difficulty)}
+   🎣 Tecniche: ${techs}
+   ${s.description}${tagStr}
+   ${AtlasSpots.spotTag(s)}`;
+  }).join("\n\n");
+}
+
+function respItinerario(ctx, hintRiver, msg) {
+  // Try to find the spot from msg or use best available
+  const criteria = AtlasSpots.parseCriteria(msg, hintRiver);
+  let spots = AtlasSpots.best(criteria, 1);
+  if(spots.length === 0) spots = AtlasSpots.best(hintRiver ? { riverId: hintRiver.id } : {}, 1);
+  if(spots.length === 0) {
+    return `Non trovo uno spot specifico per questa richiesta. Dimmi il nome del torrente e dello spot — per esempio: **"Come arrivo alla Buca del Mulino sul Sesia?"**`;
+  }
+
+  const s  = spots[0];
+  const riv = s._river;
+  const steps = (s.path || []).map(p => `${p.emoji} **Step ${p.step}** — ${p.text}`).join("\n");
+
+  const parkingInfo = s.parking
+    ? `🅿️ **Parcheggio consigliato:** ${s.parking.name}\n   ${s.parking.description} (${s.parking.distanceMeters} m dallo spot)`
+    : "🅿️ Parcheggio: verifica in loco lungo la strada di accesso.";
+
+  return `🧭 **Itinerario per ${s.name}** — *${riv.name}*
+
+${parkingInfo}
+
+**Percorso:**
+${steps}
+
+⏱️ Tempo totale: ~${s.walkingMinutes} min a piedi | Difficoltà: ${"⭐".repeat(s.difficulty)}
+${s.notes ? `\n💡 ${s.notes}` : ""}
+
+${AtlasSpots.spotTag(s)}`;
+}
+
+function respParcheggio(ctx, hintRiver, msg) {
+  const spots = hintRiver
+    ? AtlasSpots.find({ riverId: hintRiver.id }).filter(s => s.parking)
+    : AtlasSpots.all().filter(s => s.parking);
+
+  if(spots.length === 0) {
+    return `Non ho dati di parcheggio specifici per questa zona. Ti consiglio di cercare una piazzola lungo la strada di accesso al torrente o di chiedere in loco.`;
+  }
+
+  const riv  = hintRiver ? ` sul **${hintRiver.name}**` : "";
+  const list = spots.slice(0, 4).map(s => {
+    const p = s.parking;
+    return `🅿️ **${p.name}**
+   Spot: ${s.name} (${p.distanceMeters} m)
+   ${p.description}
+   ${AtlasSpots.spotTag(s)}`;
+  }).join("\n\n");
+
+  return `Parcheggi disponibili${riv}:
+
+${list}
+
+Premi **"Mostra sulla mappa"** su uno spot per visualizzare la posizione esatta del parcheggio e il percorso.`;
+}
+
+function respMarkerInfo(ctx, hintRiver) {
+  if(!hintRiver) {
+    return `Dimmi il nome del torrente per vedere tutti i marker, punti di interesse e strutture disponibili!\n\nEsempio: **"Cosa trovo sul Sesia?"**`;
+  }
+
+  const spots = AtlasSpots.find({ riverId: hintRiver.id });
+  if(spots.length === 0) {
+    return `Non ho marker dettagliati per il **${hintRiver.name}** al momento. I marker verranno aggiunti progressivamente al database TroutAtlas.`;
+  }
+
+  const markerLines = [];
+  spots.forEach(s => {
+    (s.markers || []).forEach(mk => {
+      markerLines.push(`${mk.emoji} **${mk.name}** — ${mk.description}`);
+    });
+  });
+
+  const spotLines = spots.map(s =>
+    `🎣 **${s.name}** — ${s.type}, difficoltà ${"⭐".repeat(s.difficulty)}, ${s.walkingMinutes} min a piedi`
+  ).join("\n");
+
+  const parkLines = spots
+    .filter(s => s.parking)
+    .map(s => `🅿️ **${s.parking.name}** — ${s.parking.description}`)
+    .join("\n");
+
+  return `**Mappa completa del ${hintRiver.name}:**
+
+🎣 **Spot di pesca:**
+${spotLines}
+
+${markerLines.length ? `📌 **Punti di interesse:**\n${markerLines.join("\n")}\n` : ""}${parkLines ? `🅿️ **Parcheggi:**\n${parkLines}` : ""}
+
+Vuoi l'itinerario per uno spot specifico? Chiedi **"Come arrivo a [nome spot]"**.`;
+}
+
 function respGenerico(msg, ctx, river) {
   const { season } = ctx;
   const riv = river ? ` (${river.name})` : "";
@@ -706,7 +946,6 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 /* ── §5 AtlasUI ──────────────────────────────────────────────────── */
 function renderMarkdown(text) {
-  // Split into lines and render each with semantic structure
   const lines = text.split('\n');
   let html = '';
   for(let i = 0; i < lines.length; i++) {
@@ -714,6 +953,24 @@ function renderMarkdown(text) {
     // Empty line → small spacer
     if(!line.trim()) {
       if(i > 0 && i < lines.length - 1) html += '<div style="height:5px"></div>';
+      continue;
+    }
+    // Spot action card tag: [[SPOT:riverId:spotId:Name:score]]
+    if(line.startsWith('[[SPOT:')) {
+      const inner  = line.slice(7, -2);
+      const parts  = inner.split(':');
+      const rivId  = parts[0], spotId = parts[1], name = parts[2], score = parts[3];
+      const href   = `river.html?id=${rivId}&spot=${spotId}`;
+      html += `<div class="atlas-spot-card">
+        <div class="atlas-spot-card-info">
+          <span class="atlas-spot-card-icon">🎣</span>
+          <div>
+            <div class="atlas-spot-card-name">${name}</div>
+            ${score ? `<div class="atlas-spot-card-score">🟢 Fishing Score ${score}/100</div>` : ''}
+          </div>
+        </div>
+        <a class="atlas-spot-card-btn" href="${href}">Mostra sulla mappa →</a>
+      </div>`;
       continue;
     }
     // Section header: starts with non-letter (emoji, symbol) and contains **bold**

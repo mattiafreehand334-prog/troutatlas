@@ -1,0 +1,331 @@
+# TROUTATLAS – INTEGRAZIONE AVANZATA TRA RIVER EXPLORER E ATLAS AI
+
+⚠️ IMPORTANTE
+
+NON modificare nessuna funzionalità esistente.
+
+NON modificare:
+
+- Fishing Intelligence
+- Fishing Score AI
+- Meteo
+- Condizioni Idriche
+- Tecniche Consigliate
+- Database esistente
+- Design dell'app
+- Navigazione
+- River Explorer appena implementato
+
+Questa implementazione deve essere completamente aggiuntiva.
+
+L'obiettivo è rendere ATLAS AI un assistente che conosce completamente TroutAtlas e che può utilizzare tutti i dati dell'app per guidare l'utente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## CONTESTO
+
+ATLAS AI non deve essere una semplice chat AI.
+
+Deve comportarsi come un vero esperto di TroutAtlas.
+
+Quando un utente fa una domanda, l'assistente deve essere in grado di comprendere:
+
+• quale corso d'acqua è aperto
+
+• quale località è selezionata
+
+• quale spot è visualizzato
+
+• quali dati meteo sono disponibili
+
+• quali dati idrologici sono disponibili
+
+• quale Fishing Score è presente
+
+• quali tecniche sono consigliate
+
+• quali marker sono presenti sulla mappa
+
+• quali regolamenti esistono
+
+• quali parcheggi sono vicini
+
+• quali sentieri conducono allo spot
+
+• quali immissioni sono registrate
+
+• quali punti panoramici sono disponibili
+
+• quali servizi sono vicini
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ACCESSO AL DATABASE
+
+ATLAS AI deve poter leggere automaticamente il database di TroutAtlas.
+
+Quando necessario dovrà consultare:
+
+Corso d'acqua
+
+↓
+
+Località
+
+↓
+
+Spot
+
+↓
+
+Parcheggi
+
+↓
+
+Marker
+
+↓
+
+Fishing Intelligence
+
+↓
+
+Fishing Score
+
+↓
+
+Tecniche
+
+↓
+
+Meteo
+
+↓
+
+Condizioni idriche
+
+↓
+
+Immissioni
+
+↓
+
+Regolamenti
+
+↓
+
+Servizi
+
+senza chiedere ulteriori informazioni all'utente quando il contesto è già disponibile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## DOMANDE INTELLIGENTI
+
+ATLAS AI deve comprendere richieste come:
+
+"Dove mi consigli di pescare oggi?"
+
+"Quale spot è migliore sul Sesia?"
+
+"Trova uno spot facile."
+
+"Fammi vedere uno spot poco frequentato."
+
+"Dove posso trovare una buca profonda?"
+
+"Quale parcheggio è più vicino?"
+
+"Qual è il tratto migliore per la ninfa?"
+
+"Dove posso pescare con mio figlio?"
+
+"Mostrami un tratto facilmente raggiungibile."
+
+"Vorrei camminare poco."
+
+"Portami in uno spot panoramico."
+
+"Mostrami una zona ripopolata."
+
+"Dove posso trovare grosse trote?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## RISPOSTE CONTESTUALI
+
+Le risposte devono utilizzare il database.
+
+Esempio:
+
+Utente:
+
+"Dove mi consigli di andare sul Sesia?"
+
+ATLAS AI:
+
+• analizza gli spot disponibili
+
+• confronta Fishing Score
+
+• confronta meteo
+
+• confronta condizioni dell'acqua
+
+• confronta accessibilità
+
+• confronta distanza
+
+• confronta tecniche consigliate
+
+e restituisce una risposta motivata.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## INTERAZIONE CON LA MAPPA
+
+ATLAS AI deve poter interagire con River Explorer.
+
+Quando suggerisce uno spot deve poter:
+
+• evidenziarlo sulla mappa
+
+• aprire automaticamente la relativa scheda
+
+• centrare la mappa sul punto
+
+• evidenziare il percorso
+
+• evidenziare il parcheggio consigliato
+
+• evidenziare eventuali punti di riferimento
+
+L'utente non dovrà cercare manualmente lo spot.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## NAVIGAZIONE GUIDATA
+
+Quando viene consigliato uno spot, ATLAS AI deve poter creare un piccolo itinerario.
+
+Esempio:
+
+🅿️ Parcheggia qui
+
+↓
+
+🥾 Cammina 5 minuti
+
+↓
+
+🌉 Attraversa il ponte
+
+↓
+
+🌊 Segui il sentiero lungo il fiume
+
+↓
+
+🎣 Arrivi allo Spot 3
+
+Ogni passaggio deve essere mostrato in ordine.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## UTILIZZO DEI MARKER
+
+ATLAS AI deve conoscere tutte le categorie dei marker.
+
+Ad esempio:
+
+🎣 Spot
+
+🅿️ Parcheggi
+
+🌉 Ponti
+
+🌊 Pozze
+
+💧 Cascate
+
+🥾 Sentieri
+
+🐟 Zone ripopolate
+
+⚠️ Regolamenti
+
+📸 Punti panoramici
+
+🏕️ Aree di sosta
+
+🚻 Servizi
+
+🍴 Bar e rifugi
+
+🏪 Negozi di pesca
+
+Quando necessario dovrà citarli automaticamente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## RAGIONAMENTO
+
+ATLAS AI deve motivare ogni consiglio.
+
+Ad esempio:
+
+"Ti consiglio questo spot perché oggi il Fishing Score è elevato, l'acqua è cristallina, il tratto è facilmente raggiungibile e il parcheggio dista soltanto 150 metri."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## PERSONALIZZAZIONE FUTURA
+
+Preparare l'architettura affinché in futuro ATLAS AI possa adattare i consigli anche in base alle preferenze dell'utente.
+
+Ad esempio:
+
+• tecnica preferita
+
+• distanza massima a piedi
+
+• livello di esperienza
+
+• ricerca di trote di taglia
+
+• pesca sportiva
+
+• esplorazione
+
+Senza modificare la struttura del codice.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ARCHITETTURA
+
+Separare chiaramente:
+
+• interfaccia
+
+• logica AI
+
+• accesso al database
+
+• gestione del contesto
+
+• interazione con la mappa
+
+• servizi di navigazione
+
+Ogni componente deve essere indipendente e facilmente estendibile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## OBIETTIVO FINALE
+
+ATLAS AI non deve limitarsi a rispondere alle domande.
+
+Deve diventare il vero "compagno di pesca" dell'utente.
+
+L'assistente deve essere in grado di comprendere il contesto, interpretare i dati disponibili in TroutAtlas, guidare l'utente nella scelta dello spot più adatto, evidenziarlo sulla mappa, mostrare il percorso migliore e spiegare chiaramente il motivo della scelta.
+
+L'integrazione deve essere completamente nativa e perfettamente coerente con River Explorer, così che l'utente percepisca ATLAS AI e la mappa come un unico sistema intelligente, semplice da usare e realmente utile durante la pianificazione di una giornata di pesca.

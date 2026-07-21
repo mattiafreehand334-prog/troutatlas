@@ -94,18 +94,70 @@ fetch("database.json")
     /* ── Map ──────────────────────────────────────────────── */
     if (river.coordinates) {
       const {lat, lng} = river.coordinates;
-      const map = L.map("map", {zoomControl:true, attributionControl:false}).setView([lat,lng],13);
+      const spotId     = params.get("spot");
+      const targetSpot = spotId && river.spots ? river.spots.find(s => s.id === spotId) : null;
+
+      // Center on target spot or river origin
+      const centerLat = targetSpot ? targetSpot.coordinates.lat : lat;
+      const centerLng = targetSpot ? targetSpot.coordinates.lng : lng;
+      const zoom      = targetSpot ? 15 : 13;
+
+      const map = L.map("map", {zoomControl:true, attributionControl:false}).setView([centerLat, centerLng], zoom);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18}).addTo(map);
-      const icon = L.divIcon({html:'<div style="font-size:26px;line-height:1">🎣</div>',className:"",iconSize:[32,32],iconAnchor:[16,28]});
-      L.marker([lat,lng],{icon}).addTo(map).bindPopup(`<strong>${river.name}</strong><br>${river.zone}`).openPopup();
+
+      // River origin marker
+      const rivIcon = L.divIcon({html:'<div style="font-size:26px;line-height:1">🎣</div>',className:"",iconSize:[32,32],iconAnchor:[16,28]});
+      const rivMarker = L.marker([lat,lng],{icon:rivIcon}).addTo(map);
+      if(!targetSpot) rivMarker.bindPopup(`<strong>${river.name}</strong><br>${river.zone}`).openPopup();
+
+      // All spot markers
+      if(river.spots && river.spots.length > 0) {
+        const spotIconDim = L.divIcon({html:'<div style="font-size:18px;line-height:1;opacity:.6">🎣</div>',className:"",iconSize:[24,24],iconAnchor:[12,20]});
+        river.spots.forEach(s => {
+          if(targetSpot && s.id === targetSpot.id) return;
+          const popup = `<strong>${s.name}</strong><br><em>${s.type} · ${s.walkingMinutes} min a piedi</em><br>${s.description}`;
+          L.marker([s.coordinates.lat, s.coordinates.lng], {icon: spotIconDim}).addTo(map).bindPopup(popup);
+        });
+      }
+
+      // Highlighted target spot from ATLAS AI
+      if(targetSpot) {
+        const spotIcon = L.divIcon({html:'<div style="font-size:24px;line-height:1">🎯</div>',className:"",iconSize:[30,30],iconAnchor:[15,26]});
+        const popup = `<strong>🎯 ${targetSpot.name}</strong><br>${targetSpot.description}<br><em>⏱️ ${targetSpot.walkingMinutes} min a piedi · ${"⭐".repeat(targetSpot.difficulty)}</em>`;
+        L.marker([targetSpot.coordinates.lat, targetSpot.coordinates.lng], {icon: spotIcon})
+          .addTo(map).bindPopup(popup).openPopup();
+
+        // Parking marker
+        if(targetSpot.parking) {
+          const pIcon  = L.divIcon({html:'<div style="font-size:20px;line-height:1">🅿️</div>',className:"",iconSize:[26,26],iconAnchor:[13,22]});
+          const pPopup = `<strong>${targetSpot.parking.name}</strong><br>${targetSpot.parking.description}<br><em>${targetSpot.parking.distanceMeters} m dallo spot</em>`;
+          L.marker([targetSpot.parking.coordinates.lat, targetSpot.parking.coordinates.lng], {icon: pIcon}).addTo(map).bindPopup(pPopup);
+        }
+
+        // Named-coordinate markers (bridge, scenic, etc.)
+        (targetSpot.markers || []).forEach(mk => {
+          if(!mk.coordinates) return;
+          const mkIcon = L.divIcon({html:`<div style="font-size:18px;line-height:1">${mk.emoji}</div>`,className:"",iconSize:[24,24],iconAnchor:[12,20]});
+          L.marker([mk.coordinates.lat, mk.coordinates.lng], {icon: mkIcon}).addTo(map).bindPopup(`<strong>${mk.name}</strong><br>${mk.description}`);
+        });
+
+        // ATLAS AI banner above map
+        const banner = document.createElement("div");
+        banner.className = "atlas-river-banner";
+        banner.innerHTML = `<span style="font-size:20px;flex-shrink:0">🤖</span><div><strong>ATLAS AI</strong> ti ha guidato qui: <strong>${targetSpot.name}</strong><br><span class="atlas-river-banner-sub">${targetSpot.description}</span></div>`;
+        document.getElementById("map").before(banner);
+      }
+
       const btn = document.getElementById("gmaps-btn");
       btn.addEventListener("click", e => {
         e.preventDefault();
-        const fallback = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+        const destLat = targetSpot ? targetSpot.coordinates.lat : lat;
+        const destLng = targetSpot ? targetSpot.coordinates.lng : lng;
+        const fallback = `https://www.google.com/maps/dir/?api=1&destination=${destLat},${destLng}`;
         if (!navigator.geolocation) { window.location.href = fallback; return; }
         navigator.geolocation.getCurrentPosition(
           pos => {
-            const url = `https://www.google.com/maps/dir/?api=1&origin=${pos.coords.latitude},${pos.coords.longitude}&destination=${lat},${lng}`;
+            const url = `https://www.google.com/maps/dir/?api=1&origin=${pos.coords.latitude},${pos.coords.longitude}&destination=${destLat},${destLng}`;
             window.location.href = url;
           },
           () => { window.location.href = fallback; },
