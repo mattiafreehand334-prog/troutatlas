@@ -1,0 +1,4 @@
+- [Fishing Intelligence 3.0](fishing-intelligence.md) — complete module architecture, API usage, data sources, and transparency rules for the AI scoring system.
+- [Service Worker pattern](sw-pattern.md) — no clients.claim(); cache-first + bg update; bump CACHE key on every asset change; currently troutatlas-v11.
+- [Navigation GPS pattern](nav-gps.md) — all "Portami qui" buttons use getCurrentPosition() with fallback; no target=_blank on river detail button.
+- [Image source of truth](images-sot.md) — database.json images[] arrays are the single source; app.js and river.js both read from river.images.

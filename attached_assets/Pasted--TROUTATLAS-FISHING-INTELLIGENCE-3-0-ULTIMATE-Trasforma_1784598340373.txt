@@ -1,0 +1,507 @@
+# TROUTATLAS – FISHING INTELLIGENCE 3.0 ULTIMATE
+
+Trasforma completamente la sezione "Fishing Intelligence" di TroutAtlas in una dashboard professionale, intelligente e basata su dati reali. L'obiettivo è rendere TroutAtlas il punto di riferimento per la pesca alla trota in Italia, offrendo in un'unica schermata tutte le informazioni necessarie per decidere se uscire a pescare, dove andare, quando pescare e quale tecnica utilizzare.
+
+⚠️ IMPORTANTE
+
+Non modificare il design generale dell'app. Mantieni l'attuale stile grafico premium, i colori, le card e la navigazione. Migliora solamente l'esperienza utente aggiungendo nuove funzionalità e rendendo tutto più professionale.
+
+L'app deve utilizzare esclusivamente dati reali provenienti da fonti ufficiali o pubbliche affidabili. Non inventare mai dati. Se un parametro non è disponibile, deve essere chiaramente indicato.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 1. AI FISHING SCORE
+
+Inserisci all'inizio della pagina una card principale.
+
+Titolo:
+
+🎯 Fishing Score AI
+
+Visualizzare un punteggio da 0 a 100.
+
+Classificazione:
+
+🔴 0-30 = Condizioni Scarse
+
+🟠 31-50 = Condizioni Discrete
+
+🟡 51-70 = Condizioni Buone
+
+🟢 71-85 = Condizioni Ottime
+
+🔵 86-100 = Condizioni Eccezionali
+
+Il punteggio deve essere calcolato automaticamente utilizzando:
+
+• temperatura aria
+
+• temperatura acqua
+
+• pressione atmosferica
+
+• andamento della pressione
+
+• vento
+
+• umidità
+
+• copertura nuvolosa
+
+• precipitazioni
+
+• livello del fiume
+
+• portata
+
+• limpidezza dell'acqua
+
+• stagione
+
+• ora del giorno
+
+• fase lunare
+
+• attività biologica della trota
+
+• dati storici disponibili
+
+Visualizzare anche:
+
+• motivazione del punteggio
+
+• fattori positivi
+
+• fattori negativi
+
+• affidabilità della valutazione (%)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 2. METEO PROFESSIONALE
+
+Mantenere i dati già presenti e aggiungere:
+
+• temperatura percepita
+
+• temperatura minima
+
+• temperatura massima
+
+• punto di rugiada
+
+• indice UV
+
+• alba
+
+• tramonto
+
+• durata del giorno
+
+• fase lunare
+
+• illuminazione della luna
+
+• pressione atmosferica
+
+• andamento della pressione (↑ ↓ ↔)
+
+• pressione ultime 24 ore
+
+• vento medio
+
+• raffiche
+
+• direzione del vento
+
+• umidità
+
+• visibilità
+
+• copertura nuvolosa
+
+• precipitazioni
+
+• probabilità di pioggia
+
+• ultimo aggiornamento
+
+• prossimo aggiornamento
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 3. CONDIZIONI IDRICHE PROFESSIONALI
+
+Tentare automaticamente il recupero dei dati cercandoli in tutte le fonti disponibili.
+
+Ordine di priorità:
+
+1. ARPA Piemonte
+
+2. ARPA Valle d'Aosta
+
+3. OpenData regionali
+
+4. Protezione Civile
+
+5. Servizi Idrologici Regionali
+
+6. Bacini Idrografici
+
+7. OpenRiver
+
+8. API pubbliche compatibili
+
+9. Altre fonti ufficiali disponibili
+
+Quando una fonte non restituisce dati, provarne automaticamente un'altra senza mostrare errori.
+
+Recuperare quando disponibili:
+
+• livello idrometrico
+
+• portata (m³/s)
+
+• temperatura acqua
+
+• velocità della corrente
+
+• ossigeno disciolto
+
+• conducibilità
+
+• pH
+
+• torbidità
+
+• pioggia ultime 24 ore
+
+• pioggia ultime 48 ore
+
+• pioggia ultime 72 ore
+
+• storico ultimi 7 giorni
+
+Mostrare sempre la fonte utilizzata.
+
+Se il dato non esiste realmente per quel torrente visualizzare:
+
+"Non disponibile per questa stazione."
+
+Mai visualizzare errori.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 4. ANALISI AI DELLA QUALITÀ DELL'ACQUA
+
+Analizzare automaticamente:
+
+• precipitazioni
+
+• livello
+
+• portata
+
+• torbidità
+
+• stagione
+
+• temperatura
+
+• dati storici
+
+• meteo
+
+Restituire una classificazione:
+
+🟢 Cristallina
+
+🟡 Leggermente Velata
+
+🟠 Velata
+
+🔴 Torbida
+
+Visualizzare inoltre:
+
+• affidabilità
+
+• motivazione
+
+• fattori considerati
+
+• variazione rispetto a ieri
+
+• previsione prossime 24 ore
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 5. STATO DEL TORRENTE
+
+Creare una nuova card.
+
+Visualizzare:
+
+🟢 Perfetto
+
+🟡 Buono
+
+🟠 Attenzione
+
+🔴 Critico
+
+con spiegazione dettagliata.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 6. AI FISHING COACH
+
+Creare una card completamente nuova.
+
+Titolo:
+
+🧠 Consiglio AI
+
+Generare automaticamente un consiglio diverso in base ai dati reali.
+
+Esempio:
+
+"Oggi le trote tenderanno a sostare nelle correnti laterali e nelle buche profonde. Le migliori probabilità di cattura sono previste tra le 6:00 e le 9:00 utilizzando una ninfa di piccole dimensioni."
+
+Il consiglio deve cambiare automaticamente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 7. TECNICHE CONSIGLIATE
+
+Per ogni tecnica mostrare:
+
+• efficacia
+
+• valutazione
+
+• profondità ideale
+
+• condizioni ideali
+
+• colore consigliato
+
+• misura amo
+
+• peso consigliato
+
+• recupero ideale
+
+Tecniche:
+
+• Mosca Secca
+
+• Ninfa
+
+• Streamer
+
+• Spinning
+
+• Spoon
+
+• Soft Bait (quando pertinente)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 8. ATTIVITÀ DELLE TROTE
+
+Mostrare un grafico con:
+
+🌅 Alba
+
+☀️ Mattino
+
+🌤 Tarda mattina
+
+🌞 Pomeriggio
+
+🌇 Sera
+
+🌙 Notte
+
+Per ogni fascia mostrare:
+
+• percentuale attività
+
+• barra colorata
+
+• valutazione
+
+Visualizzare inoltre:
+
+🔥 Miglior orario di oggi
+
+❌ Peggior orario di oggi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 9. GRAFICI STORICI
+
+Creare grafici professionali per:
+
+• livello del fiume
+
+• portata
+
+• temperatura acqua
+
+• temperatura aria
+
+• pressione
+
+• pioggia
+
+Intervalli disponibili:
+
+24 ore
+
+72 ore
+
+7 giorni
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 10. FONTI DATI
+
+Visualizzare sempre:
+
+Ultimo aggiornamento
+
+Fonte utilizzata
+
+Esempio:
+
+Open-Meteo
+
+ARPA Piemonte
+
+ARPA Valle d'Aosta
+
+Protezione Civile
+
+OpenData Regione Piemonte
+
+ecc.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 11. PRESTAZIONI
+
+Utilizzare cache intelligente.
+
+Aggiornare automaticamente:
+
+• meteo ogni 15 minuti
+
+• dati idrometrici appena aggiornati dalla fonte
+
+• analisi AI dopo ogni aggiornamento
+
+L'interfaccia deve rimanere veloce.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 12. SICUREZZA E ROBUSTEZZA
+
+Ogni chiamata alle API deve avere:
+
+• timeout
+
+• retry automatico
+
+• fallback
+
+• cache
+
+Se una fonte non risponde, utilizzare automaticamente la successiva.
+
+Mai interrompere il funzionamento della pagina.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 13. DESIGN
+
+Mantenere lo stile attuale.
+
+Aggiungere:
+
+• skeleton loading
+
+• animazioni leggere
+
+• transizioni fluide
+
+• badge colorati
+
+• grafici professionali
+
+• indicatori di caricamento
+
+• responsive perfetto per smartphone
+
+• ottimizzazione PWA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 14. SCALABILITÀ
+
+Progettare il sistema in modo modulare.
+
+Ogni componente deve poter essere esteso facilmente in futuro senza modificare il resto del codice.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 15. CONTROLLO DELLE FONTI DATI
+
+Prima di mostrare "Dato non disponibile", il sistema deve tentare automaticamente il recupero da tutte le fonti compatibili.
+
+Ad esempio:
+
+- Se manca la portata dell'acqua su ARPA Piemonte, cercarla automaticamente su altre reti idrometriche, OpenData regionali o servizi idrologici compatibili.
+- Se manca la temperatura dell'acqua, verificare se è disponibile presso altre stazioni vicine o fonti ufficiali.
+- Se manca il livello del fiume, cercarlo su tutte le fonti pubbliche disponibili.
+
+Solo dopo aver verificato tutte le fonti compatibili, visualizzare:
+
+"Non disponibile per questa stazione."
+
+Non inventare mai dati.
+
+Se un valore viene stimato tramite algoritmo AI perché non esiste una misura diretta, indicarlo chiaramente come:
+
+"Stima AI"
+
+distinguendolo sempre dai dati misurati.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 16. OBIETTIVO FINALE
+
+TroutAtlas deve diventare una piattaforma professionale che sostituisca la consultazione di numerosi siti diversi. Un pescatore deve poter aprire l'app e trovare in un'unica schermata:
+
+• meteo completo
+• livello idrometrico
+• portata dell'acqua
+• temperatura dell'acqua
+• pressione atmosferica
+• andamento della pressione
+• vento
+• pioggia
+• fase lunare
+• alba e tramonto
+• analisi AI della qualità dell'acqua
+• Fishing Score AI
+• stato del torrente
+• tecniche consigliate
+• attività prevista delle trote
+• consiglio AI personalizzato
+• grafici storici
+• fonti dei dati
+• ultimo aggiornamento
+
+L'obiettivo non è solo mostrare dati, ma aiutare il pescatore a prendere decisioni migliori attraverso un'interfaccia moderna, veloce, affidabile e basata su informazioni reali. Ogni dato deve essere chiaramente identificato come "misurato", "stimato dall'AI" oppure "non disponibile", così da garantire trasparenza e credibilità nel lungo periodo.

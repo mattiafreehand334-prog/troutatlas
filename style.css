@@ -360,117 +360,223 @@ main, .page-main {
 .trout-info-label { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; margin-bottom: 3px; }
 .trout-info-value { font-size: 13px; font-weight: 600; }
 
+
 /* ══════════════════════════════════════════════════════════
-   Fishing Intelligence
+   Fishing Intelligence 3.0
 ══════════════════════════════════════════════════════════ */
-#intel-section { max-width: 640px; margin: 0 auto; padding: 0 16px 8px; }
+#intel-section { max-width: 640px; margin: 0 auto; padding: 0 16px 12px; }
 
 .intel-section-title {
-  font-size: 13px; font-weight: 800; text-transform: uppercase;
+  font-size: 12px; font-weight: 800; text-transform: uppercase;
   letter-spacing: .1em; color: var(--accent);
-  padding: 14px 0 10px; display: flex; align-items: center; gap: 8px;
+  padding: 16px 0 10px; display: flex; align-items: center; gap: 8px;
 }
+.intel-powered { font-size: 10px; font-weight: 500; color: var(--muted); text-transform: none; letter-spacing: 0; margin-left: auto; }
 
+/* ── Base card ───────────────────────────────────────── */
 .intel-card {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 18px; padding: 16px 18px; margin-bottom: 12px;
+  animation: intel-fadein .3s ease;
 }
+@keyframes intel-fadein { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
 
 .intel-card-header {
   display: flex; align-items: center; gap: 8px;
-  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
   letter-spacing: .09em; color: var(--muted); margin-bottom: 14px;
 }
-.intel-icon { font-size: 16px; line-height: 1; }
+.intel-icon { font-size: 15px; line-height: 1; }
 .intel-badge {
   margin-left: auto; font-size: 10px; font-weight: 700;
   padding: 2px 8px; border-radius: 10px;
   background: rgba(59,130,246,.12); color: var(--accent);
   border: 1px solid rgba(59,130,246,.2); text-decoration: none;
-  letter-spacing: .03em;
+}
+.intel-ai-badge {
+  margin-left: auto; font-size: 9px; font-weight: 800;
+  padding: 2px 7px; border-radius: 8px; letter-spacing: .04em;
+  background: rgba(167,139,250,.15); color: #c4b5fd;
+  border: 1px solid rgba(167,139,250,.25);
 }
 
-/* Weather hero */
-.intel-weather-hero { text-align: center; margin-bottom: 16px; }
-.intel-temp { font-size: 48px; font-weight: 800; letter-spacing: -2px; line-height: 1; }
-.intel-wmo-label { font-size: 15px; color: var(--muted); margin-top: 4px; }
-
-/* 2-col stat grid */
-.intel-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.intel-stat { background: var(--card2); border-radius: 12px; padding: 10px 12px; }
-.intel-stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 700; margin-bottom: 4px; }
-.intel-stat-value { font-size: 13px; font-weight: 600; line-height: 1.4; }
+/* ── Shared stat primitives ──────────────────────────── */
+.isl { font-size: 10px; text-transform: uppercase; letter-spacing:.07em; color:var(--muted); font-weight:700; margin-bottom:3px; }
+.isv { font-size: 13px; font-weight: 600; line-height: 1.4; }
 .intel-sub { font-size: 11px; color: var(--muted); }
-.intel-na { color: var(--muted); font-size: 12px; }
+.intel-na  { color: var(--muted); font-size: 11px; }
+.c-red   { color: #fca5a5; }
+.c-amber { color: #fcd34d; }
 
-/* Water notice */
+.intel-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.intel-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+@media (max-width: 360px) { .intel-grid-3 { grid-template-columns: 1fr 1fr; } }
+.intel-stat { background: var(--card2); border-radius: 11px; padding: 9px 11px; }
+.intel-divider { height: 1px; background: var(--border); margin: 14px 0; }
+
+/* ── §1 AI Fishing Score ─────────────────────────────── */
+.intel-score-card { background: linear-gradient(160deg, #132032 0%, #0e1c2c 100%); }
+.intel-score-main { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }
+.intel-score-ring-wrap { flex-shrink: 0; }
+.intel-score-svg { width: 110px; height: 110px; }
+.intel-ring-bg   { fill: none; stroke: rgba(255,255,255,.07); stroke-width: 10; }
+.intel-ring-fill { fill: none; stroke-width: 10; stroke-linecap: round; transition: stroke-dasharray .8s ease; }
+.intel-ring-num  { font-size: 26px; font-weight: 800; text-anchor: middle; dominant-baseline: middle; }
+.intel-ring-sub  { font-size: 12px; text-anchor: middle; }
+.intel-score-info { flex: 1; }
+.intel-score-emoji { font-size: 28px; line-height: 1; margin-bottom: 4px; }
+.intel-score-label-big { font-size: 18px; font-weight: 800; letter-spacing: -.3px; line-height: 1.2; margin-bottom: 6px; }
+.intel-score-reliability { font-size: 11px; color: var(--muted); }
+
+.intel-factors { border-radius: 11px; padding: 10px 12px; margin-top: 8px; }
+.intel-factors.green { background: rgba(34,197,94,.07); border: 1px solid rgba(34,197,94,.15); }
+.intel-factors.red   { background: rgba(239,68,68,.07);  border: 1px solid rgba(239,68,68,.15); }
+.intel-factor-title  { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing:.06em; color: var(--muted); margin-bottom: 6px; }
+.intel-factor-item   { font-size: 12px; color: var(--text); line-height: 1.7; }
+
+/* ── §2 Professional Weather ─────────────────────────── */
+.intel-weather-hero { text-align: center; margin-bottom: 14px; }
+.intel-temp-big { font-size: 52px; font-weight: 800; letter-spacing: -2px; line-height: 1; }
+.intel-wmo-row  { font-size: 15px; color: var(--muted); margin-top: 4px; }
+.intel-feels    { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+.intel-sun-row  { display: flex; gap: 8px; flex-wrap: wrap; }
+.intel-sun-item { flex: 1; min-width: 70px; background: var(--card2); border-radius: 11px; padding: 9px 10px; text-align: center; }
+.intel-sun-icon { font-size: 18px; display: block; margin-bottom: 4px; line-height: 1; }
+
+.intel-update-row { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); margin-top: 12px; flex-wrap: wrap; gap: 4px; }
+
+/* ── §3 Hydro ────────────────────────────────────────── */
 .intel-notice {
   font-size: 12px; line-height: 1.65; color: var(--muted);
   background: rgba(59,130,246,.06); border: 1px solid rgba(59,130,246,.14);
   border-radius: 11px; padding: 10px 13px;
 }
 .intel-notice strong { color: #93c5fd; }
+.intel-ai-tag {
+  font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
+  padding: 1px 6px; border-radius: 6px; margin-left: 5px;
+  background: rgba(167,139,250,.15); color: #c4b5fd;
+  border: 1px solid rgba(167,139,250,.2);
+}
+.intel-na-sources { margin-top: 4px; }
+.intel-na-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+.intel-na-row:last-child { border-bottom: none; }
 
-/* AI Clarity */
-.intel-clarity-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+/* ── §4 AI Water Clarity ─────────────────────────────── */
+.intel-clarity-hero { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
 .intel-clarity-pill {
   display: inline-flex; align-items: center; gap: 6px;
-  font-size: 14px; font-weight: 800; padding: 7px 16px;
+  font-size: 14px; font-weight: 800; padding: 8px 18px;
   border-radius: 20px; border: 1px solid; white-space: nowrap;
 }
-.intel-conf { flex: 1; min-width: 120px; }
-.intel-conf-label { font-size: 10px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 700; margin-bottom: 5px; }
-.intel-conf-bar-wrap { height: 5px; background: rgba(255,255,255,.08); border-radius: 4px; overflow: hidden; margin-bottom: 3px; }
+.intel-conf-wrap { flex: 1; min-width: 120px; }
+.intel-conf-bar-wrap { height: 5px; background: rgba(255,255,255,.08); border-radius: 4px; overflow: hidden; margin: 4px 0 3px; }
 .intel-conf-bar { height: 100%; border-radius: 4px; transition: width .6s ease; }
 .intel-conf-pct { font-size: 12px; font-weight: 700; color: var(--muted); }
-.intel-clarity-reason { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.intel-clarity-reason { font-size: 13px; color: var(--text); line-height: 1.6; margin-bottom: 10px; }
+.intel-clarity-meta { border-top: 1px solid var(--border); padding-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.intel-cm-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font-size: 12px; }
+.intel-cm-item span:last-child { color: var(--text); text-align: right; max-width: 65%; }
 
-/* Fishing score */
-.intel-score-box {
-  display: flex; align-items: center; gap: 12px;
-  border-radius: 14px; border: 1px solid; padding: 14px 16px; flex-wrap: wrap;
+/* ── §5 Stream Status ────────────────────────────────── */
+.intel-status-box {
+  display: flex; align-items: flex-start; gap: 14px;
+  border-radius: 13px; border: 1px solid; padding: 14px;
 }
-.intel-score-icon { font-size: 28px; line-height: 1; }
-.intel-score-label { font-size: 20px; font-weight: 800; letter-spacing: -.4px; }
-.intel-score-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-left: auto; }
-.intel-score-chip {
-  font-size: 10px; font-weight: 700; padding: 3px 9px;
-  border-radius: 10px; letter-spacing: .04em;
+.intel-status-icon { font-size: 32px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+.intel-status-label { font-size: 20px; font-weight: 800; letter-spacing: -.3px; margin-bottom: 6px; }
+.intel-status-desc  { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+/* ── §6 AI Coach ─────────────────────────────────────── */
+.intel-coach-card {
+  background: linear-gradient(145deg, #0f1e33 0%, #132032 60%, #1a2240 100%);
+  border-color: rgba(59,130,246,.2);
+}
+.intel-coach-text {
+  font-size: 14px; color: var(--text); line-height: 1.75;
+  padding: 2px 0 4px;
 }
 
-/* Techniques */
-.intel-techs { display: flex; flex-direction: column; gap: 12px; }
-.intel-tech { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; background: var(--card2); border-radius: 14px; }
-.intel-tech-icon { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
-.intel-tech-body { flex: 1; min-width: 0; }
-.intel-tech-name { font-size: 14px; font-weight: 800; margin-bottom: 2px; }
-.intel-tech-stars { display: flex; gap: 2px; margin-bottom: 4px; }
-.intel-star { font-size: 14px; opacity: .18; }
-.intel-star.on { opacity: 1; color: #fbbf24; }
-.intel-tech-note { font-size: 12px; color: var(--muted); line-height: 1.55; }
+/* ── §7 Techniques ───────────────────────────────────── */
+.intel-techs { display: flex; flex-direction: column; gap: 10px; }
+.intel-tech { background: var(--card2); border-radius: 14px; padding: 12px 14px; border: 1px solid var(--border); }
+.intel-tech-top { border-color: rgba(59,130,246,.3); background: linear-gradient(160deg, #132032, #0f1e30); }
+.intel-tech-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
+.intel-tech-icon  { font-size: 22px; line-height: 1; flex-shrink: 0; }
+.intel-tech-title { flex: 1; }
+.intel-tech-name  { font-size: 14px; font-weight: 800; margin-bottom: 3px; }
+.intel-best-tag {
+  display: inline-block; font-size: 9px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .06em; padding: 1px 6px; border-radius: 6px; margin-left: 6px;
+  background: rgba(59,130,246,.18); color: #93c5fd; vertical-align: middle;
+}
+.intel-tech-stars { display: flex; gap: 2px; }
+.intel-star  { font-size: 13px; color: rgba(255,255,255,.2); }
+.intel-star.on { color: #fbbf24; }
+.intel-tech-cond-badge { font-size: 11px; font-weight: 700; color: var(--muted); flex-shrink: 0; margin-top: 3px; white-space: nowrap; }
+.intel-tech-note { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: 10px; }
+.intel-tech-details { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.intel-td { display: flex; flex-direction: column; background: rgba(255,255,255,.03); border-radius: 8px; padding: 6px 9px; }
+.intel-td-full { grid-column: 1 / -1; }
+.intel-td-v { font-size: 12px; font-weight: 600; margin-top: 2px; }
 
-/* Activity timeline */
-.intel-timeline { display: flex; flex-direction: column; gap: 10px; }
-.intel-period { display: flex; align-items: center; gap: 10px; }
-.intel-period-meta { display: flex; flex-direction: column; min-width: 90px; }
-.intel-period-label { font-size: 12px; font-weight: 700; }
-.intel-period-time { font-size: 10px; color: var(--muted); margin-top: 1px; }
-.intel-act-bar-wrap { flex: 1; height: 6px; background: rgba(255,255,255,.07); border-radius: 4px; overflow: hidden; }
-.intel-act-bar { height: 100%; border-radius: 4px; transition: width .7s ease; }
-.intel-period-pct { font-size: 11px; font-weight: 700; color: var(--muted); min-width: 32px; text-align: right; }
-.intel-tl-note { font-size: 11px; color: var(--muted); line-height: 1.55; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+/* ── §8 Activity Timeline ────────────────────────────── */
+.intel-activity-highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.intel-hl { background: var(--card2); border-radius: 11px; padding: 10px 12px; }
+.intel-hl-best  { border: 1px solid rgba(34,197,94,.2); }
+.intel-hl-worst { border: 1px solid rgba(239,68,68,.2); }
+.intel-hl-val   { font-size: 12px; font-weight: 700; margin: 4px 0 2px; line-height: 1.4; }
+.intel-hl-pct   { font-size: 13px; font-weight: 800; }
 
-/* Loading skeleton */
+.intel-timeline { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.intel-period { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: 10px; transition: background .15s; }
+.intel-period-best  { background: rgba(34,197,94,.06); border: 1px solid rgba(34,197,94,.15); }
+.intel-period-worst { background: rgba(239,68,68,.06);  border: 1px solid rgba(239,68,68,.1); }
+.intel-period-meta  { display: flex; flex-direction: column; min-width: 105px; }
+.intel-period-lbl   { font-size: 12px; font-weight: 700; }
+.intel-period-time  { font-size: 10px; color: var(--muted); margin-top: 1px; }
+.intel-act-bar-wrap { flex: 1; height: 7px; background: rgba(255,255,255,.07); border-radius: 4px; overflow: hidden; }
+.intel-act-bar { height: 100%; border-radius: 4px; transition: width .8s ease; }
+.intel-period-pct { font-size: 12px; font-weight: 800; min-width: 36px; text-align: right; }
+.intel-tl-note { font-size: 11px; color: var(--muted); line-height: 1.6; padding-top: 10px; border-top: 1px solid var(--border); }
+
+/* ── §9 Historical Charts ────────────────────────────── */
+.intel-chart-tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+.intel-chart-tab {
+  flex: 1; padding: 6px; border-radius: 10px; font-size: 12px; font-weight: 700;
+  border: 1px solid var(--border); background: var(--card2); color: var(--muted);
+  cursor: pointer; transition: all .15s; font-family: inherit;
+}
+.intel-chart-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.intel-chart-row { margin-bottom: 16px; }
+.intel-chart-row:last-child { margin-bottom: 0; }
+.intel-chart-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.intel-chart-var   { font-size: 12px; font-weight: 700; }
+.intel-chart-range { font-size: 11px; color: var(--muted); }
+.intel-chart-axis  { display: flex; justify-content: space-between; margin-top: 4px; }
+.intel-chart-axis span { font-size: 9px; color: var(--muted); }
+.intel-chart-empty { text-align: center; color: var(--muted); font-size: 12px; padding: 16px 0; }
+
+/* ── §10 Sources footer ──────────────────────────────── */
+.intel-sources-card { background: var(--surface); }
+.intel-sources-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.intel-source-row { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.intel-source-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.intel-source-type { margin-left: auto; font-size: 11px; font-weight: 700; color: var(--muted); }
+.intel-sources-note { font-size: 11px; color: var(--muted); line-height: 1.65; background: rgba(255,255,255,.03); border-radius: 10px; padding: 10px 12px; border: 1px solid var(--border); }
+
+/* ── Skeleton loading ────────────────────────────────── */
 .intel-skeleton { padding: 4px 0 8px; }
 .intel-pulse {
-  height: 18px; border-radius: 8px; width: 100%;
-  background: linear-gradient(90deg, var(--card2) 25%, rgba(255,255,255,.05) 50%, var(--card2) 75%);
+  height: 16px; border-radius: 8px; width: 100%;
+  background: linear-gradient(90deg, var(--card2) 25%, rgba(255,255,255,.04) 50%, var(--card2) 75%);
   background-size: 200% 100%;
-  animation: intel-shimmer 1.4s infinite;
+  animation: intel-shimmer 1.5s infinite;
 }
 @keyframes intel-shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
-/* Error */
+/* ── Error ───────────────────────────────────────────── */
 .intel-error {
   display: flex; align-items: flex-start; gap: 10px;
   padding: 14px 16px; border-radius: 14px; font-size: 13px; line-height: 1.6;

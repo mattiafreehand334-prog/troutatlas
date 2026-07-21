@@ -1,4 +1,4 @@
-const CACHE = "troutatlas-v10";
+const CACHE = "troutatlas-v11";
 
 // Core app shell cached on install (small, fast)
 const SHELL = [
