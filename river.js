@@ -96,7 +96,20 @@ fetch("database.json")
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18}).addTo(map);
       const icon = L.divIcon({html:'<div style="font-size:26px;line-height:1">🎣</div>',className:"",iconSize:[32,32],iconAnchor:[16,28]});
       L.marker([lat,lng],{icon}).addTo(map).bindPopup(`<strong>${river.name}</strong><br>${river.zone}`).openPopup();
-      document.getElementById("gmaps-btn").href = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+      const btn = document.getElementById("gmaps-btn");
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        const fallback = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+        if (!navigator.geolocation) { window.location.href = fallback; return; }
+        navigator.geolocation.getCurrentPosition(
+          pos => {
+            const url = `https://www.google.com/maps/dir/?api=1&origin=${pos.coords.latitude},${pos.coords.longitude}&destination=${lat},${lng}`;
+            window.location.href = url;
+          },
+          () => { window.location.href = fallback; },
+          { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+        );
+      });
     } else {
       document.getElementById("gmaps-btn").style.display = "none";
       document.getElementById("map").style.display = "none";

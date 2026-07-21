@@ -1,3 +1,16 @@
+function navigateTo(destLat, destLng) {
+  const fallback = `https://www.google.com/maps/dir/?api=1&destination=${destLat},${destLng}`;
+  if (!navigator.geolocation) { window.location.href = fallback; return; }
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const url = `https://www.google.com/maps/dir/?api=1&origin=${pos.coords.latitude},${pos.coords.longitude}&destination=${destLat},${destLng}`;
+      window.location.href = url;
+    },
+    () => { window.location.href = fallback; },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+  );
+}
+
 fetch("negozi.json")
   .then(r => r.json())
   .then(shops => {
@@ -33,8 +46,7 @@ fetch("negozi.json")
           <div class="shop-spec">🎣 ${s.speciality}</div>
           <div class="shop-btns">
             <a class="btn-sm btn-sm-green"
-               href="https://www.google.com/maps/dir/?api=1&destination=${s.coordinates.lat},${s.coordinates.lng}"
-               target="_blank" rel="noopener">🧭 Portami qui</a>
+               href="#" onclick="navigateTo(${s.coordinates.lat},${s.coordinates.lng});return false;">🧭 Portami qui</a>
             ${s.phone ? `<a class="btn-sm btn-sm-blue" href="tel:${s.phone}">📞 Chiama</a>` : ""}
           </div>
         </div>

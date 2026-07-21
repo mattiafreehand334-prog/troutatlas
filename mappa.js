@@ -1,3 +1,17 @@
+/* ── GPS Navigation ───────────────────────────────────────── */
+function navigateTo(destLat, destLng) {
+  const fallback = `https://www.google.com/maps/dir/?api=1&destination=${destLat},${destLng}`;
+  if (!navigator.geolocation) { window.location.href = fallback; return; }
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const url = `https://www.google.com/maps/dir/?api=1&origin=${pos.coords.latitude},${pos.coords.longitude}&destination=${destLat},${destLng}`;
+      window.location.href = url;
+    },
+    () => { window.location.href = fallback; },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+  );
+}
+
 /* ── Storage ──────────────────────────────────────────────── */
 function getSpots() { return JSON.parse(localStorage.getItem("trout_spots") || "[]"); }
 function saveSpots(s) { localStorage.setItem("trout_spots", JSON.stringify(s)); }
@@ -36,7 +50,7 @@ function openDetail(i) {
     <div class="reg-item"><span class="reg-label">📍 Coordinate</span><span class="reg-value">${spot.lat.toFixed(5)}, ${spot.lng.toFixed(5)}</span></div>
     <div class="reg-item"><span class="reg-label">📅 Salvato il</span><span class="reg-value">${new Date(spot.savedAt).toLocaleDateString("it-IT",{day:"2-digit",month:"long",year:"numeric"})}</span></div>
     <a class="btn btn-maps" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px"
-       href="https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}">🧭 Portami qui</a>
+       href="#" onclick="navigateTo(${spot.lat},${spot.lng});return false;">🧭 Portami qui</a>
     <button class="btn btn-danger" onclick="deleteSpot(${i})">🗑️ Elimina spot</button>`;
   document.getElementById("detail-modal").classList.add("open");
 }
