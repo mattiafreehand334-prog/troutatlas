@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "h37P0Y5PHLKxCvMZl9lgo"
+uri = "file://screenshots/river-external.png"
+type = "image"
+title = "River page — works in external browser"
+
+[[outputs]]
+id = "yMy17ICn1LkU1c-SWXuYy"
+uri = "file://screenshots/explore-external.png"
+type = "image"
+title = "Explorer page — works in external browser"

@@ -58,14 +58,15 @@ self.addEventListener("fetch", e => {
     return;
   }
 
-  // Everything else: cache-first, update in background
+  // App shell: network-first so development changes are visible immediately
   e.respondWith(
-    caches.open(CACHE).then(async cache => {
-      const cached = await cache.match(e.request);
-      const networkPromise = fetch(e.request)
-        .then(res => { if (res.ok) cache.put(e.request, res.clone()); return res; })
-        .catch(() => null);
-      return cached || networkPromise;
-    })
+    fetch(e.request)
+      .then(res => {
+        if (res.ok) {
+          caches.open(CACHE).then(cache => cache.put(e.request, res.clone()));
+        }
+        return res;
+      })
+      .catch(() => caches.match(e.request))
   );
 });

@@ -11,6 +11,36 @@
 </head>
 <body class="explorer-body">
 
+<div id="debug-banner" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#0f172a;border-bottom:2px solid #3b82f6;padding:10px 14px;font-family:system-ui,sans-serif;font-size:13px;color:#e2e8f0;box-shadow:0 4px 20px rgba(0,0,0,.5);">
+  <span id="debug-status">⏳ TroutAtlas Explorer v19 — caricamento in corso…</span>
+  <button onclick="location.reload(true)" style="margin-left:10px;padding:4px 10px;border-radius:6px;border:1px solid #3b82f6;background:rgba(59,130,246,.15);color:#93c5fd;cursor:pointer;font-size:12px;">🔄 Refresh forzato</button>
+</div>
+<script>
+(function(){
+  const banner = document.getElementById('debug-banner');
+  const status = document.getElementById('debug-status');
+  window.addEventListener('error', function(e){
+    status.innerHTML = '<b>❌ ERRORE JS:</b> ' + (e.message || e.error || 'errore sconosciuto') + ' — vedi console';
+    banner.style.borderColor = '#ef4444';
+  });
+  window.addEventListener('unhandledrejection', function(e){
+    status.innerHTML = '<b>❌ ERRORE ASYNC:</b> ' + (e.reason && e.reason.message ? e.reason.message : e.reason) + ' — vedi console';
+    banner.style.borderColor = '#ef4444';
+  });
+  document.addEventListener('DOMContentLoaded', function(){
+    status.innerHTML = '<b>✅ DOM pronto</b> — in attesa dei dati…';
+  });
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      if(banner.style.borderColor !== 'rgb(239, 68, 68)') {
+        banner.style.opacity = '0';
+        setTimeout(function(){ banner.style.display='none'; }, 500);
+      }
+    }, 2000);
+  });
+})();
+</script>
+
 <!-- ── Top bar ─────────────────────────────────────────────── -->
 <div class="ex-topbar">
   <a class="ex-back" href="index.html">←</a>
