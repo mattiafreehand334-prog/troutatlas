@@ -11,7 +11,10 @@
 <body>
 
 <div class="river-header">
-  <a class="back-btn" href="index.html" style="padding:12px 16px;display:inline-flex;align-items:center;gap:6px;color:var(--accent);text-decoration:none;font-size:13px;font-weight:600">← Tutti i torrenti</a>
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 8px 0">
+    <a class="back-btn" href="index.html" style="padding:8px 16px;display:inline-flex;align-items:center;gap:6px;color:var(--accent);text-decoration:none;font-size:13px;font-weight:600">← Tutti i torrenti</a>
+    <a href="explore.html" style="padding:8px 14px;display:inline-flex;align-items:center;gap:5px;color:var(--muted);text-decoration:none;font-size:12px;font-weight:600;border:1px solid var(--border);border-radius:12px;background:var(--card)">🗺️ River Explorer</a>
+  </div>
   <div class="gallery-wrap" id="gallery-wrap">
     <div class="gallery-track" id="gallery-track"></div>
     <button class="gallery-prev" id="gallery-prev">‹</button>
@@ -39,8 +42,14 @@
     <a id="gmaps-btn" class="btn btn-maps">🧭 Portami qui</a>
     <button id="reg-btn" class="btn btn-regs">📋 Regolamenti della zona</button>
   </div>
+  <!-- Localities — geographic path from source to downstream -->
+  <div id="localities-section"></div>
   <!-- Fishing Intelligence section (populated by intelligence.js) -->
   <div id="intel-section"></div>
+  <!-- Permits & Licences -->
+  <div id="permits-section"></div>
+  <!-- Prepara la tua uscita -->
+  <div id="trip-prep-section"></div>
 </div>
 
 <nav class="bottom-nav">

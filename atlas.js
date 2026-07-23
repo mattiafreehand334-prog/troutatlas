@@ -184,6 +184,7 @@ const LocalProvider = {
 function detectIntent(msg, history) {
   const m = msg.toLowerCase();
   if(/ciao|salve|buongiorno|buonasera|aiuto|cosa sai|cosa fai|chi sei/.test(m)) return "saluto";
+  if(/mi serve.*permesso|permesso.*mi serve|ho bisogno.*permesso|acquist.*permesso|dove.*acquist|serve la licenza|licenza.*valdostan|licenza.*piemontese|catch.*release.*obblig|obbligo.*rilascio|quanto costa.*permesso|ente gestore|punti vendita.*permesso|dove compro|devo avere.*permesso/.test(m)) return "permesso_info";
   if(/regolam|licenz|tesserino|legge|norma|vietato|permesso|taglia min|limite giorn/.test(m)) return "regolamenti";
   if(/spiegami|come si pesca|come funziona|impara|insegna|introduzione|basi|principiant/.test(m)) return "spiegazione";
   if(/attrezzat|canna|lenza|mulinello|fluorocarbon|trecciato|amo|asola|galleggiante|wader|stivali/.test(m)) return "attrezzatura";
@@ -312,6 +313,7 @@ function generateResponse(intent, msg, ctx, river, history) {
     case "orario":        return respOrario(ctx, river);
     case "trote_habitat": return respTroteHabitat(ctx);
     case "spiegazione":   return respSpiegazione(msg, ctx);
+    case "permesso_info": return respPermessoInfo(ctx, river);
     case "regolamenti":   return respRegolamenti(river, ctx);
     case "attrezzatura":  return respAttrezzatura(ctx, msg);
     case "meteo":         return respMeteo(ctx, river);
@@ -917,6 +919,50 @@ ${spotLines}
 ${markerLines.length ? `📌 **Punti di interesse:**\n${markerLines.join("\n")}\n` : ""}${parkLines ? `🅿️ **Parcheggi:**\n${parkLines}` : ""}
 
 Vuoi l'itinerario per uno spot specifico? Chiedi **"Come arrivo a [nome spot]"**.`;
+}
+
+function respPermessoInfo(ctx, river) {
+  const { season } = ctx;
+  if(!river) {
+    return `Dimmi il nome del torrente o del fiume per cui vuoi sapere i permessi — per esempio: **"Mi serve un permesso per il Sesia?"**
+
+In generale, per pescare in Piemonte servono:
+• **Licenza regionale Piemonte** (valida per l'anno solare)
+• **Tesserino FIPSAS** o equivalente
+• **Permesso di zona** per le riserve turistiche (acquistato localmente)
+
+⚠️ Se peschi in **Valle d'Aosta** (es. Torrente Lys), la licenza piemontese **non è valida** — serve la licenza valdostana separata.`;
+  }
+
+  const p = river.permits;
+  if(!p) {
+    return `Non ho informazioni dettagliate sui permessi per il **${river.name}**.
+
+Contatta la sezione FIPSAS locale o la Provincia di ${river.province} per le informazioni aggiornate.`;
+  }
+
+  const crLine   = p.catchAndRelease ? '\n\n🔴 **Catch & Release obbligatorio** — nessuna trota può essere trattenuta!' : '';
+  const warnLine = p.notes && p.notes.toUpperCase().includes('ATTENZIONE') ? `\n\n⚠️ ${p.notes}` : '';
+  const buyLine  = p.buyUrl ? `\n\n🟢 **Acquista il permesso:** ${p.buyUrl}` : '';
+  const regLine  = p.regulationUrl ? `\n🔗 **Regolamento ufficiale:** ${p.regulationUrl}` : '';
+
+  const posLine = p.pointsOfSale && p.pointsOfSale.length
+    ? '\n\n🏪 **Punti vendita:** ' + p.pointsOfSale.map(s => `${s.name} (${s.address})`).join(', ')
+    : '';
+
+  return `🎫 **Permessi per il ${river.name}**
+
+**Tipo di gestione:** ${p.management}
+**Ente gestore:** ${p.entity}
+
+**Licenza richiesta:**
+${p.licenseType || (p.licenseRequired ? 'Sì — licenza regionale + tesserino FIPSAS' : 'Nessuna licenza regionale aggiuntiva')}
+
+${p.catchLimit ? `**Limite catture:** ${p.catchLimit}` : ''}
+${p.minSize    ? `**Taglia minima:** ${p.minSize}`    : ''}
+${river.regulations && river.regulations.season ? `**Stagione:** ${river.regulations.season}` : ''}${crLine}${warnLine}${buyLine}${regLine}${posLine}
+
+Per i permessi aggiornati e i prezzi consulta sempre direttamente l'ente gestore.`;
 }
 
 function respGenerico(msg, ctx, river) {

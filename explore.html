@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River Explorer — TroutAtlas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="explore-style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body class="explorer-body">
+
+<!-- ── Top bar ─────────────────────────────────────────────── -->
+<div class="ex-topbar">
+  <a class="ex-back" href="index.html">←</a>
+  <div class="ex-topbar-center">
+    <span class="ex-topbar-icon">🗺️</span>
+    <span class="ex-topbar-title">River Explorer</span>
+  </div>
+  <button class="ex-nearme-btn" id="near-me-btn" title="Intorno a me">📍</button>
+</div>
+
+<!-- ── Filter strip ───────────────────────────────────────── -->
+<div class="ex-filter-strip" id="ex-filter-strip">
+  <button class="ex-filter active" data-filter="all">Tutti</button>
+  <button class="ex-filter" data-filter="region-Piemonte">🏔 Piemonte</button>
+  <button class="ex-filter" data-filter="region-Valle d'Aosta">🏔 Valle d'Aosta</button>
+  <button class="ex-filter" data-filter="type-fiume">🌊 Fiumi</button>
+  <button class="ex-filter" data-filter="type-torrente">💧 Torrenti</button>
+  <button class="ex-filter" data-filter="type-lago">🏞 Laghi</button>
+</div>
+
+<!-- ── Map ───────────────────────────────────────────────── -->
+<div id="explorer-map"></div>
+
+<!-- ── Bottom drawer ──────────────────────────────────────── -->
+<div class="ex-drawer" id="ex-drawer">
+  <div class="ex-drawer-handle" id="ex-drawer-handle">
+    <div class="ex-drawer-handle-bar"></div>
+  </div>
+
+  <!-- LIST VIEW: all rivers -->
+  <div id="ex-list-view">
+    <div class="ex-list-header">
+      <span id="ex-list-count">Caricamento…</span>
+      <span class="ex-list-hint">Tocca un fiume sulla mappa o nella lista</span>
+    </div>
+    <div id="ex-river-list"></div>
+  </div>
+
+  <!-- DETAIL VIEW: selected river -->
+  <div id="ex-detail-view" style="display:none">
+    <div class="ex-detail-header">
+      <button class="ex-detail-back" id="ex-detail-back">← Tutti i fiumi</button>
+      <a class="ex-detail-open-btn" id="ex-open-river" href="#">📋 Scheda completa</a>
+    </div>
+    <div class="ex-detail-river-title">
+      <h2 id="ex-detail-name"></h2>
+      <p id="ex-detail-meta"></p>
+    </div>
+
+    <!-- Zone legend strip -->
+    <div class="ex-zones-strip" id="ex-zones"></div>
+
+    <!-- Locality path navigation -->
+    <div class="ex-section-label">
+      <span class="ex-section-icon">⛰️</span>
+      Percorso — dalla sorgente alla confluenza
+    </div>
+    <div class="ex-localities-rail" id="ex-localities"></div>
+
+    <!-- Spots for selected locality -->
+    <div id="ex-locality-spots"></div>
+
+    <!-- Permits mini-card -->
+    <div id="ex-permits-mini"></div>
+
+    <!-- Bottom padding -->
+    <div style="height:24px"></div>
+  </div>
+</div>
+
+<!-- ── Bottom Nav ─────────────────────────────────────────── -->
+<nav class="bottom-nav">
+  <a class="bnav-item" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi</a>
+  <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item bnav-item--active" href="explore.html"><span class="bnav-icon">🗺️</span>Esplora</a>
+  <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
+</nav>
+
+<script src="explore.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js');</script>
+</body>
+</html>

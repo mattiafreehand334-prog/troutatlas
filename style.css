@@ -819,6 +819,108 @@ main, .page-main {
 .atlas-send-btn:disabled { opacity: .35; cursor: not-allowed; transform: none; }
 .atlas-send-icon { line-height: 1; }
 
+/* ─────────────────────────────────────────────────────────
+   River detail page — Localities, Permits, Trip Prep
+   ─────────────────────────────────────────────────────── */
+
+/* Locality timeline */
+.loc-timeline { display: flex; flex-direction: column; gap: 0; margin: 8px 0; }
+.loc-step     { display: flex; gap: 12px; align-items: flex-start; }
+.loc-step-track { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.loc-step-dot {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--card2); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0;
+}
+.loc-step-line {
+  width: 2px; flex: 1; min-height: 12px;
+  background: linear-gradient(to bottom, rgba(59,130,246,.35), rgba(59,130,246,.1));
+  margin: 2px 0;
+}
+.loc-step-content {
+  padding: 4px 0 14px;
+}
+.loc-step-name { font-size: 14px; font-weight: 700; color: var(--text); }
+.loc-step-desc { font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.5; }
+.loc-explore-link {
+  display: inline-block; margin-top: 12px;
+  font-size: 13px; font-weight: 600; color: var(--accent);
+  background: rgba(37,99,235,.1); border: 1px solid rgba(37,99,235,.3);
+  border-radius: 12px; padding: 8px 16px; text-decoration: none;
+  transition: all .15s;
+}
+.loc-explore-link:hover { background: rgba(37,99,235,.2); }
+
+/* Permits card */
+.perm-section { }
+.perm-card {
+  background: rgba(37,99,235,.05); border: 1px solid rgba(37,99,235,.2);
+  border-radius: 16px; overflow: hidden; margin-top: 12px;
+}
+.perm-rows { padding: 14px 16px 4px; display: flex; flex-direction: column; gap: 10px; }
+.perm-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; font-size: 13px; }
+.perm-label { color: var(--muted); flex-shrink: 0; white-space: nowrap; }
+.perm-value { text-align: right; line-height: 1.5; font-size: 12px; }
+.perm-cr-alert {
+  margin: 10px 16px 4px; padding: 10px 14px;
+  background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.25);
+  border-radius: 10px; font-size: 13px; color: #fca5a5;
+}
+.perm-warning {
+  margin: 8px 16px 4px; padding: 10px 14px;
+  background: rgba(251,191,36,.07); border: 1px solid rgba(251,191,36,.2);
+  border-radius: 10px; font-size: 12px; color: #fde68a; line-height: 1.5;
+}
+.perm-actions {
+  padding: 14px 16px; display: flex; gap: 8px; flex-wrap: wrap;
+  border-top: 1px solid rgba(59,130,246,.12);
+}
+.perm-action-btn {
+  flex: 1; min-width: 0; text-align: center; padding: 10px 8px;
+  border-radius: 12px; font-size: 12px; font-weight: 700;
+  text-decoration: none; border: 1px solid transparent;
+  cursor: pointer; transition: all .15s; white-space: nowrap;
+  display: inline-block; font-family: inherit;
+}
+.perm-action-btn--green  { background:rgba(34,197,94,.12);  border-color:rgba(34,197,94,.4);  color:#4ade80; }
+.perm-action-btn--orange { background:rgba(249,115,22,.1);  border-color:rgba(249,115,22,.35); color:#fdba74; }
+.perm-action-btn--blue   { background:rgba(59,130,246,.12); border-color:rgba(59,130,246,.35); color:#93c5fd; }
+.perm-lic-info {
+  display: none; margin: 0 16px 14px;
+  background: rgba(15,30,60,.6); border: 1px solid rgba(59,130,246,.2);
+  border-radius: 12px; padding: 12px 14px;
+}
+.perm-lic-info.open { display: block; }
+.perm-lic-title { font-size: 13px; font-weight: 700; color: #93c5fd; margin-bottom: 8px; }
+.perm-lic-body  { font-size: 13px; color: var(--text); line-height: 1.6; }
+.perm-lic-notes { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+.perm-pos-section { padding: 12px 16px 16px; border-top: 1px solid rgba(59,130,246,.12); }
+.perm-pos-title { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing:.4px; margin-bottom: 10px; }
+.perm-pos-card {
+  background: var(--card2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; font-size: 12px;
+}
+.perm-pos-name { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+.perm-pos-addr, .perm-pos-meta { color: var(--muted); margin-top: 2px; }
+
+/* Trip prep card */
+.trip-prep-section { }
+.trip-prep-sub { font-size: 13px; color: var(--muted); margin: -4px 0 14px; line-height: 1.5; }
+.trip-rows { display: flex; flex-direction: column; gap: 12px; }
+.trip-row { display: flex; gap: 12px; align-items: flex-start; }
+.trip-icon { font-size: 20px; flex-shrink: 0; width: 26px; text-align: center; line-height: 1; margin-top: 1px; }
+.trip-content { flex: 1; }
+.trip-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing:.4px; margin-bottom: 2px; }
+.trip-value { font-size: 13px; color: var(--text); line-height: 1.5; }
+.trip-nav-btn {
+  display: block; margin-top: 18px; text-align: center;
+  background: var(--accent); color: #fff; font-weight: 700;
+  font-size: 14px; padding: 14px 20px; border-radius: 14px;
+  text-decoration: none; transition: all .15s;
+}
+.trip-nav-btn:hover { background: #2563eb; transform: translateY(-1px); }
+
 /* ── Spot action cards (rendered in AI messages) ─────────── */
 .atlas-spot-card {
   display: flex; align-items: center; justify-content: space-between;

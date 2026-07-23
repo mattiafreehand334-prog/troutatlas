@@ -9,6 +9,142 @@ function toggleFavourite(id) {
   localStorage.setItem("trout_favourites", JSON.stringify(favs));
 }
 
+/* ── §R1 Localities section ──────────────────────────── */
+function renderLocalities(river) {
+  const sec = document.getElementById('localities-section');
+  if(!sec) return;
+  if(!river.localities || !river.localities.length) { sec.innerHTML=''; return; }
+  const locs = [...river.localities].sort((a,b) => a.order - b.order);
+  sec.innerHTML = `
+    <div class="detail-section">
+      <h2>📍 Percorso — dalla sorgente alla confluenza</h2>
+      <div class="loc-timeline">
+        ${locs.map((loc, i) => `
+          <div class="loc-step">
+            <div class="loc-step-track">
+              <div class="loc-step-dot">${i===0?'⛰️':i===locs.length-1?'🔽':'📍'}</div>
+              ${i < locs.length-1 ? '<div class="loc-step-line"></div>' : ''}
+            </div>
+            <div class="loc-step-content">
+              <div class="loc-step-name">${loc.name}</div>
+              ${loc.description ? `<div class="loc-step-desc">${loc.description}</div>` : ''}
+            </div>
+          </div>`).join('')}
+      </div>
+      <a href="explore.html" class="loc-explore-link">🗺️ Esplora sulla mappa interattiva →</a>
+    </div>`;
+}
+
+/* ── §R2 Permits & Licences section ──────────────────── */
+function renderPermits(river) {
+  const sec = document.getElementById('permits-section');
+  if(!sec) return;
+  const p = river.permits;
+  if(!p) { sec.innerHTML = ''; return; }
+
+  const crAlert   = p.catchAndRelease ? `<div class="perm-cr-alert">🔴 <strong>Catch &amp; Release obbligatorio</strong> — nessuna trota può essere trattenuta.</div>` : '';
+  const warnAlert = p.notes && p.notes.toUpperCase().includes('ATTENZIONE') ? `<div class="perm-warning">⚠️ ${p.notes}</div>` : '';
+
+  const buyBtn = p.buyUrl ? `<a class="perm-action-btn perm-action-btn--green" href="${p.buyUrl}" target="_blank" rel="noopener">🟢 Acquista il permesso</a>` : '';
+  const regBtn = p.regulationUrl ? `<a class="perm-action-btn perm-action-btn--orange" href="${p.regulationUrl}" target="_blank" rel="noopener">🟠 Regolamento ufficiale</a>` : '';
+  const licBtn = `<button class="perm-action-btn perm-action-btn--blue" onclick="document.getElementById('perm-lic-info').classList.toggle('open')">🔵 Mi serve la licenza?</button>`;
+
+  const posHTML = p.pointsOfSale && p.pointsOfSale.length
+    ? `<div class="perm-pos-section">
+        <div class="perm-pos-title">🏪 Dove acquistare il permesso</div>
+        ${p.pointsOfSale.map(pos => `
+          <div class="perm-pos-card">
+            <div class="perm-pos-name">${pos.name}</div>
+            <div class="perm-pos-addr">📍 ${pos.address}</div>
+            ${pos.phone && pos.phone !== 'Informazione non disponibile' ? `<div class="perm-pos-meta">📞 ${pos.phone}</div>` : ''}
+            ${pos.hours && pos.hours !== 'Informazione non disponibile' ? `<div class="perm-pos-meta">🕒 ${pos.hours}</div>` : ''}
+          </div>`).join('')}
+      </div>` : '';
+
+  const infoRows = [
+    ['🏛️', 'Ente gestore',     p.entity],
+    ['📋', 'Tipo di gestione', p.management],
+    p.licenseType    ? ['📄', 'Licenza richiesta', p.licenseType]   : null,
+    p.catchLimit     ? ['🐟', 'Limite catture',    p.catchLimit]     : null,
+    p.minSize        ? ['📏', 'Taglia minima',     p.minSize]        : null,
+    river.regulations && river.regulations.season ? ['📅', 'Stagione', river.regulations.season] : null,
+  ].filter(Boolean);
+
+  sec.innerHTML = `
+    <div class="detail-section perm-section">
+      <h2>🎫 Permessi e Licenze</h2>
+      <div class="perm-card">
+        <div class="perm-rows">
+          ${infoRows.map(([icon,label,val]) => `
+            <div class="perm-row">
+              <span class="perm-label">${icon} ${label}</span>
+              <span class="perm-value">${val}</span>
+            </div>`).join('')}
+        </div>
+        ${crAlert}${warnAlert}
+        <div class="perm-actions">${buyBtn}${licBtn}${regBtn}</div>
+        <div class="perm-lic-info" id="perm-lic-info">
+          <div class="perm-lic-title">ℹ️ Cosa ti serve per pescare qui</div>
+          <div class="perm-lic-body">${p.licenseType || (p.licenseRequired ? 'Licenza regionale richiesta — consulta il tuo ente FIPSAS locale.' : 'Nessuna licenza regionale aggiuntiva richiesta.')}</div>
+          ${p.notes && !p.notes.toUpperCase().includes('ATTENZIONE') ? `<div class="perm-lic-notes">${p.notes}</div>` : ''}
+        </div>
+        ${posHTML}
+      </div>
+    </div>`;
+}
+
+/* ── §R3 Trip prep section ───────────────────────────── */
+function renderTripPrep(river) {
+  const sec = document.getElementById('trip-prep-section');
+  if(!sec) return;
+
+  const bestSpot = river.spots && river.spots.length
+    ? [...river.spots].sort((a,b) => (b.fishingScore||0)-(a.fishingScore||0))[0] : null;
+  const p   = river.permits    || {};
+  const reg = river.regulations || {};
+
+  const rows = [
+    bestSpot && bestSpot.parking
+      ? ['🅿️','Dove parcheggiare', `${bestSpot.parking.name} — ${bestSpot.parking.description}`]
+      : ['🅿️','Dove parcheggiare', 'Cercare piazzole sterrate lungo la strada di accesso'],
+    bestSpot
+      ? ['🥾','Cammino fino allo spot', `~${bestSpot.walkingMinutes} min a piedi fino a "${bestSpot.name}"`]
+      : ['🥾','Cammino fino allo spot', 'Variabile — consultare le schede spot'],
+    ['🎫','Permesso richiesto', p.management || reg.license || 'Verifica presso la sezione FIPSAS locale'],
+    reg.season   ? ['📅','Periodo di apertura',    reg.season]                              : null,
+    river.flyFriendly !== undefined
+      ? ['🎣','Tecnica consigliata', (river.flyFriendly ? '🪰 Pesca a mosca · ' : '') + (river.recommendedLures||[]).slice(0,2).join(', ')]
+      : null,
+    river.recommendedRod ? ['🎣','Canna consigliata', river.recommendedRod] : null,
+    ['👢','Equipaggiamento', river.difficulty >= 3 ? 'Waders obbligatori · Stivali feltro o scolpiti · Giubbotto sicurezza' : 'Stivali o waders · Abbigliamento a strati'],
+    ['🕒','Fascia oraria consigliata', 'Alba e tramonto per la secca · Ore centrali per la ninfa'],
+    river.species  ? ['🐟','Specie presenti',     (river.species||[]).join(', ')]           : null,
+    reg.minSize    ? ['📏','Taglia minima',        reg.minSize]                              : null,
+    reg.rules && reg.rules.length ? ['📋','Regole principali', reg.rules.slice(0,2).join(' · ')] : null,
+    ['🌦️','Meteo e condizioni', 'Consulta la sezione Fishing Intelligence ↑'],
+  ].filter(Boolean);
+
+  sec.innerHTML = `
+    <div class="detail-section trip-prep-section">
+      <h2>🧳 Prepara la tua uscita</h2>
+      <p class="trip-prep-sub">Tutto ciò che ti serve sapere prima di andare al fiume.</p>
+      <div class="trip-rows">
+        ${rows.map(([icon,label,val]) => `
+          <div class="trip-row">
+            <span class="trip-icon">${icon}</span>
+            <div class="trip-content">
+              <div class="trip-label">${label}</div>
+              <div class="trip-value">${val}</div>
+            </div>
+          </div>`).join('')}
+      </div>
+      ${bestSpot ? `
+        <a href="river.html?id=${river.id}&spot=${bestSpot.id}" class="trip-nav-btn">
+          🧭 Portami allo spot migliore: ${bestSpot.name} →
+        </a>` : ''}
+    </div>`;
+}
+
 fetch("database.json")
   .then(r => r.json())
   .then(rivers => {
@@ -105,6 +241,27 @@ fetch("database.json")
       const map = L.map("map", {zoomControl:true, attributionControl:false}).setView([centerLat, centerLng], zoom);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18}).addTo(map);
 
+      // ── River polyline with zone coloring ──────────────
+      if(river.polyline && river.polyline.length >= 2) {
+        const baseTypeColors = {'fiume':'#3b82f6','torrente':'#06b6d4','torrente di montagna':'#0ea5e9','lago':'#10b981','lago alpino':'#8b5cf6'};
+        const baseColor = baseTypeColors[(river.waterType||'').toLowerCase()] || '#3b82f6';
+        const zoneColors = {libero:'#22c55e',riserva_turistica:'#f97316',no_kill:'#ef4444',speciale:'#a855f7'};
+        // Base dim polyline
+        L.polyline(river.polyline, {color:baseColor,weight:2,opacity:0.22,dashArray:'4 4'}).addTo(map);
+        if(river.zones && river.zones.length > 0) {
+          river.zones.forEach(z => {
+            const s = z.segment || [0, river.polyline.length-1];
+            const pts = river.polyline.slice(s[0], Math.min(s[1]+1, river.polyline.length));
+            if(pts.length < 2) return;
+            const c = zoneColors[z.type] || baseColor;
+            L.polyline(pts, {color:c,weight:6,opacity:0.8,lineCap:'round',lineJoin:'round'}).addTo(map)
+              .bindPopup(`<strong>${z.name}</strong><br><em>${z.description}</em>`);
+          });
+        } else {
+          L.polyline(river.polyline, {color:baseColor,weight:6,opacity:0.8,lineCap:'round'}).addTo(map);
+        }
+      }
+
       // River origin marker
       const rivIcon = L.divIcon({html:'<div style="font-size:26px;line-height:1">🎣</div>',className:"",iconSize:[32,32],iconAnchor:[16,28]});
       const rivMarker = L.marker([lat,lng],{icon:rivIcon}).addTo(map);
@@ -195,4 +352,9 @@ fetch("database.json")
 
     /* ── Fishing Intelligence ─────────────────────────────── */
     loadFishingIntelligence(river);
+
+    /* ── Localities, Permits, Trip Prep ───────────────────── */
+    renderLocalities(river);
+    renderPermits(river);
+    renderTripPrep(river);
   });

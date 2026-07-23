@@ -4,3 +4,5 @@
 - [Image source of truth](images-sot.md) — database.json images[] arrays are the single source; app.js and river.js both read from river.images.
 - [ATLAS AI architecture](atlas-ai.md) — rule-based AI assistant in atlas.js; provider interface ready for OpenAI swap; context via localStorage atlas_last_river.
 - [Spot system](spot-system.md) — 19 fishing spots across all 13 rivers in database.json; AtlasSpots module + 4 new intents; [[SPOT:]] tag renders as map-link cards; river.js reads ?spot= param to center map and show ATLAS AI banner.
+- [River detail sections](river-detail-sections.md) — renderLocalities/Permits/TripPrep functions live at the TOP of river.js (before fetch()); called at end of fetch callback; CSS in style.css; SW cache now at troutatlas-v16.
+- [ATLAS permesso_info intent](atlas-ai.md) — must be listed BEFORE the broader "regolamenti" intent in detectIntent; respPermessoInfo(ctx, river) handles permit/licence questions; river.permits data in database.json.
