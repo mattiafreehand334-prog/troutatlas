@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TroutAtlas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=19">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -48,10 +48,10 @@
   <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
 </nav>
 
-<script src="app.js"></script>
+<script src="app.js?v=19"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('/sw.js?v=19');
   }
   window.addEventListener('online',  () => document.body.classList.remove('offline'));
   window.addEventListener('offline', () => document.body.classList.add('offline'));

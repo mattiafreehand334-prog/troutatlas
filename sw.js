@@ -1,15 +1,18 @@
-const CACHE = "troutatlas-v17";
+const CACHE = "troutatlas-v19";
 
 // Core app shell cached on install (small, fast)
 const SHELL = [
   "/index.html",
   "/river.html",
+  "/explore.html",
   "/mappa.html",
   "/knots.html",
   "/negozi.html",
   "/trote.html",
   "/app.js",
   "/river.js",
+  "/explore.js",
+  "/explore-style.css",
   "/intelligence.js",
   "/mappa.js",
   "/knots.js",
@@ -34,7 +37,7 @@ self.addEventListener("activate", e => {
   e.waitUntil(
     caches.keys()
       .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
-      // Don't call clients.claim() — avoid disrupting in-flight page fetches
+      .then(() => self.clients.claim())
   );
 });
 
