@@ -430,6 +430,85 @@
         45.745,
         8.279
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "sesia-lm1",
+        "type": "bridge",
+        "name": "Ponte di Varallo",
+        "description": "Antico ponte in pietra a tre arcate. Accesso diretto al tratto riserva. Ottimo punto di avvistamento delle trote.",
+        "coordinates": {
+          "lat": 45.818,
+          "lng": 8.238
+        },
+        "locality": "Varallo"
+      },
+      {
+        "id": "sesia-lm2",
+        "type": "waterfall",
+        "name": "Salto di Scopello",
+        "description": "Piccolo salto di circa 3 m. Crea una buca profonda a valle eccellente per la fario di taglia.",
+        "coordinates": {
+          "lat": 45.812,
+          "lng": 8.243
+        },
+        "locality": "Scopello"
+      },
+      {
+        "id": "sesia-lm3",
+        "type": "pool",
+        "name": "Buca del Temolo",
+        "description": "Lama profonda 3–4 m, corrente lenta. Storico rifugio per i temoli in primavera.",
+        "coordinates": {
+          "lat": 45.835,
+          "lng": 8.097
+        },
+        "locality": "Campertogno"
+      },
+      {
+        "id": "sesia-lm4",
+        "type": "trail",
+        "name": "Sentiero Val Vogna",
+        "description": "Sentiero CAI n° 6. Scende al fiume in 15 min da Riva Valdobbia. Ottimo accesso ai tratti alti.",
+        "coordinates": {
+          "lat": 45.847,
+          "lng": 8.015
+        },
+        "locality": "Riva Valdobbia"
+      },
+      {
+        "id": "sesia-lm5",
+        "type": "confluence",
+        "name": "Confluenza Mastallone",
+        "description": "Immissario del Torrente Mastallone. Zona di pesca produttiva dopo le piogge grazie all'apporto di insetti.",
+        "coordinates": {
+          "lat": 45.818,
+          "lng": 8.26
+        },
+        "locality": "Varallo"
+      },
+      {
+        "id": "sesia-lm6",
+        "type": "pool",
+        "name": "Buca della Pietra",
+        "description": "Masso di 2 m crea un vortice laterale. Zona di riposo per le fario in estate.",
+        "coordinates": {
+          "lat": 45.825,
+          "lng": 8.17
+        },
+        "locality": "Piode"
+      },
+      {
+        "id": "sesia-lm7",
+        "type": "access",
+        "name": "Accesso Quarona Nord",
+        "description": "Parcheggio sterrato e discesa al fiume tramite sentiero segnato. 5 min a piedi.",
+        "coordinates": {
+          "lat": 45.779,
+          "lng": 8.362
+        },
+        "locality": "Quarona"
+      }
     ]
   },
   {
@@ -704,6 +783,63 @@
         45.494,
         8.176
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "cervo-lm1",
+        "type": "bridge",
+        "name": "Ponte di Portula",
+        "description": "Ponte ad arco in pietra. Accesso al tratto libero superiore. Parcheggio nelle vicinanze.",
+        "coordinates": {
+          "lat": 45.704,
+          "lng": 8.136
+        },
+        "locality": "Portula"
+      },
+      {
+        "id": "cervo-lm2",
+        "type": "waterfall",
+        "name": "Cascata del Cervo",
+        "description": "Salto di 4 m con buca profonda. La zona a valle è chiusa da anni per rigenerazione — verificare il regolamento attuale.",
+        "coordinates": {
+          "lat": 45.651,
+          "lng": 8.078
+        },
+        "locality": "Coggiola"
+      },
+      {
+        "id": "cervo-lm3",
+        "type": "confluence",
+        "name": "Confluenza Strona",
+        "description": "Immissario della Strona di Mosso. Zona ampia con correnti alternate, ideale per la ninfa e lo streamer.",
+        "coordinates": {
+          "lat": 45.569,
+          "lng": 8.06
+        },
+        "locality": "Biella"
+      },
+      {
+        "id": "cervo-lm4",
+        "type": "pool",
+        "name": "Buca dei Pioppi",
+        "description": "Tratto lento ombreggiato da pioppi. Schiuse serali abbondanti in maggio-giugno.",
+        "coordinates": {
+          "lat": 45.615,
+          "lng": 8.06
+        },
+        "locality": "Sagliano Micca"
+      },
+      {
+        "id": "cervo-lm5",
+        "type": "access",
+        "name": "Accesso SP 100",
+        "description": "Slargo sulla SP 100 con discesa a scalini al fiume. Tratto libero con buche regolari.",
+        "coordinates": {
+          "lat": 45.58,
+          "lng": 8.059
+        },
+        "locality": "Sagliano Micca"
+      }
     ]
   },
   {
@@ -984,6 +1120,52 @@
         45.672,
         8.17
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "sessera-lm1",
+        "type": "bridge",
+        "name": "Ponte della Sessera",
+        "description": "Ponte in cemento armato sulla SS 229. Accesso al tratto centrale. Zona a libero con buona densità di fario.",
+        "coordinates": {
+          "lat": 45.703,
+          "lng": 8.143
+        },
+        "locality": "Coggiola"
+      },
+      {
+        "id": "sessera-lm2",
+        "type": "waterfall",
+        "name": "Cascata di Ailoche",
+        "description": "Cascata a gradoni su roccia metamorfica. La buca a valle ospita fario fino a 35 cm.",
+        "coordinates": {
+          "lat": 45.72,
+          "lng": 8.135
+        },
+        "locality": "Ailoche"
+      },
+      {
+        "id": "sessera-lm3",
+        "type": "trail",
+        "name": "Sentiero del Bosco",
+        "description": "Sentiero CAI lungo il bosco ripario. Accede a 3 km di fiume altrimenti non raggiungibili in auto.",
+        "coordinates": {
+          "lat": 45.71,
+          "lng": 8.139
+        },
+        "locality": "Ailoche"
+      },
+      {
+        "id": "sessera-lm4",
+        "type": "pool",
+        "name": "Gorge di Coggiola",
+        "description": "Canyon stretto di 80 m con acqua verde scura. Tecnica esclusivamente a ninfa. Scarponi con grip obbligatori.",
+        "coordinates": {
+          "lat": 45.7,
+          "lng": 8.145
+        },
+        "locality": "Coggiola"
+      }
     ]
   },
   {
@@ -1181,6 +1363,52 @@
         45.44,
         8.23
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "elvo-lm1",
+        "type": "bridge",
+        "name": "Ponte Romano di Sala",
+        "description": "Antico ponte romano a volta singola. Uno dei punti di accesso storici al fiume. Area con pozzo profondo.",
+        "coordinates": {
+          "lat": 45.517,
+          "lng": 8.136
+        },
+        "locality": "Sala Biellese"
+      },
+      {
+        "id": "elvo-lm2",
+        "type": "waterfall",
+        "name": "Salto di Muzzano",
+        "description": "Salto basso di 1 m su soglia rocciosa. Genera un risucchio laterale frequentato da fario in posizione di cattura.",
+        "coordinates": {
+          "lat": 45.52,
+          "lng": 8.1
+        },
+        "locality": "Muzzano"
+      },
+      {
+        "id": "elvo-lm3",
+        "type": "confluence",
+        "name": "Confluenza Rio Viona",
+        "description": "Affluente che apporta acqua fresca in estate. Zona importante nei mesi caldi quando il livello cala.",
+        "coordinates": {
+          "lat": 45.516,
+          "lng": 8.133
+        },
+        "locality": "Sala Biellese"
+      },
+      {
+        "id": "elvo-lm4",
+        "type": "access",
+        "name": "Accesso Graglia",
+        "description": "Parcheggio comunale con sentiero segnalato fino alla riva. Tratto adatto alle famiglie con bambini.",
+        "coordinates": {
+          "lat": 45.53,
+          "lng": 8.11
+        },
+        "locality": "Graglia"
+      }
     ]
   },
   {
@@ -1393,6 +1621,52 @@
         45.618,
         8.363
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "strona-lm1",
+        "type": "bridge",
+        "name": "Ponte in Ferro di Mosso",
+        "description": "Storico ponte industriale dell'800 in ferro battuto. Accesso al tratto urbano con buche sottoponte.",
+        "coordinates": {
+          "lat": 45.698,
+          "lng": 8.12
+        },
+        "locality": "Mosso"
+      },
+      {
+        "id": "strona-lm2",
+        "type": "waterfall",
+        "name": "Salto del Mulino",
+        "description": "Antico mulino con salto artificiale di 2 m. La buca sottostante è uno spot storico per la fario.",
+        "coordinates": {
+          "lat": 45.69,
+          "lng": 8.115
+        },
+        "locality": "Valle Mosso"
+      },
+      {
+        "id": "strona-lm3",
+        "type": "pool",
+        "name": "Buca della Ripa",
+        "description": "Curva con erosione esterna, buca di 2.5 m in sponda sinistra. Spot per la secca nella serata.",
+        "coordinates": {
+          "lat": 45.68,
+          "lng": 8.125
+        },
+        "locality": "Trivero"
+      },
+      {
+        "id": "strona-lm4",
+        "type": "trail",
+        "name": "Sentiero Oasi WWF",
+        "description": "Sentiero della Oasi naturalistica lungo la Strona. Tratto a catch and release non ufficiale ma rispettato dai locali.",
+        "coordinates": {
+          "lat": 45.71,
+          "lng": 8.13
+        },
+        "locality": "Mosso"
+      }
     ]
   },
   {
@@ -1688,6 +1962,63 @@
         45.818,
         8.236
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "mastallone-lm1",
+        "type": "bridge",
+        "name": "Ponte di Fobello",
+        "description": "Piccolo ponte in pietra a valle del paese. Accesso al tratto a libero superiore. Fario selvaggia di montagna.",
+        "coordinates": {
+          "lat": 45.86,
+          "lng": 8.098
+        },
+        "locality": "Fobello"
+      },
+      {
+        "id": "mastallone-lm2",
+        "type": "waterfall",
+        "name": "Cascata di Rimella",
+        "description": "Grande cascata su roccia granitica. Inaccessibile ma visibile dal sentiero. Zona di rispetto spontaneo dei pescatori locali.",
+        "coordinates": {
+          "lat": 45.875,
+          "lng": 8.082
+        },
+        "locality": "Rimella"
+      },
+      {
+        "id": "mastallone-lm3",
+        "type": "confluence",
+        "name": "Confluenza Sesia",
+        "description": "Confluenza con il Fiume Sesia. Zona mista con fario e temolo. Distanza di pesca obbligatoria dalla confluenza: 50 m — verificare norme locali.",
+        "coordinates": {
+          "lat": 45.818,
+          "lng": 8.265
+        },
+        "locality": "Varallo"
+      },
+      {
+        "id": "mastallone-lm4",
+        "type": "pool",
+        "name": "Buca del Granito",
+        "description": "Pozzo profondo tra due massi granitici. Accesso via ferrata non segnata — equipaggiamento necessario. Fario trofeo.",
+        "coordinates": {
+          "lat": 45.85,
+          "lng": 8.11
+        },
+        "locality": "Fobello"
+      },
+      {
+        "id": "mastallone-lm5",
+        "type": "access",
+        "name": "Accesso Cervatto",
+        "description": "Strada forestale con sbarra. A piedi 20 min fino al tratto alto incontaminato. Permesso necesssario per l'accesso veicolare.",
+        "coordinates": {
+          "lat": 45.872,
+          "lng": 8.118
+        },
+        "locality": "Cervatto"
+      }
     ]
   },
   {
@@ -1915,6 +2246,63 @@
         45.331,
         7.722
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "orco-lm1",
+        "type": "dam",
+        "name": "Diga di Ceresole",
+        "description": "Grande sbarramento artificiale. Il piede della diga è zona di rispetto — nessuna pesca. Accesso al tratto a valle dalla SP 460.",
+        "coordinates": {
+          "lat": 45.432,
+          "lng": 7.214
+        },
+        "locality": "Ceresole Reale"
+      },
+      {
+        "id": "orco-lm2",
+        "type": "waterfall",
+        "name": "Cascate del Rio Piantonetto",
+        "description": "Cascate dell'affluente Piantonetto in area Parco Nazionale Gran Paradiso. Area protetta — pesca vietata nel tratto in parco.",
+        "coordinates": {
+          "lat": 45.49,
+          "lng": 7.54
+        },
+        "locality": "Noasca"
+      },
+      {
+        "id": "orco-lm3",
+        "type": "bridge",
+        "name": "Ponte Romano di Pont",
+        "description": "Antico ponte in pietra a Pont Canavese. Area con buca ampia sotto gli archi. Tratto libero con buona densità di pesci.",
+        "coordinates": {
+          "lat": 45.422,
+          "lng": 7.631
+        },
+        "locality": "Pont Canavese"
+      },
+      {
+        "id": "orco-lm4",
+        "type": "pool",
+        "name": "Buca della Cascina",
+        "description": "Ansa con corrente lenta e fondo di ghiaia. Zona di riproduzione naturale — rispettare i nidi in ottobre-novembre.",
+        "coordinates": {
+          "lat": 45.45,
+          "lng": 7.59
+        },
+        "locality": "Locana"
+      },
+      {
+        "id": "orco-lm5",
+        "type": "access",
+        "name": "Sentiero Parco Gran Paradiso",
+        "description": "Accesso ufficiale al fiume nel tratto a margine del parco. Seguire la segnaletica verde. Permesso PNGP richiesto.",
+        "coordinates": {
+          "lat": 45.47,
+          "lng": 7.64
+        },
+        "locality": "Locana"
+      }
     ]
   },
   {
@@ -2108,6 +2496,41 @@
         45.762,
         8.031
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "mucrone-lm1",
+        "type": "dam",
+        "name": "Diga del Mucrone",
+        "description": "Diga dell'Enel che alimenta il lago. L'area attorno alla diga è zona di rispetto con accesso limitato.",
+        "coordinates": {
+          "lat": 45.76,
+          "lng": 8.032
+        },
+        "locality": "Oropa"
+      },
+      {
+        "id": "mucrone-lm2",
+        "type": "trail",
+        "name": "Sentiero Panoramico Oropa",
+        "description": "Sentiero che circumnaviga il lago. Vista sulle Alpi Biellesi. Accesso agli spazi riva per la pesca dalla mulattiera nord.",
+        "coordinates": {
+          "lat": 45.762,
+          "lng": 8.028
+        },
+        "locality": "Oropa"
+      },
+      {
+        "id": "mucrone-lm3",
+        "type": "access",
+        "name": "Area Pic-Nic Lago",
+        "description": "Zona attrezzata con tavoli. Parcheggio a 200 m. Punto di partenza per il sentiero riva sud. Adatto alle famiglie.",
+        "coordinates": {
+          "lat": 45.758,
+          "lng": 8.034
+        },
+        "locality": "Oropa"
+      }
     ]
   },
   {
@@ -2319,6 +2742,41 @@
         45.421,
         8.044
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "viverone-lm1",
+        "type": "access",
+        "name": "Spiaggia di Viverone",
+        "description": "Accesso pubblico con parcheggio e pontile. Zona di pesca da riva con canna per i lucci e le trotelle di lago.",
+        "coordinates": {
+          "lat": 45.421,
+          "lng": 8.044
+        },
+        "locality": "Viverone"
+      },
+      {
+        "id": "viverone-lm2",
+        "type": "access",
+        "name": "Pontile di Azeglio",
+        "description": "Pontile storico in legno. Pesca notturna dal pontile per il persico e il luccio. Permesso comunale richiesto.",
+        "coordinates": {
+          "lat": 45.398,
+          "lng": 8.048
+        },
+        "locality": "Azeglio"
+      },
+      {
+        "id": "viverone-lm3",
+        "type": "pool",
+        "name": "Zona Palafitte",
+        "description": "Area palafitticola protetta (UNESCO). Nessuna pesca a 200 m dalla zona. Sito di interesse storico e naturalistico eccezionale.",
+        "coordinates": {
+          "lat": 45.41,
+          "lng": 8.053
+        },
+        "locality": "Viverone"
+      }
     ]
   },
   {
@@ -2526,6 +2984,41 @@
         45.983,
         8.318
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "artogna-lm1",
+        "type": "bridge",
+        "name": "Ponte di Migiandone",
+        "description": "Ponte carrabile che attraversa l'Artogna prima della confluenza con il Toce. Accesso al tratto finale.",
+        "coordinates": {
+          "lat": 46.055,
+          "lng": 8.295
+        },
+        "locality": "Migiandone"
+      },
+      {
+        "id": "artogna-lm2",
+        "type": "waterfall",
+        "name": "Cascate dell'Artogna",
+        "description": "Serie di cascate e rapide nella parte alta della valle. Zona scenograficamente straordinaria. Accesso a piedi 45 min.",
+        "coordinates": {
+          "lat": 46.08,
+          "lng": 8.31
+        },
+        "locality": "Ornavasso"
+      },
+      {
+        "id": "artogna-lm3",
+        "type": "confluence",
+        "name": "Confluenza Toce",
+        "description": "Immissione nel Fiume Toce. Zona produttiva per lasche e cavedani. La fario è rara nel tratto terminale.",
+        "coordinates": {
+          "lat": 46.052,
+          "lng": 8.298
+        },
+        "locality": "Migiandone"
+      }
     ]
   },
   {
@@ -2717,6 +3210,41 @@
         46.068,
         8.121
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "antrona-lm1",
+        "type": "dam",
+        "name": "Diga di Antrona",
+        "description": "Grande diga artificiale del 1941. Area di rispetto nella fascia a 300 m. Il lago è gestito da ENEL con permesso specifico.",
+        "coordinates": {
+          "lat": 46.063,
+          "lng": 8.127
+        },
+        "locality": "Antrona Schieranco"
+      },
+      {
+        "id": "antrona-lm2",
+        "type": "access",
+        "name": "Frana del 1642",
+        "description": "Sito storico: enorme frana che ostruì la valle creando un lago effimero. Punto di interest geologico con pannello esplicativo.",
+        "coordinates": {
+          "lat": 46.07,
+          "lng": 8.13
+        },
+        "locality": "Antrona Schieranco"
+      },
+      {
+        "id": "antrona-lm3",
+        "type": "trail",
+        "name": "Sentiero Alta Val Antrona",
+        "description": "Sentiero alpino E/EE verso i rifugi superiori. Accede a tratti del torrente alto con fario selvatica di alta quota.",
+        "coordinates": {
+          "lat": 46.075,
+          "lng": 8.133
+        },
+        "locality": "Antronapiana"
+      }
     ]
   },
   {
@@ -3011,6 +3539,63 @@
         45.597,
         7.797
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "lys-lm1",
+        "type": "bridge",
+        "name": "Ponte Romano di Pont-Saint-Martin",
+        "description": "Magnifico arco romano del I sec. a.C. Monumento storico. Zona di pesca a valle — accesso dalla sponda sinistra.",
+        "coordinates": {
+          "lat": 45.6,
+          "lng": 7.796
+        },
+        "locality": "Pont-Saint-Martin"
+      },
+      {
+        "id": "lys-lm2",
+        "type": "waterfall",
+        "name": "Cascata di Fontainemore",
+        "description": "Cascata principale della bassa valle. La buca a valle è uno spot storico per la fario. Accesso da piazzola sulla SS 26.",
+        "coordinates": {
+          "lat": 45.683,
+          "lng": 7.847
+        },
+        "locality": "Fontainemore"
+      },
+      {
+        "id": "lys-lm3",
+        "type": "pool",
+        "name": "Buca di Issime",
+        "description": "Grande buca profonda con fondo di sabbia. Zona di riposo principale della fario in estate. Pesca a ninfa sul fondo.",
+        "coordinates": {
+          "lat": 45.715,
+          "lng": 7.855
+        },
+        "locality": "Issime"
+      },
+      {
+        "id": "lys-lm4",
+        "type": "access",
+        "name": "Accesso Gaby",
+        "description": "Parcheggio nella piazza del paese con sentiero segnato fino al fiume (10 min). Tratto a libero ben frecuentato.",
+        "coordinates": {
+          "lat": 45.738,
+          "lng": 7.856
+        },
+        "locality": "Gaby"
+      },
+      {
+        "id": "lys-lm5",
+        "type": "confluence",
+        "name": "Confluenza Doire",
+        "description": "Immissario laterale. Area di confluenza con correnti miste. Zona notoriamente ricca nei mesi di maggio-giugno.",
+        "coordinates": {
+          "lat": 45.782,
+          "lng": 7.858
+        },
+        "locality": "Gressoney-La-Trinité"
+      }
     ]
   },
   {
@@ -3202,6 +3787,30 @@
         45.503,
         7.484
       ]
+    ],
+    "landmarks": [
+      {
+        "id": "lagoNero-lm1",
+        "type": "trail",
+        "name": "Sentiero dal Parcheggio",
+        "description": "Unico accesso al lago: sentiero alpino 1h30 dal parcheggio di Campiglia Soana. Dislivello +650 m. Equipaggiamento alpino necessario.",
+        "coordinates": {
+          "lat": 45.496,
+          "lng": 7.482
+        },
+        "locality": "Campiglia Soana"
+      },
+      {
+        "id": "lagoNero-lm2",
+        "type": "access",
+        "name": "Morena Glaciale",
+        "description": "Grande morena che sbarra la valle. Vista sul lago e sulle pareti del Gran Paradiso. Zona di osservazione fauna alpina.",
+        "coordinates": {
+          "lat": 45.503,
+          "lng": 7.484
+        },
+        "locality": "Campiglia Soana"
+      }
     ]
   }
 ]

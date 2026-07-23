@@ -366,3 +366,103 @@
 .ex-spot-popup-desc  { color: #cbd5e1; margin-top: 6px; font-size: 12px; line-height: 1.5; }
 .ex-spot-popup-link  { display: inline-block; margin-top: 10px; color: #3b82f6; font-weight: 700; font-size: 12px; }
 .ex-popup-score      { color: #22c55e; font-weight: 700; }
+
+/* ─────────────────────────────────────────────────────────
+   LAYER TOGGLE STRIP
+   ─────────────────────────────────────────────────────── */
+.ex-layers-strip {
+  flex-shrink: 0;
+  display: flex; align-items: center; gap: 6px; overflow-x: auto;
+  scrollbar-width: none; padding: 5px 14px;
+  background: rgba(7,11,18,.95);
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  z-index: 1000;
+}
+.ex-layers-strip::-webkit-scrollbar { display: none; }
+.ex-layers-label {
+  flex-shrink: 0; font-size: 10px; color: #475569;
+  font-weight: 700; text-transform: uppercase; letter-spacing: .5px;
+}
+.ex-layer-btn {
+  flex-shrink: 0; padding: 4px 11px; border-radius: 14px;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+  color: #475569; font-size: 12px; font-weight: 600; cursor: pointer;
+  transition: all .15s; white-space: nowrap; opacity: .6;
+}
+.ex-layer-btn.active {
+  background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18);
+  color: #e2e8f0; opacity: 1;
+}
+
+/* ─────────────────────────────────────────────────────────
+   JOURNEY BUTTON
+   ─────────────────────────────────────────────────────── */
+.ex-journey-btn {
+  flex-shrink: 0;
+  padding: 5px 12px; border-radius: 14px; font-size: 11px; font-weight: 700;
+  background: rgba(37,99,235,.12); border: 1px solid rgba(37,99,235,.3);
+  color: #93c5fd; cursor: pointer; transition: all .15s; white-space: nowrap;
+  font-family: inherit;
+}
+.ex-journey-btn.active {
+  background: rgba(239,68,68,.12); border-color: rgba(239,68,68,.35);
+  color: #fca5a5;
+}
+.ex-journey-btn:hover { filter: brightness(1.2); }
+
+/* ─────────────────────────────────────────────────────────
+   LANDMARK MARKERS (map)
+   ─────────────────────────────────────────────────────── */
+.ex-landmark-marker {
+  width: 28px; height: 28px; border-radius: 8px;
+  background: rgba(9,20,45,.9);
+  border: 1.5px solid var(--lc, #e2e8f0);
+  display: flex; align-items: center; justify-content: center; font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.6);
+  transition: transform .15s;
+}
+.ex-landmark-marker:hover { transform: scale(1.2); }
+
+/* ─────────────────────────────────────────────────────────
+   LANDMARK POPUP
+   ─────────────────────────────────────────────────────── */
+.ex-landmark-popup { font-size: 13px; min-width: 180px; }
+.ex-landmark-popup-type { font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
+.ex-landmark-popup-name { font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #f1f5f9; }
+.ex-landmark-popup-desc { color: #cbd5e1; line-height: 1.55; font-size: 12px; }
+.ex-landmark-popup-loc  { margin-top: 6px; font-size: 11px; color: #64748b; }
+
+/* ─────────────────────────────────────────────────────────
+   LOCALITY PANEL — section header
+   ─────────────────────────────────────────────────────── */
+.ex-locality-section-hdr {
+  padding: 10px 16px 6px;
+  font-size: 12px; font-weight: 700; color: #94a3b8;
+  text-transform: uppercase; letter-spacing: .4px;
+}
+.ex-locality-section-hdr:not(:first-child) {
+  border-top: 1px solid rgba(255,255,255,.06);
+  margin-top: 8px; padding-top: 14px;
+}
+
+/* ─────────────────────────────────────────────────────────
+   LANDMARK CARDS (drawer)
+   ─────────────────────────────────────────────────────── */
+.ex-landmark-card {
+  display: flex; gap: 12px; align-items: flex-start;
+  margin: 4px 12px; padding: 12px 14px;
+  background: rgba(15,20,30,.9);
+  border: 1px solid rgba(255,255,255,.07);
+  border-left: 3px solid var(--lc, #e2e8f0);
+  border-radius: 12px; transition: border-color .15s;
+}
+.ex-landmark-card:hover { border-color: rgba(255,255,255,.15); }
+.ex-landmark-card-left { display: flex; flex-direction: column; align-items: center; gap: 3px; flex-shrink: 0; }
+.ex-landmark-card-icon { font-size: 20px; line-height: 1; }
+.ex-landmark-card-type {
+  font-size: 9px; font-weight: 700; color: #475569;
+  text-transform: uppercase; letter-spacing: .4px; text-align: center;
+}
+.ex-landmark-card-body { flex: 1; }
+.ex-landmark-card-name { font-size: 13px; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; }
+.ex-landmark-card-desc { font-size: 12px; color: #94a3b8; line-height: 1.55; }

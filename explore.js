@@ -14,7 +14,24 @@ let explorerMap   = null;
 /* ── Map layer groups (cleared/redrawn independently) ─── */
 const LG = {};  // filled after map init
 
+/* ── Layer visibility state ────────────────────────────── */
+const LAYER_VIS = { spots:true, landmarks:true, localities:true, parking:true };
+
+/* ── Journey state ──────────────────────────────────────── */
+let journeyTimer = null;
+let journeyIdx   = 0;
+
 /* ── Config ────────────────────────────────────────────── */
+const LANDMARK_TYPES = {
+  bridge:     { emoji:'🌉', color:'#f0abfc', label:'Ponte'      },
+  waterfall:  { emoji:'💦', color:'#67e8f9', label:'Cascata'    },
+  pool:       { emoji:'🌀', color:'#93c5fd', label:'Buca'       },
+  trail:      { emoji:'🥾', color:'#86efac', label:'Sentiero'   },
+  access:     { emoji:'🛤️', color:'#fde68a', label:'Accesso'   },
+  confluence: { emoji:'🔀', color:'#fb923c', label:'Confluenza' },
+  dam:        { emoji:'🏗️', color:'#f87171', label:'Diga'      },
+};
+
 const ZONE_COLORS = {
   libero:              { color:'#22c55e', label:'Libero',             emoji:'🟢' },
   riserva_turistica:   { color:'#f97316', label:'Riserva turistica',  emoji:'🟠' },
@@ -41,6 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   drawOverview();
   renderList(allRivers);
   initFilters();
+  initLayerToggles();
   initDrawer();
   openDrawerDefault();
 });
@@ -59,7 +77,7 @@ function initMap() {
   }).addTo(explorerMap);
 
   // Create layer groups for independent management
-  ['overview','zoneLines','localities','spots','user'].forEach(k => {
+  ['overview','zoneLines','localities','spots','landmarks','parking','user'].forEach(k => {
     LG[k] = L.layerGroup().addTo(explorerMap);
   });
 }
@@ -116,9 +134,10 @@ function selectRiver(river) {
   });
 
   drawZonePolylines(river);
-  drawLocalityMarkers(river);
-  drawSpotMarkers(river);
-  drawParkingMarkers(river);
+  if(LAYER_VIS.localities) drawLocalityMarkers(river);
+  if(LAYER_VIS.spots)      drawSpotMarkers(river);
+  if(LAYER_VIS.parking)    drawParkingMarkers(river);
+  if(LAYER_VIS.landmarks)  drawLandmarkMarkers(river);
 
   // Fit bounds
   const pts = river.polyline && river.polyline.length > 0 ? river.polyline : river.coordinates ? [[river.coordinates.lat, river.coordinates.lng]] : null;
@@ -240,12 +259,34 @@ function drawParkingMarkers(river) {
       html:'<div class="ex-parking-marker">🅿️</div>', className:'', iconSize:[24,24], iconAnchor:[12,12]
     });
     L.marker([s.parking.coordinates.lat, s.parking.coordinates.lng], { icon:pIcon })
-      .addTo(LG.spots)
+      .addTo(LG.parking)
       .bindPopup(`
         <div class="ex-spot-popup">
           <div class="ex-spot-popup-name">${s.parking.name}</div>
           <div>${s.parking.description}</div>
           <div class="ex-spot-popup-walk">📏 ${s.parking.distanceMeters} m dallo spot "${s.name}"</div>
+        </div>
+      `);
+  });
+}
+
+/* ── Landmark markers ───────────────────────────────────── */
+function drawLandmarkMarkers(river) {
+  (river.landmarks || []).forEach(lm => {
+    if(!lm.coordinates) return;
+    const cfg = LANDMARK_TYPES[lm.type] || { emoji:'📌', color:'#e2e8f0', label:'Luogo' };
+    const icon = L.divIcon({
+      html: `<div class="ex-landmark-marker" style="--lc:${cfg.color}"><span>${cfg.emoji}</span></div>`,
+      className:'', iconSize:[30,30], iconAnchor:[15,15]
+    });
+    L.marker([lm.coordinates.lat, lm.coordinates.lng], { icon })
+      .addTo(LG.landmarks)
+      .bindPopup(`
+        <div class="ex-landmark-popup">
+          <div class="ex-landmark-popup-type">${cfg.emoji} ${cfg.label}</div>
+          <div class="ex-landmark-popup-name">${lm.name}</div>
+          <div class="ex-landmark-popup-desc">${lm.description}</div>
+          ${lm.locality ? `<div class="ex-landmark-popup-loc">📍 vicino a ${lm.locality}</div>` : ''}
         </div>
       `);
   });
@@ -301,6 +342,13 @@ function showDetailView(river) {
     locRail.appendChild(chip);
   });
 
+  // Wire journey button
+  const jBtn = document.getElementById('ex-journey-btn');
+  if(jBtn) {
+    jBtn.textContent = '▶ Segui il fiume';
+    jBtn.onclick = () => startJourney(river);
+  }
+
   renderPermitsMini(river);
   document.getElementById('ex-locality-spots').innerHTML =
     `<div class="ex-locality-hint">👆 Tocca una <strong>località</strong> o uno <strong>spot 🎣</strong> sulla mappa per i dettagli</div>`;
@@ -322,17 +370,44 @@ function focusLocality(river, loc) {
 
   const el = document.getElementById('ex-locality-spots');
 
-  if(nearby.length === 0) {
+  // Nearby landmarks (within 0.06°)
+  const nearbyLM = (river.landmarks || []).filter(lm => {
+    if(!lm.coordinates || !loc.coordinates) return false;
+    const dlat = Math.abs(lm.coordinates.lat - loc.coordinates.lat);
+    const dlng = Math.abs(lm.coordinates.lng - loc.coordinates.lng);
+    return Math.sqrt(dlat*dlat + dlng*dlng) < 0.06;
+  });
+
+  // Build landmark HTML
+  const landmarkHTML = nearbyLM.length > 0 ? `
+    <div class="ex-locality-section-hdr">🗺️ Luoghi vicino a <strong>${loc.name}</strong></div>
+    ${nearbyLM.map(lm => {
+      const cfg = LANDMARK_TYPES[lm.type] || { emoji:'📌', color:'#e2e8f0', label:'Luogo' };
+      return `<div class="ex-landmark-card" style="--lc:${cfg.color}">
+        <div class="ex-landmark-card-left">
+          <div class="ex-landmark-card-icon">${cfg.emoji}</div>
+          <div class="ex-landmark-card-type">${cfg.label}</div>
+        </div>
+        <div class="ex-landmark-card-body">
+          <div class="ex-landmark-card-name">${lm.name}</div>
+          <div class="ex-landmark-card-desc">${lm.description}</div>
+        </div>
+      </div>`;
+    }).join('')}
+  ` : '';
+
+  if(nearby.length === 0 && nearbyLM.length === 0) {
     el.innerHTML = `
       <div class="ex-locality-empty">
         <div>📍 <strong>${loc.name}</strong></div>
-        <div>${loc.description || 'Nessuno spot mappato in questa località.'}</div>
-      </div>`;
+        <div>${loc.description || 'Nessuno spot o luogo mappato in questa località.'}</div>
+      </div>
+      ${loc.description ? '' : ''}`;
     return;
   }
 
-  el.innerHTML = `
-    <div class="ex-locality-spots-header">🎣 Spot vicino a <strong>${loc.name}</strong></div>
+  const spotHTML = nearby.length > 0 ? `
+    <div class="ex-locality-section-hdr">🎣 Spot vicino a <strong>${loc.name}</strong></div>
     ${nearby.sort((a,b) => (b.fishingScore||0)-(a.fishingScore||0)).map(s => `
       <a class="ex-spot-card" href="river.html?id=${river.id}&spot=${s.id}">
         <div class="ex-spot-card-top">
@@ -352,9 +427,11 @@ function focusLocality(river, loc) {
           ${s.scenicView     ? '<span class="ex-stag">📸 Panoramico</span>'   : ''}
           ${!s.crowded       ? '<span class="ex-stag">🔇 Tranquillo</span>'   : ''}
         </div>
-        <div class="ex-spot-card-cta">Mostra sulla mappa →</div>
+        <div class="ex-spot-card-cta">Naviga a questo spot →</div>
       </a>
-    `).join('')}`;
+    `).join('')}` : '';
+
+  el.innerHTML = landmarkHTML + spotHTML;
 }
 
 function highlightLocality(name) {
@@ -464,6 +541,66 @@ function _permitBadge(p) {
   if(m.includes('speciale') || m.includes('mista'))
     return '<span class="ex-perm-badge ex-perm-badge--purple">🟣 Speciale</span>';
   return '<span class="ex-perm-badge ex-perm-badge--green">🟢 Libero</span>';
+}
+
+/* ── Layer toggles ──────────────────────────────────────── */
+function initLayerToggles() {
+  document.querySelectorAll('.ex-layer-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.layer;
+      LAYER_VIS[key] = !LAYER_VIS[key];
+      btn.classList.toggle('active', LAYER_VIS[key]);
+
+      if(!selectedRiver) return;
+      // Toggle visibility on the right layer group
+      if(key === 'spots')     { LAYER_VIS.spots     ? drawSpotMarkers(selectedRiver)     : LG.spots.clearLayers(); }
+      if(key === 'landmarks') { LAYER_VIS.landmarks ? drawLandmarkMarkers(selectedRiver) : LG.landmarks.clearLayers(); }
+      if(key === 'localities'){ LAYER_VIS.localities? drawLocalityMarkers(selectedRiver) : LG.localities.clearLayers(); }
+      if(key === 'parking')   { LAYER_VIS.parking   ? drawParkingMarkers(selectedRiver)  : LG.parking.clearLayers(); }
+    });
+  });
+}
+
+/* ── Journey mode ───────────────────────────────────────── */
+function startJourney(river) {
+  stopJourney();
+  const locs = [...(river.localities || [])].sort((a,b) => a.order - b.order);
+  if(!locs.length) return;
+  journeyIdx = 0;
+
+  const btn = document.getElementById('ex-journey-btn');
+  if(btn) { btn.textContent = '⏹ Stop'; btn.classList.add('active'); btn.onclick = stopJourney; }
+
+  openDrawerFull();
+  stepJourney(river, locs);
+}
+
+function stopJourney() {
+  if(journeyTimer) { clearTimeout(journeyTimer); journeyTimer = null; }
+  const btn = document.getElementById('ex-journey-btn');
+  if(btn && selectedRiver) {
+    btn.textContent = '▶ Segui il fiume';
+    btn.classList.remove('active');
+    btn.onclick = () => startJourney(selectedRiver);
+  }
+}
+
+function stepJourney(river, locs) {
+  if(journeyIdx >= locs.length) { stopJourney(); return; }
+  const loc = locs[journeyIdx++];
+
+  // Highlight chip + scroll into view
+  document.querySelectorAll('.ex-loc-chip').forEach(c => c.classList.remove('active'));
+  const chip = document.querySelector(`.ex-loc-chip[data-loc-name="${CSS.escape(loc.name)}"]`);
+  if(chip) { chip.classList.add('active'); chip.scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' }); }
+
+  // Pan map to locality
+  if(loc.coordinates) explorerMap.setView([loc.coordinates.lat, loc.coordinates.lng], 14, { animate:true });
+
+  // Show territory panel for this locality
+  focusLocality(river, loc);
+
+  journeyTimer = setTimeout(() => stepJourney(river, locs), 4000);
 }
 
 /* ── Filters ────────────────────────────────────────────── */
@@ -598,10 +735,13 @@ function initDrawer() {
 }
 
 function backToList() {
+  stopJourney();
   selectedRiver = null;
   LG.zoneLines.clearLayers();
   LG.localities.clearLayers();
   LG.spots.clearLayers();
+  LG.landmarks.clearLayers();
+  LG.parking.clearLayers();
   LG.overview.eachLayer(l => { if(l.setStyle) l.setStyle({ opacity:0.6, weight:4 }); });
   document.getElementById('ex-list-view').style.display   = 'block';
   document.getElementById('ex-detail-view').style.display = 'none';

@@ -31,6 +31,15 @@
   <button class="ex-filter" data-filter="type-lago">🏞 Laghi</button>
 </div>
 
+<!-- ── Layer toggle strip ─────────────────────────────────── -->
+<div class="ex-layers-strip" id="ex-layers-strip">
+  <span class="ex-layers-label">Mappa:</span>
+  <button class="ex-layer-btn active" data-layer="spots">🎣 Spot</button>
+  <button class="ex-layer-btn active" data-layer="landmarks">🗺️ Luoghi</button>
+  <button class="ex-layer-btn active" data-layer="localities">📍 Località</button>
+  <button class="ex-layer-btn active" data-layer="parking">🅿️ Parcheggi</button>
+</div>
+
 <!-- ── Map ───────────────────────────────────────────────── -->
 <div id="explorer-map"></div>
 
@@ -64,9 +73,12 @@
     <div class="ex-zones-strip" id="ex-zones"></div>
 
     <!-- Locality path navigation -->
-    <div class="ex-section-label">
-      <span class="ex-section-icon">⛰️</span>
-      Percorso — dalla sorgente alla confluenza
+    <div class="ex-section-label" style="justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:6px">
+        <span class="ex-section-icon">⛰️</span>
+        Percorso — dalla sorgente alla confluenza
+      </div>
+      <button class="ex-journey-btn" id="ex-journey-btn">▶ Segui il fiume</button>
     </div>
     <div class="ex-localities-rail" id="ex-localities"></div>
 
