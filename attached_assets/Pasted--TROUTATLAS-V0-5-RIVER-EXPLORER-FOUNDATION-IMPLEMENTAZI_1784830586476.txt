@@ -1,0 +1,428 @@
+# TROUTATLAS V0.5
+## RIVER EXPLORER FOUNDATION
+### IMPLEMENTAZIONE COMPLETA DEL NUOVO SISTEMA DI ESPLORAZIONE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ IMPORTANTE
+
+Questa implementazione NON deve modificare o rompere nessuna funzionalità esistente.
+
+NON modificare:
+
+• Homepage
+• Fishing Intelligence
+• Fishing Score AI
+• Meteo
+• Condizioni Idriche
+• ATLAS AI
+• Tecniche Consigliate
+• Sistema Preferiti
+• Ricerca esistente
+• Grafica globale
+• Tema
+• Navbar
+• Footer
+• PWA
+• Database attuale
+
+Tutto ciò che esiste deve continuare a funzionare esattamente come prima.
+
+River Explorer deve essere aggiunto come NUOVO MODULO indipendente ma perfettamente integrato.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# OBIETTIVO
+
+TroutAtlas non deve più essere soltanto un elenco di fiumi.
+
+Deve diventare una guida geografica della pesca.
+
+L'utente deve poter esplorare un territorio anche se non conosce assolutamente la zona.
+
+L'obiettivo è aiutare chi arriva in una regione sconosciuta a capire:
+
+• dove andare
+
+• quali fiumi esistono
+
+• quali valli attraversare
+
+• dove parcheggiare
+
+• dove iniziare a pescare
+
+• quali regolamenti esistono
+
+• quali permessi servono
+
+• quali spot sono più semplici
+
+L'interfaccia deve essere intuitiva anche per chi apre TroutAtlas per la prima volta.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# NUOVA ARCHITETTURA DEL DATABASE
+
+Preparare il database con questa gerarchia:
+
+Italia
+
+↓
+
+Regione
+
+↓
+
+Provincia
+
+↓
+
+Valle
+
+↓
+
+Corso d'acqua
+
+↓
+
+Località
+
+↓
+
+Tratto
+
+↓
+
+Spot
+
+↓
+
+Marker
+
+↓
+
+Fishing Intelligence
+
+↓
+
+Fishing Score
+
+↓
+
+Regolamenti
+
+↓
+
+Permessi
+
+↓
+
+Parcheggi
+
+↓
+
+Sentieri
+
+↓
+
+Servizi
+
+↓
+
+Punti panoramici
+
+↓
+
+Note
+
+La struttura deve essere facilmente estendibile.
+
+L'aggiunta di nuovi fiumi non deve richiedere modifiche al codice.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# HOME RIVER EXPLORER
+
+Creare una nuova sezione dedicata.
+
+L'utente può iniziare l'esplorazione scegliendo:
+
+📍 Regione
+
+🏔 Valle
+
+🌊 Lago
+
+🏞 Fiume
+
+💧 Torrente
+
+oppure utilizzare la funzione
+
+📍 Intorno a me
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# FILTRO REGIONI
+
+Aggiungere un filtro:
+
+Filtra per Regione
+
+Selezionando una regione mostrare:
+
+• numero corsi d'acqua
+
+• numero spot
+
+• specie principali
+
+• valli disponibili
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# VALLI
+
+Ogni regione dovrà mostrare le proprie valli.
+
+Esempio:
+
+Valsesia
+
+Val Sermenza
+
+Val Mastallone
+
+Valle Elvo
+
+ecc.
+
+Questo aiuta gli utenti a comprendere il territorio.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA DEL FIUME
+
+Ogni fiume deve avere una pagina dedicata.
+
+Esempio:
+
+Fiume Sesia
+
+La pagina deve mostrare:
+
+• descrizione
+
+• mappa
+
+• lunghezza
+
+• località attraversate
+
+• specie ittiche
+
+• Fishing Score medio
+
+• stato generale
+
+• regolamenti
+
+• permessi
+
+• località
+
+• spot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# IL FIUME DEVE ESSERE RAPPRESENTATO COME UN PERCORSO
+
+La mappa NON deve mostrare soltanto dei marker.
+
+Deve seguire il reale sviluppo del corso d'acqua.
+
+L'utente deve poter scorrere il fiume dalla sorgente verso valle.
+
+Ogni tratto deve essere chiaramente distinguibile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# LOCALITÀ
+
+Ogni località attraversata dal fiume deve comparire in ordine geografico.
+
+Esempio:
+
+Alagna
+
+↓
+
+Riva Valdobbia
+
+↓
+
+Campertogno
+
+↓
+
+Scopello
+
+↓
+
+Piode
+
+↓
+
+Varallo
+
+↓
+
+Quarona
+
+Ogni località è cliccabile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# SPOT
+
+Ogni località contiene uno o più spot.
+
+Ogni spot deve avere una propria scheda con:
+
+• coordinate GPS
+
+• descrizione
+
+• accessibilità
+
+• distanza dal parcheggio
+
+• difficoltà
+
+• tipo di acqua
+
+• profondità stimata
+
+• corrente
+
+• fondale
+
+• tecniche consigliate
+
+• mosche consigliate
+
+• periodo migliore
+
+• orario migliore
+
+• Fishing Score
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# MARKER
+
+Creare categorie distinte:
+
+🎣 Spot
+
+🅿️ Parcheggio
+
+🌉 Ponte
+
+🥾 Sentiero
+
+🌊 Pozza
+
+💧 Cascata
+
+📸 Punto panoramico
+
+⚠ Zona regolamentata
+
+🐟 Zona ripopolata
+
+🏕 Area sosta
+
+🚻 Servizi
+
+🍴 Rifugio o bar
+
+🏪 Negozio pesca
+
+Ogni marker deve avere una scheda informativa.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# RISERVE E REGOLAMENTI
+
+Per ogni corso d'acqua individuare, quando disponibili:
+
+• riserve turistiche
+
+• tratti no-kill
+
+• tratti liberi
+
+• zone a regolamento speciale
+
+• enti gestori
+
+• periodi di apertura
+
+• limitazioni
+
+• permessi richiesti
+
+Se disponibili da fonti ufficiali, aggiungere:
+
+• costo giornaliero
+
+• costo stagionale
+
+• dove acquistare il permesso
+
+• link ufficiale
+
+NON inventare dati.
+
+Se il dato non è reperibile mostrare:
+
+"Informazione non disponibile."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# FUNZIONE "INTORNO A ME"
+
+Aggiungere una funzione che utilizza la posizione approssimativa dell'utente (previo consenso) per mostrare:
+
+• fiumi vicini
+
+• torrenti vicini
+
+• laghi vicini
+
+• spot vicini
+
+Con filtri per raggio (10, 25, 50, 100, 200 km) e ordinamento per distanza, Fishing Score, accessibilità e presenza di parcheggio.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# INTEGRAZIONE
+
+River Explorer deve riutilizzare i componenti già esistenti (card, mappe, Fishing Score, meteo, ATLAS AI) senza duplicare codice.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# TEST FINALI
+
+Prima di terminare:
+
+- verificare che tutte le funzioni esistenti continuino a funzionare;
+- verificare che River Explorer non introduca errori;
+- verificare che i dati mancanti siano gestiti con messaggi chiari anziché con valori inventati;
+- mantenere lo stile premium coerente con il resto di TroutAtlas.
+
+OBIETTIVO FINALE:
+
+Creare le fondamenta di un sistema di esplorazione geografica estendibile, in cui aggiungere nuovi territori significhi soprattutto aggiungere dati e non riscrivere l'applicazione.

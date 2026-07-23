@@ -1,0 +1,196 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# SISTEMA LICENZE E PERMESSI
+
+Ogni corso d'acqua, lago o torrente deve contenere una sezione dedicata ai permessi e alle licenze.
+
+Questa sezione deve essere chiaramente visibile all'interno della pagina del corso d'acqua e, quando applicabile, anche nella pagina della singola località o dello spot.
+
+NON utilizzare dati inventati.
+
+Utilizzare esclusivamente informazioni ufficiali provenienti dagli enti gestori, associazioni riconosciute, province, regioni o siti istituzionali.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# CARD "PERMESSI E LICENZE"
+
+Creare una card premium con il seguente layout.
+
+🎫 Permessi e Licenze
+
+All'interno mostrare:
+
+• Tipo di gestione del tratto (libero, riserva turistica, no-kill, gestione speciale, ecc.)
+
+• Ente gestore
+
+• Licenza regionale richiesta (Sì / No / Dipende)
+
+• Permesso giornaliero (se previsto)
+
+• Permesso stagionale (se previsto)
+
+• Eventuali limitazioni
+
+• Periodi di apertura
+
+• Numero massimo di catture (quando previsto)
+
+• Obbligo di rilascio (quando previsto)
+
+• Link al regolamento ufficiale
+
+Se un'informazione non è disponibile, visualizzare:
+
+"Informazione non disponibile"
+
+senza generare dati fittizi.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PULSANTI AZIONE
+
+Alla fine della card inserire tre pulsanti ben visibili.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🟢 ACQUISTA IL PERMESSO
+
+Se esiste un sito ufficiale dell'ente che vende il permesso:
+
+aprire direttamente quella pagina.
+
+Non utilizzare siti non ufficiali.
+
+Se il permesso è acquistabile solo in negozio, aprire invece la scheda del punto vendita più vicino.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🔵 MI SERVE LA LICENZA?
+
+Premendo questo pulsante si apre una finestra informativa.
+
+La finestra deve spiegare in modo semplice:
+
+• serve solo il permesso?
+
+• serve anche la licenza regionale?
+
+• servono entrambi?
+
+• esistono eccezioni?
+
+• dove ottenere la licenza?
+
+L'obiettivo è aiutare anche un pescatore principiante.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+🟠 REGOLAMENTO UFFICIALE
+
+Aprire direttamente il regolamento ufficiale pubblicato dall'ente competente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PUNTI VENDITA
+
+Quando disponibili mostrare anche:
+
+🏪 Dove acquistare il permesso
+
+Per ogni punto vendita visualizzare:
+
+• nome
+
+• indirizzo
+
+• distanza
+
+• telefono (quando disponibile)
+
+• orari (quando disponibili)
+
+• pulsante "Portami qui"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PREPARA LA TUA USCITA
+
+Creare una nuova card premium chiamata:
+
+🧳 Prepara la tua uscita
+
+Questa sezione deve riassumere tutte le informazioni necessarie per affrontare una giornata di pesca nello spot selezionato.
+
+Mostrare:
+
+📍 Dove parcheggiare
+
+🥾 Tempo di cammino fino allo spot
+
+🎫 Permesso richiesto
+
+💶 Costo del permesso (se disponibile)
+
+📅 Periodo di apertura
+
+🌦️ Meteo previsto
+
+🌊 Condizioni dell'acqua
+
+🎣 Tecnica consigliata
+
+🪰 Esche o mosche consigliate
+
+👢 Equipaggiamento consigliato (es. waders sì/no)
+
+🕒 Fascia oraria consigliata
+
+🐟 Specie presenti
+
+📋 Regolamenti principali
+
+🧭 Pulsante "Portami qui"
+
+La card deve essere leggibile, sintetica e pensata per essere consultata rapidamente anche direttamente sul fiume.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# INTEGRAZIONE CON ATLAS AI
+
+ATLAS AI deve poter utilizzare automaticamente queste informazioni.
+
+Esempi:
+
+"Mi serve un permesso per pescare qui?"
+
+"Dove posso acquistarlo?"
+
+"Serve la licenza regionale?"
+
+"Quali sono le limitazioni?"
+
+"Posso trattenere le trote?"
+
+L'assistente deve rispondere utilizzando esclusivamente i dati presenti nel database di TroutAtlas o provenienti da fonti ufficiali.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# OBIETTIVO
+
+L'utente non deve più uscire da TroutAtlas per:
+
+• capire se può pescare
+
+• sapere quale permesso serve
+
+• conoscere il costo (se disponibile)
+
+• trovare il regolamento
+
+• acquistare il permesso
+
+• capire se serve una licenza
+
+• preparare tutta la propria uscita di pesca
+
+TroutAtlas deve diventare il punto di riferimento unico per pianificare una giornata di pesca, dalla scelta dello spot fino alla gestione dei permessi e delle informazioni pratiche.
