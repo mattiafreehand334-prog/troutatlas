@@ -1,0 +1,14 @@
+Serving HTTP on 0.0.0.0 port 5000 (http://0.0.0.0:5000/) ...
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /?nativeBrowserPresentationStyle=fullScreen HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /cervo_1.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /sessera_1.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /style.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /manifest.json HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /database.json HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:36] "GET /sesia_1.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:43] "GET /elvo_1.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:46] "GET /mappa.html HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:46] "GET /mappa.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2026 13:29:47] "GET /sw.js HTTP/1.1" 200 -

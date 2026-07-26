@@ -1,0 +1,348 @@
+# TROUTATLAS V0.6
+# PREMIUM ONBOARDING EXPERIENCE
+# GUIDA INTRODUTTIVA INTERATTIVA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ IMPORTANTE
+
+NON modificare alcuna funzionalità esistente.
+
+NON modificare:
+
+• River Explorer
+• Fishing Intelligence
+• Fishing Score AI
+• ATLAS AI
+• Home
+• Database
+• Mappe
+• Favoriti
+• Negozi
+• Meteo
+• Condizioni Idriche
+• Tema Grafico
+
+L'unico obiettivo è creare un sistema di onboarding professionale completamente integrato con TroutAtlas.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# OBIETTIVO
+
+Quando un nuovo utente apre TroutAtlas per la prima volta deve essere accompagnato in una breve esperienza introduttiva.
+
+L'obiettivo NON è mostrare semplicemente delle immagini.
+
+L'obiettivo è insegnare ad utilizzare l'applicazione.
+
+L'esperienza deve ricordare l'onboarding delle applicazioni Apple.
+
+Elegante.
+
+Pulita.
+
+Moderna.
+
+Con animazioni fluide.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PRIMO AVVIO
+
+L'onboarding deve comparire SOLO al primo avvio.
+
+Una volta completato salvare lo stato.
+
+L'utente non deve più rivederlo.
+
+Nelle impostazioni aggiungere:
+
+📖 Guida introduttiva
+
+che permette di riavviare il tutorial in qualsiasi momento.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ASPETTO GRAFICO
+
+L'intero schermo viene oscurato con uno sfondo trasparente.
+
+Al centro compare una grande card premium.
+
+Utilizzare lo stesso stile grafico di TroutAtlas.
+
+La card contiene:
+
+• grande immagine o screenshot
+
+• titolo
+
+• descrizione
+
+• indicatore pagina
+
+• pulsanti
+
+Gli angoli devono essere arrotondati.
+
+Le animazioni morbide.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# INDICATORE PAGINE
+
+Mostrare sempre la progressione.
+
+Esempio:
+
+● ○ ○ ○ ○ ○ ○ ○
+
+oppure
+
+1 / 8
+
+L'utente deve capire immediatamente quanto manca alla fine.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PULSANTI
+
+In basso:
+
+◀ Indietro
+
+Avanti ▶
+
+Salta
+
+Alla fine:
+
+🚀 Inizia ad esplorare
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 1
+
+👋 Benvenuto su TroutAtlas
+
+Screenshot della Home.
+
+Testo:
+
+"Benvenuto in TroutAtlas.
+
+Scopri fiumi, torrenti e laghi, pianifica le tue uscite e lasciati guidare dall'intelligenza artificiale."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 2
+
+🏞 River Explorer
+
+Screenshot della sezione River Explorer.
+
+Testo:
+
+"Esplora il territorio seguendo il corso reale dei fiumi.
+
+Scopri località, spot, riserve di pesca, regolamenti, parcheggi e punti di interesse direttamente sulla mappa."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 3
+
+📍 Intorno a me
+
+Screenshot.
+
+Testo:
+
+"Trova automaticamente tutti gli spot entro il raggio che preferisci sfruttando la tua posizione."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 4
+
+🎣 Fishing Intelligence
+
+Screenshot.
+
+Testo:
+
+"Analizza condizioni dell'acqua, meteo, pressione, livelli idrometrici e Fishing Score prima di partire."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 5
+
+🤖 ATLAS AI
+
+Screenshot.
+
+Testo:
+
+"ATLAS AI conosce TroutAtlas e ti aiuta a scegliere dove pescare, quali tecniche usare e come preparare la tua uscita."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 6
+
+🎫 Permessi e Licenze
+
+Screenshot.
+
+Testo:
+
+"Consulta regolamenti, scopri se serve un permesso, visualizza i costi quando disponibili e raggiungi direttamente il sito ufficiale dell'ente gestore."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 7
+
+⭐ Preferiti
+
+Screenshot.
+
+Testo:
+
+"Salva i tuoi spot preferiti e ritrovali rapidamente ogni volta che vuoi."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PAGINA 8
+
+🚀 Sei pronto!
+
+Grande illustrazione finale.
+
+Testo:
+
+"Adesso conosci tutte le principali funzionalità di TroutAtlas.
+
+È il momento di iniziare ad esplorare."
+
+Pulsante:
+
+🚀 Inizia ad esplorare
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# TUTORIAL CONTESTUALE
+
+L'onboarding NON deve limitarsi a mostrare immagini.
+
+Ogni schermata deve poter evidenziare gli elementi reali dell'interfaccia.
+
+Ad esempio:
+
+River Explorer
+
+↓
+
+aprire realmente River Explorer
+
+↓
+
+oscurare il resto dello schermo
+
+↓
+
+illuminare il pulsante o la sezione spiegata
+
+↓
+
+mostrare una card con la spiegazione.
+
+Lo stesso comportamento deve essere disponibile per:
+
+• Home
+
+• Fishing Intelligence
+
+• ATLAS AI
+
+• Permessi
+
+• Preferiti
+
+• Intorno a me
+
+L'effetto deve ricordare una visita guidata interattiva.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ANIMAZIONI
+
+Utilizzare animazioni eleganti.
+
+Fade
+
+Zoom
+
+Slide
+
+Highlight
+
+Glow
+
+Transizioni fluide.
+
+Evitare movimenti bruschi.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# RESPONSIVE
+
+Il tutorial deve funzionare perfettamente su:
+
+Smartphone
+
+Tablet
+
+Desktop
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PRESTAZIONI
+
+Caricare gli screenshot in modo ottimizzato.
+
+Precaricare solo la schermata successiva.
+
+Non rallentare il caricamento dell'app.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ACCESSIBILITÀ
+
+Consentire la navigazione anche tramite tastiera.
+
+Garantire un contrasto elevato.
+
+Rendere il testo facilmente leggibile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# OBIETTIVO FINALE
+
+L'utente deve percepire TroutAtlas come un'applicazione professionale fin dal primo avvio.
+
+Il tutorial deve essere piacevole, moderno e utile.
+
+Alla fine del tour l'utente deve sapere:
+
+• come esplorare il territorio;
+
+• come utilizzare River Explorer;
+
+• come usare ATLAS AI;
+
+• come leggere Fishing Intelligence;
+
+• come trovare spot vicini;
+
+• come consultare regolamenti e permessi;
+
+• come salvare i preferiti.
+
+Il risultato finale deve ricordare l'onboarding delle migliori applicazioni moderne, con una grafica premium perfettamente integrata nello stile di TroutAtlas.

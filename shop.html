@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negozio partner — TroutAtlas</title>
+  <link rel="stylesheet" href="style.css?v=20">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <a class="back-btn" href="negozi.html">← Tutti i negozi</a>
+    <h1>🏪 Negozio partner</h1>
+    <p>Risorse selezionate per pescare meglio sul territorio.</p>
+  </div>
+</div>
+
+<main class="shop-profile-main" id="shop-profile" aria-live="polite">
+  <div class="empty-state"><div class="icon">🎣</div><p>Caricamento del negozio…</p></div>
+</main>
+
+<nav class="bottom-nav">
+  <a class="bnav-item" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi</a>
+  <a class="bnav-item active" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item" href="mappa.html"><span class="bnav-icon">🗺️</span>Mappa</a>
+  <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
+</nav>
+
+<script src="shop.js?v=20"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('/sw.js?v=20');</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Serving HTTP on 0.0.0.0 port 5000 (http://0.0.0.0:5000/) ...
+127.0.0.1 - - [23/Jul/2026 17:43:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /database.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /sw.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /river.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /mappa.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /sesia_1.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /knots.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /negozi.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:20] "GET /trote.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /river.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /intelligence.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /cervo_1.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /mappa.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /knots.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /negozi.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /trote.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /atlas.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /atlas.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:21] "GET /negozi.json HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:25] "GET /river.html?id=sesia HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:25] "GET /sesia_2.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:25] "GET /sesia_3.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jul/2026 17:43:27] "GET /sw.js HTTP/1.1" 304 -

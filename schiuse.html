@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🦟 Schiuse — TroutAtlas</title>
+  <link rel="stylesheet" href="style.css?v=21">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <a class="back-btn" href="index.html">← Torna a TroutAtlas</a>
+    <h1>🦟 Hatch Tracker</h1>
+    <p>Previsioni smart per le schiuse e la pesca a mosca.</p>
+  </div>
+</div>
+
+<main class="page-main" id="schiuse-main">
+  <section class="detail-section">
+    <h2>🌊 Seleziona il corso d'acqua</h2>
+    <div class="schiuse-select-row">
+      <select id="river-select" class="form-input"></select>
+      <button id="refresh-btn" class="btn btn-primary">Aggiorna condizioni</button>
+    </div>
+    <p class="schiuse-note">Scegli un fiume o torrente per ottenere consigli di schiusa personalizzati in base a temperatura, corrente e specie.</p>
+  </section>
+
+  <section class="detail-section" id="conditions-card">
+    <div class="schiuse-header-row">
+      <div>
+        <div class="section-title">Condizioni correnti</div>
+        <h2 id="condition-status">Nessun torrente selezionato</h2>
+      </div>
+      <div class="schiuse-score" id="schiuse-score">0/100</div>
+    </div>
+    <div class="schiuse-info-grid" id="condition-grid"></div>
+    <div class="schiuse-hint" id="condition-hint">Seleziona un corso d'acqua per vedere il tracker.</div>
+  </section>
+
+  <section class="detail-section" id="active-hatch-section">
+    <div class="section-title">Schiuse attive</div>
+    <div class="schiuse-card-grid" id="active-hatch-list"></div>
+  </section>
+
+  <section class="detail-section" id="recommendation-section">
+    <div class="section-title">Consiglio premium</div>
+    <div class="schiuse-recommendation" id="recommendation-card">Seleziona un corso d'acqua per generare la strategia.</div>
+  </section>
+
+  <section class="detail-section" id="timeline-section">
+    <div class="section-title">Timeline stagionale</div>
+    <div class="schiuse-timeline" id="timeline-chart"></div>
+  </section>
+
+  <section class="detail-section" id="species-section">
+    <div class="section-title">Specie chiave</div>
+    <div class="schiuse-species-grid" id="species-grid"></div>
+  </section>
+
+  <section class="detail-section" id="source-section">
+    <div class="section-title">Fonti verificate</div>
+    <ul class="source-list">
+      <li>Wikimedia Commons per immagini pubbliche</li>
+      <li>Studi entomologici su Baetis, Ephemera e Trichoptera</li>
+      <li>Linee guida FIPSAS per le tecniche di pesca a mosca</li>
+    </ul>
+  </section>
+</main>
+
+<nav class="bottom-nav">
+  <a class="bnav-item" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi</a>
+  <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item" href="mappa.html"><span class="bnav-icon">🗺️</span>Mappa</a>
+  <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
+</nav>
+
+<script src="schiuse-data.js"></script>
+<script src="schiuse.js?v=1"></script>
+<script>if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=21');</script>
+</body>
+</html>

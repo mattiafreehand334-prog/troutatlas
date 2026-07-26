@@ -1,5 +1,73 @@
 [
   {
+    "id": "fishing-time",
+    "name": "Fishing Time",
+    "type": "Negozio di pesca",
+    "address": "Via Cairoli 14, 13011 Borgosesia (VC)",
+    "phone": "+39 350 525 5958",
+    "email": "info@fishingtimetempodipesca.com",
+    "speciality": "Pesca in Valsesia, spinning trota e attrezzatura tecnica",
+    "coordinates": { "lat": 45.7173542, "lng": 8.2757300 },
+    "partner": {
+      "official": true,
+      "profileEnabled": true
+    },
+    "coverImage": "https://fishingtimetempodipesca.com/cdn/shop/files/Copilot_20260425_114406.png?v=1777110543&width=1600",
+    "gallery": [
+      {
+        "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?cb_client=maps_sv.tactile&w=1200&h=800&pitch=17.299598632149525&panoid=tcEDxgFtU5KeNSvXCQff3w&yaw=113.39260894785485",
+        "alt": "Google Street View entrance at Fishing Time"
+      },
+      {
+        "src": "https://fishingtimetempodipesca.com/cdn/shop/files/valsesia-fishing-landscape.png?v=1773615469&width=1200",
+        "alt": "Fishing in Valsesia"
+      },
+      {
+        "src": "https://fishingtimetempodipesca.com/cdn/shop/files/fly-fishing-alpine-river.png?v=1773615721&width=1200",
+        "alt": "Fly fishing in alpine waters"
+      }
+    ],
+    "description": "Fishing Time è un punto di riferimento per chi pesca in Valsesia: attrezzatura selezionata, consigli esperti e supporto per uscire con sicurezza su fiumi, torrenti e laghi alpini.",
+    "specialties": [
+      "Fly Fishing",
+      "Trout Spinning",
+      "Fly Tying",
+      "Equipment",
+      "Accessories"
+    ],
+    "services": [
+      "Consulenza per la pesca in Valsesia",
+      "Permessi e informazioni sulle acque locali",
+      "Ritiro ordini in negozio",
+      "Supporto tecnico per attrezzatura da mosca e spinning"
+    ],
+    "hours": "Mar–Sab 08:30–19:30",
+    "websiteUrl": "https://fishingtimetempodipesca.com/",
+    "socials": {
+      "instagramUrl": "https://www.instagram.com/fishingtimetempodipesca/",
+      "facebookUrl": "https://www.facebook.com/61581780463265",
+      "youtubeUrl": "https://www.youtube.com/@fishingtimetempodipesca",
+      "pinterestUrl": "https://it.pinterest.com/fishingtimepesca/"
+    },
+    "brands": [
+      "Trabucco",
+      "Savage Gear",
+      "Rapture",
+      "K-Karp",
+      "Abu Garcia",
+      "Greys",
+      "Catgear",
+      "Herakles",
+      "Madcat",
+      "Loomis & Franklin",
+      "Berkley",
+      "Colmic",
+      "Penn",
+      "Camor",
+      "Parisi"
+    ]
+  },
+  {
     "id": "pescasport-biella",
     "name": "Pesca Sport Biella",
     "type": "Negozio di pesca",

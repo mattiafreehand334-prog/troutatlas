@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File [35m"<frozen runpy>"[0m, line [35m198[0m, in [35m_run_module_as_main[0m
+  File [35m"<frozen runpy>"[0m, line [35m88[0m, in [35m_run_code[0m
+  File [35m"/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/http/server.py"[0m, line [35m1345[0m, in [35m<module>[0m
+    [31mtest[0m[1;31m([0m
+    [31m~~~~[0m[1;31m^[0m
+        [1;31mHandlerClass=handler_class,[0m
+        [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+    ...<3 lines>...
+        [1;31mprotocol=args.protocol,[0m
+        [1;31m^^^^^^^^^^^^^^^^^^^^^^^[0m
+    [1;31m)[0m
+    [1;31m^[0m
+  File [35m"/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/http/server.py"[0m, line [35m1292[0m, in [35mtest[0m
+    with [31mServerClass[0m[1;31m(addr, HandlerClass)[0m as httpd:
+         [31m~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/socketserver.py"[0m, line [35m457[0m, in [35m__init__[0m
+    [31mself.server_bind[0m[1;31m()[0m
+    [31m~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/http/server.py"[0m, line [35m1339[0m, in [35mserver_bind[0m
+    return [31msuper().server_bind[0m[1;31m()[0m
+           [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/http/server.py"[0m, line [35m140[0m, in [35mserver_bind[0m
+    [31msocketserver.TCPServer.server_bind[0m[1;31m(self)[0m
+    [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^[0m
+  File [35m"/nix/store/qzc04a3npl70cyyy6flnnrb2ig3kayxm-python3-3.13.11/lib/python3.13/socketserver.py"[0m, line [35m478[0m, in [35mserver_bind[0m
+    [31mself.socket.bind[0m[1;31m(self.server_address)[0m
+    [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^[0m
+[1;35mOSError[0m: [35m[Errno 98] Address already in use[0m

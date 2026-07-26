@@ -1,0 +1,256 @@
+# TROUTATLAS V0.6.1
+# SMART ONBOARDING
+# TUTORIAL DINAMICO E CONTESTUALE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ IMPORTANTE
+
+NON modificare alcuna funzionalità esistente.
+
+NON modificare:
+
+• River Explorer
+• Fishing Intelligence
+• Fishing Score AI
+• ATLAS AI
+• Home
+• Database
+• Sistema Mappe
+• Favoriti
+• Permessi
+• Ricerca
+• Layout
+• Tema Grafico
+
+Questa implementazione deve solamente rendere il tutorial intelligente e contestuale.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# OBIETTIVO
+
+Il tutorial non deve limitarsi a spiegare l'app.
+
+Deve accompagnare realmente il nuovo utente nella scoperta delle funzionalità.
+
+Ogni schermata del tour deve essere collegata alla schermata reale di TroutAtlas.
+
+L'utente deve imparare utilizzando l'applicazione.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# TUTORIAL INTERATTIVO
+
+Quando viene mostrata una funzionalità, il tutorial deve:
+
+• Aprire automaticamente la relativa schermata.
+
+• Oscurare delicatamente il resto dell'interfaccia.
+
+• Evidenziare solamente la funzione spiegata.
+
+• Mostrare una card con la spiegazione.
+
+L'effetto deve ricordare una visita guidata professionale.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ESEMPIO
+
+Schermata:
+
+River Explorer
+
+↓
+
+Aprire River Explorer
+
+↓
+
+Illuminare la mappa
+
+↓
+
+Illuminare il pulsante principale
+
+↓
+
+Mostrare una card con la spiegazione.
+
+Solo dopo aver premuto "Avanti" passare alla funzione successiva.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# HIGHLIGHT
+
+L'elemento spiegato deve avere:
+
+• bordo luminoso
+
+• leggera animazione glow
+
+• piccolo effetto zoom
+
+• freccia indicatrice
+
+Il resto dell'interfaccia deve rimanere visibile ma leggermente oscurato.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# TUTORIAL ADATTIVO
+
+Il tutorial deve adattarsi allo stato dell'utente.
+
+Esempi:
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Caso 1
+
+La posizione è già stata concessa.
+
+Nella schermata "Intorno a me" mostra direttamente un esempio reale utilizzando la posizione disponibile.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Caso 2
+
+La posizione NON è stata concessa.
+
+Mostrare una breve spiegazione e il pulsante per concedere l'autorizzazione.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Caso 3
+
+ATLAS AI non è mai stato aperto.
+
+Alla relativa schermata invitare l'utente a fare la prima domanda.
+
+Suggerire ad esempio:
+
+"Dove mi consigli di pescare oggi?"
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Caso 4
+
+River Explorer non è mai stato utilizzato.
+
+Alla fine del tutorial aprire automaticamente River Explorer così l'utente può iniziare immediatamente ad esplorare.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PRIMA ESPERIENZA
+
+Terminato il tutorial, accompagnare l'utente nel primo utilizzo.
+
+Ad esempio:
+
+Aprire River Explorer.
+
+↓
+
+Mostrare:
+
+"Prova ad aprire il tuo primo fiume."
+
+↓
+
+Quando l'utente apre un fiume:
+
+"Perfetto!"
+
+↓
+
+Invitarlo ad aprire uno spot.
+
+↓
+
+Successivamente suggerire:
+
+"Prova anche ATLAS AI."
+
+L'obiettivo è trasformare il tutorial in una vera esperienza guidata.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# SUGGERIMENTI INTELLIGENTI
+
+Durante i primi giorni di utilizzo mostrare piccoli suggerimenti discreti.
+
+Ad esempio:
+
+💡 Hai già provato River Explorer?
+
+💡 Consulta Fishing Intelligence prima di partire.
+
+💡 Salva gli spot nei Preferiti.
+
+💡 Chiedi consiglio ad ATLAS AI.
+
+I suggerimenti devono poter essere chiusi definitivamente.
+
+Non devono risultare invasivi.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# MODALITÀ "SCOPRI LE NOVITÀ"
+
+Ogni volta che TroutAtlas riceve un aggiornamento importante, il sistema deve poter mostrare una breve introduzione alle nuove funzionalità.
+
+Esempio:
+
+🎉 Novità della versione 0.7
+
+• Nuovi fiumi
+
+• Nuovi spot
+
+• Nuove funzioni AI
+
+• Nuovi regolamenti
+
+Con pulsante:
+
+"Scopri le novità"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# PRESTAZIONI
+
+Il tutorial deve essere leggero.
+
+Non rallentare l'app.
+
+Caricare solamente ciò che serve.
+
+Le animazioni devono essere fluide anche su smartphone.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ACCESSIBILITÀ
+
+Consentire:
+
+• navigazione tramite tastiera
+
+• pulsanti facilmente cliccabili
+
+• contrasto elevato
+
+• testi leggibili
+
+• possibilità di saltare qualsiasi fase
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# OBIETTIVO FINALE
+
+Il tutorial deve dare la sensazione di essere accompagnati da una guida personale.
+
+L'utente non deve sentirsi davanti a una presentazione statica.
+
+Deve invece imparare realmente ad utilizzare TroutAtlas mentre esplora l'app.
+
+Il risultato finale deve ricordare l'onboarding delle migliori applicazioni moderne, con un'esperienza elegante, intuitiva e perfettamente integrata nello stile premium di TroutAtlas.

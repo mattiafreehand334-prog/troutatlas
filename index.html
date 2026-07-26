@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TroutAtlas</title>
-  <link rel="stylesheet" href="style.css?v=19">
+  <link rel="stylesheet" href="style.css?v=21">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -33,6 +33,30 @@
     <button class="tab" data-tab="lago">🏔️ Laghi</button>
     <button class="tab" data-tab="fly">🪰 A mosca</button>
   </div>
+
+  <div class="feature-card">
+    <div class="feature-card-copy">
+      <span class="feature-chip">Premium</span>
+      <h2>🦟 Schiuse</h2>
+      <p>Accedi al nuovo Hatch Tracker per consigli sulle migliori schiuse e i pattern da usare.</p>
+    </div>
+    <a class="btn btn-primary feature-cta" href="schiuse.html">Apri Hatch Tracker</a>
+  </div>
+</div>
+
+<div style="max-width:640px;margin:0 auto;padding:12px;">
+  <section id="latest-updates" class="updates" aria-label="Latest updates">
+    <h3>Aggiornamenti TroutAtlas</h3>
+    <ul id="updates-list" style="list-style:none;padding:0;margin:0;"> </ul>
+  </section>
+
+  <section id="hatch-preview" aria-label="Hatch Tracker Preview" style="margin-top:12px;">
+    <h3>Hatch Tracker — Oggi</h3>
+    <div id="hatch-content">
+      <p>Caricamento dati Hatch Tracker…</p>
+    </div>
+    <a class="btn" href="schiuse.html">Apri Hatch Tracker completo</a>
+  </section>
 </div>
 
 <main>
@@ -48,10 +72,46 @@
   <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
 </nav>
 
+<script src="schiuse-data.js"></script>
+<script src="updates.js"></script>
 <script src="app.js?v=19"></script>
 <script>
+  (function(){
+    try {
+      // Render latest updates
+      const updatesList = document.getElementById('updates-list');
+      if (window.LATEST_UPDATES && updatesList) {
+        LATEST_UPDATES.slice(0,5).forEach(u => {
+          const li = document.createElement('li');
+          li.style.padding = '8px 0';
+          li.innerHTML = `<strong>${u.title}</strong> — <small>${u.date}</small><div>${u.desc}</div>`;
+          updatesList.appendChild(li);
+        });
+      }
+
+      // Simple Hatch Tracker preview based on month
+      const hatchContent = document.getElementById('hatch-content');
+      if (window.SCHIUSE_SPECIES && hatchContent) {
+        const month = (new Date()).getMonth() + 1;
+        const active = SCHIUSE_SPECIES.filter(s => s.activeMonths.includes(month));
+        const species = active.length ? active[0] : SCHIUSE_SPECIES[0];
+        hatchContent.innerHTML = `
+          <div style=\"display:flex;gap:12px;align-items:center\"> 
+            <img src=\"${species.image}\" alt=\"${species.title}\" style=\"width:96px;height:64px;object-fit:cover;border-radius:6px\"> 
+            <div>
+              <strong>${species.title}</strong>
+              <div style=\"font-size:90%\">${species.summary}</div>
+              <div style=\"margin-top:6px;font-size:90%\"><em>Pattern:</em> ${species.pattern}</div>
+            </div>
+          </div>
+        `;
+      }
+    } catch(e){ console.error('Hatch/Updates render error', e); }
+  })();
+</script>
+<script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js?v=19');
+    navigator.serviceWorker.register('/sw.js?v=21');
   }
   window.addEventListener('online',  () => document.body.classList.remove('offline'));
   window.addEventListener('offline', () => document.body.classList.add('offline'));
