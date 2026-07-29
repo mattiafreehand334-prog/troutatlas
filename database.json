@@ -32,12 +32,12 @@
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte + Segnaline zona Valsesia",
       "season": "2ª domenica di marzo – 30 settembre",
-      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "rules": [
-        "Limite giornaliero: 5 trote, 2 temoli",
+        "Limite giornaliero: 5 trote",
         "Anzini vietati",
         "Esche naturali vietate in alcuni tratti",
-        "Catch & release consigliato per il Temolo"
+        "Rilascio obbligatorio di tutti gli esemplari di Temolo (Catch & Release obbligatorio)"
       ]
     },
     "spots": [
@@ -343,10 +343,10 @@
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS + segnaline zona Valsesia",
       "dailyCost": "Informazione non disponibile",
       "seasonCost": "Informazione non disponibile",
-      "buyUrl": "https://www.fipsasvercelli.it",
+      "buyUrl": "https://www.fipsas.it/contatti/",
       "regulationUrl": null,
-      "catchLimit": "5 trote, 2 temoli al giorno",
-      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "catchLimit": "5 trote al giorno (Temolo: rilascio obbligatorio)",
+      "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "catchAndRelease": false,
       "notes": "I tratti vicino a Scopello e Varallo richiedono il segnaline di zona. Verificare sempre il regolamento aggiornato presso la sezione locale FIPSAS.",
       "pointsOfSale": [
@@ -1444,11 +1444,11 @@
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
       "season": "2ª domenica di marzo – 30 settembre",
-      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "rules": [
-        "Limite giornaliero: 5 trote, 2 temoli",
+        "Limite giornaliero: 5 trote",
         "Tratto a mosca artificiale solo nel tratto superiore",
-        "Obbligatorio riportare il Temolo in acqua",
+        "Rilascio obbligatorio di tutti gli esemplari di Temolo (Catch & Release obbligatorio)",
         "Vietato l'amo triplo"
       ]
     },
@@ -1563,10 +1563,10 @@
       "seasonCost": "Informazione non disponibile",
       "buyUrl": "https://www.fipsas.it",
       "regulationUrl": null,
-      "catchLimit": "5 trote, 2 temoli al giorno",
-      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "catchLimit": "5 trote al giorno (Temolo: rilascio obbligatorio)",
+      "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "catchAndRelease": false,
-      "notes": "Tratto superiore riservato alla mosca artificiale. Obbligo di rilascio per il Temolo.",
+      "notes": "Tratto superiore riservato alla mosca artificiale. Rilascio obbligatorio di tutti gli esemplari di Temolo (Catch & Release obbligatorio).",
       "pointsOfSale": [
         {
           "name": "FIPSAS Biella",
@@ -1702,9 +1702,9 @@
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte + Segnaline zona Valsesia",
       "season": "2ª domenica di marzo – 30 settembre",
-      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "rules": [
-        "Limite giornaliero: 5 trote, 2 temoli",
+        "Limite giornaliero: 5 trote",
         "Torrente impervio: obbligatorio giubbotto di sicurezza",
         "Vietata la pesca in solitaria nei tratti di gola",
         "Esche naturali vietate"
@@ -1907,10 +1907,10 @@
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS + segnaline zona Valsesia",
       "dailyCost": "Informazione non disponibile",
       "seasonCost": "Informazione non disponibile",
-      "buyUrl": "https://www.fipsasvercelli.it",
+      "buyUrl": "https://www.fipsas.it/contatti/",
       "regulationUrl": null,
-      "catchLimit": "5 trote, 2 temoli al giorno",
-      "minSize": "Trota Fario: 22 cm | Temolo: 30 cm",
+      "catchLimit": "5 trote al giorno (Temolo: rilascio obbligatorio)",
+      "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "catchAndRelease": false,
       "notes": "Torrente impervio con tratti in gola. Obbligatorio il giubbotto di sicurezza. Vietata la pesca in solitaria nei tratti di gola.",
       "pointsOfSale": [
@@ -2812,9 +2812,9 @@
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
       "season": "2ª domenica di marzo – 30 settembre",
-      "minSize": "Trota Fario: 22 cm | Trota Marmorata: RILASCIO OBBLIGATORIO",
+      "minSize": "Trota Fario: 22 cm | Trota Marmorata: 60 cm (max 1 esemplare/anno)",
       "rules": [
-        "Trota Marmorata: catch & release assoluto (specie protetta)",
+        "Trota Marmorata: È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
         "Limite: 3 trote fario al giorno",
         "Guado obbligatorio con waders",
         "Vietate le esche naturali di origine animale"
@@ -2830,7 +2830,7 @@
           "lat": 46.058,
           "lng": 8.291
         },
-        "description": "Spettacolare salto naturale con buca profonda. Habitat ideale per la Trota Marmorata. Solo catch & release.",
+        "description": "Spettacolare salto naturale con buca profonda. Habitat ideale per la Trota Marmorata.",
         "fishingScore": 87,
         "techniques": [
           "streamer",
@@ -2842,7 +2842,7 @@
         "bigFish": true,
         "familyFriendly": false,
         "stocking": false,
-        "notes": "Habitat protetto della Marmorata. Approccio furtivo obbligatorio. C&R assoluto per la marmorata.",
+        "notes": "Habitat protetto della Marmorata. Approccio furtivo obbligatorio. È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
         "parking": {
           "name": "Piazzola Artogna Valle",
           "description": "Piazzola sterrata all'ingresso della valle, 6 auto",
@@ -2896,7 +2896,7 @@
             "type": "warning",
             "emoji": "⚠️",
             "name": "Zona protetta Marmorata",
-            "description": "C&R assoluto — non toccare le marmorate, sono specie protetta"
+            "description": "Regolamento specifico Marmorata: massimo un esemplare all'anno, solo se pari o superiore a 60 cm"
           }
         ]
       }
@@ -2941,8 +2941,8 @@
       "regulationUrl": null,
       "catchLimit": "3 trote fario al giorno",
       "minSize": "Trota Fario: 22 cm",
-      "catchAndRelease": true,
-      "notes": "Trota Marmorata: CATCH & RELEASE ASSOLUTO. Specie protetta — non trattenere né fotografare a lungo fuori dall'acqua.",
+      "catchAndRelease": false,
+      "notes": "Trota Marmorata: È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
       "pointsOfSale": [
         {
           "name": "Negozi di pesca VCO",
@@ -2960,7 +2960,7 @@
           0,
           2
         ],
-        "description": "C&R obbligatorio per la Marmorata. Specie protetta — nessuna eccezione."
+        "description": "Regolamento Marmorata: massimo un esemplare all'anno, solo se pari o superiore a 60 cm."
       }
     ],
     "polyline": [
@@ -3280,10 +3280,10 @@
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza Valle d'Aosta (diversa da Piemonte!)",
       "season": "3ª domenica di marzo – 30 settembre",
-      "minSize": "Trota Fario: 20 cm | Temolo: 28 cm",
+      "minSize": "Trota Fario: 20 cm | Temolo: rilascio obbligatorio",
       "rules": [
         "Attenzione: licenza VALDOSTANA separata da quella piemontese",
-        "Limite: 5 trote, 2 temoli al giorno",
+        "Limite: 5 trote al giorno (Temolo: rilascio obbligatorio)",
         "Torrente glaciale: livello variabile con le temperature",
         "Vietate le esche animali"
       ]
@@ -3476,8 +3476,8 @@
       "seasonCost": "Informazione non disponibile",
       "buyUrl": "https://www.regione.vda.it",
       "regulationUrl": "https://www.regione.vda.it",
-      "catchLimit": "5 trote, 2 temoli al giorno",
-      "minSize": "Trota Fario: 20 cm | Temolo: 28 cm",
+      "catchLimit": "5 trote al giorno (Temolo: rilascio obbligatorio)",
+      "minSize": "Trota Fario: 20 cm | Temolo: rilascio obbligatorio",
       "catchAndRelease": false,
       "notes": "⚠️ ATTENZIONE: La licenza piemontese NON è valida in Valle d'Aosta. Occorre la licenza valdostana separata. I pescatori piemontesi spesso dimenticano questa distinzione.",
       "pointsOfSale": [

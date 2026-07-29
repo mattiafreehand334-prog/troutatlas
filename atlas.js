@@ -645,8 +645,8 @@ function respRegolamenti(river, ctx) {
 • Stagione regolare: **2ª domenica di marzo – 30 settembre**
 • Licenza: **Tesserino FIPSAS + Licenza Regionale Piemonte**
 • Taglia minima Trota Fario: **22 cm** (20 cm in alcuni laghi)
-• Temolo: **30 cm**, spesso catch & release obbligatorio
-• Trota Marmorata: **sempre rilascio obbligatorio** (specie protetta)
+• Temolo: **Rilascio obbligatorio di tutti gli esemplari (Catch & Release obbligatorio)**
+• Trota Marmorata: **È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.**
 • Esche naturali: vietate in molti tratti (verificare localmente)
 
 ⚠️ Verifica sempre le norme aggiornate presso la sezione FIPSAS locale o il sito Regione Piemonte.`;

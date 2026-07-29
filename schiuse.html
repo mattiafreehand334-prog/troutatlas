@@ -23,7 +23,7 @@
       <select id="river-select" class="form-input"></select>
       <button id="refresh-btn" class="btn btn-primary">Aggiorna condizioni</button>
     </div>
-    <p class="schiuse-note">Scegli un fiume o torrente per ottenere consigli di schiusa personalizzati in base a temperatura, corrente e specie.</p>
+    <p class="schiuse-note">Scegli un corso d'acqua per ottenere una strategia di schiusa personalizzata basata su condizioni, specie e pattern disponibili.</p>
   </section>
 
   <section class="detail-section" id="conditions-card">
@@ -38,32 +38,59 @@
     <div class="schiuse-hint" id="condition-hint">Seleziona un corso d'acqua per vedere il tracker.</div>
   </section>
 
-  <section class="detail-section" id="active-hatch-section">
-    <div class="section-title">Schiuse attive</div>
+  <section class="detail-section">
+    <div class="section-title">Il regime alimentare della trota</div>
+    <div class="diet-grid" id="diet-grid"></div>
+    <div class="diet-detail-card" id="diet-detail-card">
+      <strong>Seleziona una categoria per scoprire perché le trote attaccano e come imitare la preda.</strong>
+      <p>Acqua, terra e piccoli pesci: la trota segue ciò che è disponibile e visibile in ogni settore del fiume.</p>
+    </div>
+  </section>
+
+  <section class="detail-section" id="local-biodiversity">
+    <div class="section-title">Biodiversità locale</div>
+    <div class="bio-overview" id="bio-overview"></div>
+    <div class="biodiversity-grid" id="biodiversity-grid"></div>
+  </section>
+
+  <section class="detail-section" id="today-hatch">
+    <div class="section-title">Schiusa di oggi</div>
+    <div class="hatch-summary" id="hatch-summary"></div>
     <div class="schiuse-card-grid" id="active-hatch-list"></div>
   </section>
 
-  <section class="detail-section" id="recommendation-section">
-    <div class="section-title">Consiglio premium</div>
-    <div class="schiuse-recommendation" id="recommendation-card">Seleziona un corso d'acqua per generare la strategia.</div>
-  </section>
-
   <section class="detail-section" id="timeline-section">
-    <div class="section-title">Timeline stagionale</div>
-    <div class="schiuse-timeline" id="timeline-chart"></div>
+    <div class="section-title">Timeline biologica</div>
+    <div class="timeline-grid" id="timeline-chart"></div>
   </section>
 
   <section class="detail-section" id="species-section">
-    <div class="section-title">Specie chiave</div>
-    <div class="schiuse-species-grid" id="species-grid"></div>
+    <div class="section-title">Specie in primo piano</div>
+    <p class="schiuse-note">Le specie di insetti attive che guidano la scelta dei pattern per oggi.</p>
+    <div class="species-grid" id="species-grid"></div>
+  </section>
+
+  <section class="detail-section" id="recommendation-section">
+    <div class="section-title">Match the hatch</div>
+    <div class="match-grid" id="recommendation-grid"></div>
+  </section>
+
+  <section class="detail-section" id="why-section">
+    <div class="section-title">Perché questa mosca?</div>
+    <div class="why-card" id="why-card"></div>
+  </section>
+
+  <section class="detail-section" id="fly-catalog-section">
+    <div class="section-title">Catalogo Mosche</div>
+    <div class="catalog-grid" id="fly-catalog"></div>
   </section>
 
   <section class="detail-section" id="source-section">
     <div class="section-title">Fonti verificate</div>
     <ul class="source-list">
       <li>Wikimedia Commons per immagini pubbliche</li>
-      <li>Studi entomologici su Baetis, Ephemera e Trichoptera</li>
-      <li>Linee guida FIPSAS per le tecniche di pesca a mosca</li>
+      <li>Guide entomologiche su efemere, sedge e chironomidi</li>
+      <li>Dati locali sul comportamento alimentare delle trote</li>
     </ul>
   </section>
 </main>
@@ -79,6 +106,6 @@
 
 <script src="schiuse-data.js"></script>
 <script src="schiuse.js?v=1"></script>
-<script>if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=21');</script>
+<script src="sw-register.js?v=22"></script>
 </body>
 </html>

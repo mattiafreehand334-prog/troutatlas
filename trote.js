@@ -30,30 +30,30 @@ const TROUT = [
   {
     name: "Temolo",
     latin: "Thymallus thymallus",
-    keep: "conditional",
-    keepLabel: "Catch & Release consigliato",
+    keep: "no",
+    keepLabel: "Catch & Release obbligatorio",
     image: "trout_temoli.jpg",
     desc: "Riconoscibile per la vistosa pinna dorsale a vela, colorata di blu-viola con puntini rossi. Predilige acque fredde, ossigenate e a corrente veloce. Specie in declino in molti fiumi alpini a causa dell'ibridazione e degli sbarramenti.",
-    minSize: "30 cm",
-    dailyLimit: "2 esemplari (in molte zone: rilascio obbligatorio)",
+    minSize: "Rilascio obbligatorio di tutti gli esemplari",
+    dailyLimit: "Nessun trattenimento consentito",
     habitat: "Grandi torrenti e fiumi alpini a corrente sostenuta",
     diet: "Insetti (soprattutto in superficie), ninfe, crostacei",
     season: "Marzo – Settembre",
-    notes: "⚠️ Specie sensibile. In Valsesia e in molte zone della Regione Piemonte il Temolo deve essere SEMPRE rimesso in acqua. Controllare i regolamenti locali prima di tenere un esemplare."
+    notes: "Rilascio obbligatorio di tutti gli esemplari (Catch & Release obbligatorio)."
   },
   {
     name: "Trota Marmorata",
     latin: "Salmo marmoratus",
-    keep: "no",
-    keepLabel: "Rilascio obbligatorio",
+    keep: "conditional",
+    keepLabel: "Tenibile (1 esemplare/anno)",
     image: "trout_marmorata2.jpg",
     desc: "Endemica dei fiumi adriatici del Nord Italia. La più grande trota europea, può superare i 10 kg. Livrea unica: fondo grigio-beige con marmorizzazione scura senza macchie rosse. Gravemente minacciata dall'ibridazione con la Trota Fario.",
-    minSize: "— (rilascio sempre obbligatorio)",
-    dailyLimit: "ZERO — specie protetta",
+    minSize: "60 cm",
+    dailyLimit: "Massimo 1 esemplare all'anno",
     habitat: "Grandi fiumi alpini (Tagliamento, Isonzo, Piave) — rara in Piemonte",
     diet: "Pesci, crostacei, anfibi, piccoli mammiferi",
     season: "— (protetta tutto l'anno)",
-    notes: "🛑 SPECIE PROTETTA. Se catturata, deve essere rimessa in acqua immediatamente con la massima delicatezza. Usare ami senza ardiglione nelle zone dove è segnalata la sua presenza (es. Torrente Artogna, VCO)."
+    notes: "È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente."
   },
   {
     name: "Trota Lacustre",
