@@ -1,0 +1,122 @@
+[
+  {
+    "id": "gammarus",
+    "type": "macroinvertebrate",
+    "name": "Gammarus",
+    "scientificName": "Gammarus spp.",
+    "classification": "Crustacea > Amphipoda",
+    "typicalSize": "5-20 mm",
+    "habitat": "Fondi ciottolosi e zone con detrito organico",
+    "distribution": "Torrenti, laghi e risorgive",
+    "ecologicalRole": "Detritivoro chiave nella rete trofica",
+    "importanceForTrout": "Fonte energetica costante, soprattutto in acque fredde",
+    "interestingFacts": "Molte specie cambiano colorazione in base al substrato.",
+    "atlasAiAdvice": "Se il fondo e ricco di detrito, usa imitazioni naturali e recuperi brevi.",
+    "coverImage": "assets/images/chironomid.jpg",
+    "images": ["assets/images/chironomid.jpg"],
+    "links": {
+      "flies": ["woolly-bugger"],
+      "fish": ["trota-fario", "trota-marmorata"]
+    }
+  },
+  {
+    "id": "freshwater-shrimp",
+    "type": "macroinvertebrate",
+    "name": "Gamberetto d'acqua dolce",
+    "scientificName": "Atyaephyra desmarestii",
+    "classification": "Crustacea > Decapoda",
+    "typicalSize": "20-45 mm",
+    "habitat": "Rive lente con vegetazione sommersa",
+    "distribution": "Laghetti, lanche, tratti lenti",
+    "ecologicalRole": "Ricicla materiale organico e biofilm",
+    "importanceForTrout": "Prede opportunistiche in periodi di bassa schiusa",
+    "interestingFacts": "Attivo soprattutto in condizioni crepuscolari.",
+    "atlasAiAdvice": "In acque lente prova streamer piccoli con pause lunghe.",
+    "coverImage": "assets/images/chironomid.jpg",
+    "images": ["assets/images/chironomid.jpg"],
+    "links": {
+      "flies": ["woolly-bugger"],
+      "fish": ["trota-lacustre"]
+    }
+  },
+  {
+    "id": "caddis-larva",
+    "type": "macroinvertebrate",
+    "name": "Larva di tricottero",
+    "scientificName": "Trichoptera larvae",
+    "classification": "Insecta > Trichoptera",
+    "typicalSize": "8-20 mm",
+    "habitat": "Sassi e correnti ossigenate",
+    "distribution": "Molto diffusa nei torrenti",
+    "ecologicalRole": "Filtro/alimentatore su microdetrito",
+    "importanceForTrout": "Prede ad alta frequenza in ninfa",
+    "interestingFacts": "Molte larve costruiscono astucci con sabbia e frammenti vegetali.",
+    "atlasAiAdvice": "Ninfe olive o crema in deriva profonda durante ore centrali.",
+    "coverImage": "assets/images/trichoptera.jpg",
+    "images": ["assets/images/trichoptera.jpg"],
+    "links": {
+      "insects": ["trichoptera"],
+      "flies": ["elk-hair-caddis", "hare-ear"]
+    }
+  },
+  {
+    "id": "stonefly-larva",
+    "type": "macroinvertebrate",
+    "name": "Larva di plecottero",
+    "scientificName": "Plecoptera larvae",
+    "classification": "Insecta > Plecoptera",
+    "typicalSize": "10-30 mm",
+    "habitat": "Fondo roccioso in corrente sostenuta",
+    "distribution": "Torrenti montani freddi",
+    "ecologicalRole": "Predatore e indicatore di acque molto pulite",
+    "importanceForTrout": "Molto rilevante in acque fredde",
+    "interestingFacts": "Il loro declino segnala rapidamente stress ambientale.",
+    "atlasAiAdvice": "Ninfe scure e pesate in ingresso buca durante mattino tardo.",
+    "coverImage": "assets/images/trichoptera.jpg",
+    "images": ["assets/images/trichoptera.jpg"],
+    "links": {
+      "insects": ["stonefly"],
+      "flies": ["pheasant-tail", "hare-ear"]
+    }
+  },
+  {
+    "id": "mayfly-nymph",
+    "type": "macroinvertebrate",
+    "name": "Ninfa di efemera",
+    "scientificName": "Ephemeroptera nymph",
+    "classification": "Insecta > Ephemeroptera",
+    "typicalSize": "6-18 mm",
+    "habitat": "Ghiaia e correnti regolari",
+    "distribution": "Fiumi e torrenti ossigenati",
+    "ecologicalRole": "Trasferimento energetico tra biofilm e pesci",
+    "importanceForTrout": "Cardine della dieta in primavera",
+    "interestingFacts": "Molte ninfe effettuano migrazioni micro-locali prima della schiusa.",
+    "atlasAiAdvice": "Imitazioni snelle #14-18 e derive ripetute su linee di passaggio.",
+    "coverImage": "assets/images/baetis.jpg",
+    "images": ["assets/images/baetis.jpg"],
+    "links": {
+      "insects": ["baetis", "ephemera-danica"],
+      "flies": ["pheasant-tail", "cdc-olive"]
+    }
+  },
+  {
+    "id": "dobsonfly-larva",
+    "type": "macroinvertebrate",
+    "name": "Larva di dobsonfly",
+    "scientificName": "Corydalus spp. larva",
+    "classification": "Insecta > Megaloptera",
+    "typicalSize": "20-70 mm",
+    "habitat": "Buche profonde con rocce stabili",
+    "distribution": "Tratti selettivi di fiumi e torrenti",
+    "ecologicalRole": "Predatore apicale tra macroinvertebrati",
+    "importanceForTrout": "Bassa frequenza ma alto valore energetico",
+    "interestingFacts": "Le larve possono vivere diversi anni prima della metamorfosi.",
+    "atlasAiAdvice": "Pattern voluminosi solo in acqua velata o nelle ore piu coperte.",
+    "coverImage": "assets/images/chironomid.jpg",
+    "images": ["assets/images/chironomid.jpg"],
+    "links": {
+      "flies": ["woolly-bugger"],
+      "fish": ["trota-marmorata"]
+    }
+  }
+]

@@ -1,4 +1,4 @@
-const SCHIUSE_SPECIES = [
+﻿const SCHIUSE_SPECIES = [
   {
     id: 'baetis',
     title: 'Baetis / Blue-winged Olive',
@@ -58,37 +58,37 @@ const SCHIUSE_PATTERNS = [
     id: 'bwo-nymph',
     title: 'Ninfa Baetis #16-18',
     species: ['baetis'],
-    description: 'Imitazione versatile per correnti moderate, perfetta quando l’acqua è fresca e chiara.',
-    icon: '🪰'
+    description: 'Imitazione versatile per correnti moderate, perfetta quando lâ€™acqua Ã¨ fresca e chiara.',
+    icon: 'ðŸª°'
   },
   {
     id: 'green-drake',
     title: 'Emergente Green Drake #10',
     species: ['ephemera'],
-    description: 'Usa un’emergente ambra/oliva per la schiusa di fine maggio e inizio giugno.',
-    icon: '🌿'
+    description: 'Usa unâ€™emergente ambra/oliva per la schiusa di fine maggio e inizio giugno.',
+    icon: 'ðŸŒ¿'
   },
   {
     id: 'caddis-pupa',
     title: 'Caddis pupa oliva #14',
     species: ['trichoptera'],
     description: 'Aggiungi un peso sottile e punta a un ritmo lento: si muovono vicine al fondo.',
-    icon: '🪱'
+    icon: 'ðŸª±'
   },
   {
     id: 'chironomid',
     title: 'Bloodworm / Chironomid #16',
     species: ['chironomid'],
     description: 'Eccellente nelle acque lente e quando le trote si concentrano sui midge larvali.',
-    icon: '🟠'
+    icon: 'ðŸŸ '
   }
 ];
 
 const SCHIUSE_HINTS = [
-  'Un’acqua limpida e corrente moderata favorisce le schiuse di Ephemera e Baetis.',
-  'La pioggia leggera può migliorare i risvegli degli insetti, ma le acque torbide riducono le attività.',
-  'Vento sotto i 15 km/h mantiene il pelo più calmo e aumenta le probabilità di cattura con esche delicate.',
-  'Cerca la chiazze di insetti attorno ai ciottoli e alle sponde basse durante le ore più fresche.'
+  'Unâ€™acqua limpida e corrente moderata favorisce le schiuse di Ephemera e Baetis.',
+  'La pioggia leggera puÃ² migliorare i risvegli degli insetti, ma le acque torbide riducono le attivitÃ .',
+  'Vento sotto i 15 km/h mantiene il pelo piÃ¹ calmo e aumenta le probabilitÃ  di cattura con esche delicate.',
+  'Cerca la chiazze di insetti attorno ai ciottoli e alle sponde basse durante le ore piÃ¹ fresche.'
 ];
 
 const SCHIUSE_DIET_CATEGORIES = [
@@ -96,7 +96,7 @@ const SCHIUSE_DIET_CATEGORIES = [
     id: 'aquatic',
     title: 'Cibo acquatico',
     icon: '🌊',
-    items: ['Mayflies', 'Caddisflies', 'Stoneflies', 'Chironomids', 'Ninfe di libellula', 'Ninfe di damigella', 'Verme acquatico', 'Bloodworm', 'Gamberetti d’acqua dolce', 'Gammarus', 'Scuds', 'Isopodi', 'Coleotteri acquatici', 'Larve di Dobsonfly', 'Hellgrammite']
+    items: ['Mayflies', 'Caddisflies', 'Stoneflies', 'Chironomids', 'Ninfe di libellula', 'Ninfe di damigella', 'Verme acquatico', 'Bloodworm', 'Gamberetti dâ€™acqua dolce', 'Gammarus', 'Scuds', 'Isopodi', 'Coleotteri acquatici', 'Larve di Dobsonfly', 'Hellgrammite']
   },
   {
     id: 'terrestrial',
@@ -122,7 +122,7 @@ const SCHIUSE_LOCATION_PROFILES = [
   {
     id: 'sesia',
     summary: 'Fiume alpino medio-corso con ghiaia fine e correnti sostenute. Le trote inseguono soprattutto ninfe veloci e sedge mattutine.',
-    altitude: '450–850 m',
+    altitude: '450â€“850 m',
     waterCharacter: 'Acqua fresca, corrente moderata',
     substrate: 'Fondo ghiaioso e ciottoloso',
     season: 'Primavera/estate',
@@ -132,7 +132,7 @@ const SCHIUSE_LOCATION_PROFILES = [
   {
     id: 'cervo',
     summary: 'Torrente di montagna con tratti rocciosi e acqua molto ossigenata. Predominano efemere grosse e sedge serali.',
-    altitude: '550–950 m',
+    altitude: '550â€“950 m',
     waterCharacter: 'Corrente rapida, acqua fredda',
     substrate: 'Sassi e ciottoli',
     season: 'Fine primavera/estate',
@@ -141,8 +141,8 @@ const SCHIUSE_LOCATION_PROFILES = [
   },
   {
     id: 'sessera',
-    summary: 'Fiume giovane con molti riffle e pozze brevi. Insetti piccoli e medi dominano l’alimentazione delle trote.',
-    altitude: '450–700 m',
+    summary: 'Fiume giovane con molti riffle e pozze brevi. Insetti piccoli e medi dominano lâ€™alimentazione delle trote.',
+    altitude: '450â€“700 m',
     waterCharacter: 'Corrente variabile',
     substrate: 'Ghiaia e sabbia grossolana',
     season: 'Primavera/estate',
@@ -152,7 +152,7 @@ const SCHIUSE_LOCATION_PROFILES = [
   {
     id: 'elvo',
     summary: 'Torrente valle con acqua chiara, fondi sabbiosi e ampie pozze. Gli insetti terrestri caduti sono un elemento chiave.',
-    altitude: '300–600 m',
+    altitude: '300â€“600 m',
     waterCharacter: 'Corrente moderata',
     substrate: 'Ghiaia, sabbia',
     season: 'Inizio estate',
@@ -162,17 +162,17 @@ const SCHIUSE_LOCATION_PROFILES = [
   {
     id: 'strona',
     summary: 'Torrente di collina con corrente rapida e vegetazione ripariale. Spesso le trote cercano alimenti terrestri sulle sponde.',
-    altitude: '250–520 m',
+    altitude: '250â€“520 m',
     waterCharacter: 'Corrente vivace',
     substrate: 'Ciottoli e sassi',
     season: 'Estate',
     dominantInsects: ['Caddisfly', 'Chironomidae', 'Terrestrials'],
-    notes: 'Una secca leggera o emergente può essere decisiva nelle ore centrali.'
+    notes: 'Una secca leggera o emergente puÃ² essere decisiva nelle ore centrali.'
   },
   {
     id: 'mastallone',
     summary: 'Torrente subalpino con acqua fredda e corrente forte. Le trote seguono insetti larvali e piccoli pesci nelle risalite.',
-    altitude: '700–1200 m',
+    altitude: '700â€“1200 m',
     waterCharacter: 'Acqua ossigenata, corrente veloce',
     substrate: 'Roccioso e ghiaioso',
     season: 'Primavera/estate',
@@ -182,7 +182,7 @@ const SCHIUSE_LOCATION_PROFILES = [
   {
     id: 'orco',
     summary: 'Fiume prealpino con ampie buche e correnti moderate. Le trote amano sagittare le ninfe e i piccoli alimenti terrestri.',
-    altitude: '250–650 m',
+    altitude: '250â€“650 m',
     waterCharacter: 'Corrente moderata',
     substrate: 'Ghiaia e sabbia',
     season: 'Primavera/estate',
@@ -191,8 +191,8 @@ const SCHIUSE_LOCATION_PROFILES = [
   },
   {
     id: 'mucrone',
-    summary: 'Torrente alpino stretto con correnti rapide e salti d’acqua. Predominano le efemere piccole e i tricotteri.',
-    altitude: '500–900 m',
+    summary: 'Torrente alpino stretto con correnti rapide e salti dâ€™acqua. Predominano le efemere piccole e i tricotteri.',
+    altitude: '500â€“900 m',
     waterCharacter: 'Corrente veloce',
     substrate: 'Rocce e ghiaia',
     season: 'Fine primavera/estate',
@@ -212,7 +212,7 @@ const SCHIUSE_LOCATION_PROFILES = [
   {
     id: 'artogna',
     summary: 'Torrente collinare con tratti ombreggiati e rapide costanti. Le trote si alimentano soprattutto su tricotteri e chironomidi.',
-    altitude: '320–620 m',
+    altitude: '320â€“620 m',
     waterCharacter: 'Corrente costante',
     substrate: 'Ciottoli e sabbia grossolana',
     season: 'Primavera/estate',
@@ -227,12 +227,12 @@ const SCHIUSE_LOCATION_PROFILES = [
     substrate: 'Sassi e limo',
     season: 'Estate',
     dominantInsects: ['Chironomidae', 'Gammarus', 'Midge'],
-    notes: 'La schiusa di midge è spesso concentrata nelle prime ore del mattino e alla sera.'
+    notes: 'La schiusa di midge Ã¨ spesso concentrata nelle prime ore del mattino e alla sera.'
   },
   {
     id: 'lys',
-    summary: 'Torrente alpino con tratti stretti e torrentizi. Le trote cercano larve e ninfe a profondità medio-bassa.',
-    altitude: '400–780 m',
+    summary: 'Torrente alpino con tratti stretti e torrentizi. Le trote cercano larve e ninfe a profonditÃ  medio-bassa.',
+    altitude: '400â€“780 m',
     waterCharacter: 'Corrente rapida',
     substrate: 'Rocce, ghiaia',
     season: 'Primavera/estate',
@@ -247,7 +247,87 @@ const SCHIUSE_LOCATION_PROFILES = [
     substrate: 'Rocce e limo',
     season: 'Estate',
     dominantInsects: ['Chironomidae', 'Gammarus', 'Scuds'],
-    notes: 'Le mosche affondanti e le imitazioni di midge in acqua lenta sono efficaci all’alba e al tramonto.'
+    notes: 'Le mosche affondanti e le imitazioni di midge in acqua lenta sono efficaci allâ€™alba e al tramonto.'
+  },
+  {
+    id: 'egua',
+    summary: 'Torrente alpino corto e ripido in Val d\'Egua, con salti e buche ossigenate. La trota fario si alimenta su ninfe di corrente e sedge serali.',
+    altitude: '850â€“2400 m',
+    waterCharacter: 'Acqua fredda, corrente veloce',
+    substrate: 'Massi e ciottoli',
+    season: 'Fine primavera/estate',
+    dominantInsects: ['Baetis', 'Trichoptera', 'Chironomidae', 'Stonefly'],
+    notes: 'Pattern chiave: ninfe snelle #14-18 e caddis emergenti nelle ore serali.'
+  },
+  {
+    id: 'sermenza',
+    summary: 'Corso montano pluvio-nivale della Val Sermenza, con alternanza di run medi e raschi. Trota fario attiva su ninfa e artificiale leggero.',
+    altitude: '550â€“1700 m',
+    waterCharacter: 'Corrente sostenuta, livelli variabili',
+    substrate: 'Ghiaia e ciottoli',
+    season: 'Primavera avanzata/autunno iniziale',
+    dominantInsects: ['Baetis', 'Ephemera', 'Trichoptera', 'Chironomidae'],
+    notes: 'Con acqua leggermente velata aumentano le finestre utili per ninfa e streamer leggeri.'
+  },
+  {
+    id: 'landwasser',
+    summary: 'Fiume alpino dei Grigioni con lunghi tratti incassati e portata nivo-alpina. Habitat tipico da acque fredde con macroinvertebrati di corrente.',
+    altitude: '950â€“1560 m',
+    waterCharacter: 'Acqua fredda, corrente rapida',
+    substrate: 'Ciottoli grossi e roccia',
+    season: 'Estate/inizio autunno',
+    dominantInsects: ['Baetis', 'Trichoptera', 'Chironomidae', 'Stonefly'],
+    notes: 'In giornate coperte funzionano ninfe beadhead e piccoli streamer su correnti profonde.'
+  },
+  {
+    id: 'sorba',
+    summary: 'Torrente torrentizio della Val Sorba, noto per gole e tratti rocciosi. Le fario sfruttano correntini, ombre e ritorni sotto salto.',
+    altitude: '730â€“2450 m',
+    waterCharacter: 'Acqua fredda e ossigenata',
+    substrate: 'Rocce, blocchi e ciottoli',
+    season: 'Estate',
+    dominantInsects: ['Trichoptera', 'Baetis', 'Stonefly', 'Chironomidae'],
+    notes: 'Approccio tecnico: derivazioni corte nelle pocket water e presentazioni basse nei corridoi.'
+  },
+  {
+    id: 'anza',
+    summary: 'Torrente glaciale della Valle Anzasca con forte dinamica estiva. Trote stazionano in pocket water, raschi profondi e margini protetti.',
+    altitude: '250â€“1800 m',
+    waterCharacter: 'Fredda, spesso sostenuta',
+    substrate: 'Massi e ghiaia grossolana',
+    season: 'Estate/inizio autunno',
+    dominantInsects: ['Stonefly', 'Trichoptera', 'Baetis', 'Chironomidae'],
+    notes: 'Dopo fusione o pioggia serve adattare peso e profondita della ninfa.'
+  },
+  {
+    id: 'ovesca',
+    summary: 'Torrente della Valle Antrona con alveo variabile e piene improvvise. Buche e raschi medi offrono finestre tecniche interessanti.',
+    altitude: '250â€“1100 m',
+    waterCharacter: 'Corrente rapida con tratti incisi',
+    substrate: 'Ciottoli, blocchi e detrito grossolano',
+    season: 'Fine primavera/estate',
+    dominantInsects: ['Trichoptera', 'Baetis', 'Chironomidae', 'Stonefly'],
+    notes: 'Con acqua in calo: ninfa in vena principale e secca in bordure attive.'
+  },
+  {
+    id: 'diveria',
+    summary: 'Torrente alpino transfrontaliero con gole strette e correnti forti in Val Divedro. Le trote seguono soprattutto prede bentoniche.',
+    altitude: '200â€“2000 m',
+    waterCharacter: 'Fredda, rapida, spesso turbolenta',
+    substrate: 'Rocce e ciottoli grossi',
+    season: 'Estate',
+    dominantInsects: ['Baetis', 'Stonefly', 'Trichoptera', 'Chironomidae'],
+    notes: 'Finestra migliore con livello in calo e visibilita accettabile dopo pioggia.'
+  },
+  {
+    id: 'ayasse',
+    summary: 'Torrente valdostano della valle di Champorcher con riserva di pesca alla trota documentata. Correnti veloci e buche intervallate da salti.',
+    altitude: '400â€“2580 m',
+    waterCharacter: 'Acqua alpina fredda e limpida',
+    substrate: 'Massi e ciottoli',
+    season: 'Fine primavera/estate',
+    dominantInsects: ['Trichoptera', 'Baetis', 'Stonefly', 'Chironomidae'],
+    notes: 'Per match-the-hatch: caddis emergenti e ninfe scure nelle ore fresche.'
   }
 ];
 
@@ -264,7 +344,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Dry Flies',
     imitatedInsect: 'Mayfly adult',
     lifeStage: 'Adult',
-    sizes: '#12–#18',
+    sizes: '#12â€“#18',
     color: 'Grigio/Marrone',
     materials: 'CDC, penna di capra, paletta bianca',
     difficulty: 'Intermedio',
@@ -272,8 +352,8 @@ const SCHIUSE_FLY_CATALOG = [
     waters: 'Fiumi e torrenti chiari',
     months: 'Mar-Giu',
     bestConditions: 'Acqua limpida, corrente moderata',
-    notes: 'Pattern multiuso per efemere e mosche generiche. Ottimo quando il corso d’acqua è freddo.',
-    image: null,
+    notes: 'Pattern multiuso per efemere e mosche generiche. Ottimo quando il corso dâ€™acqua Ã¨ freddo.',
+    image: 'flies/adams.jpg',
     matchTags: ['baetis', 'ephemera']
   },
   {
@@ -282,7 +362,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Dry Flies',
     imitatedInsect: 'Mayfly adult',
     lifeStage: 'Adult',
-    sizes: '#12–#18',
+    sizes: '#12â€“#18',
     color: 'Grigio/Oliva',
     materials: 'CDC, paletta bianca, piuma di gallo',
     difficulty: 'Intermedio',
@@ -290,8 +370,8 @@ const SCHIUSE_FLY_CATALOG = [
     waters: 'Fiumi e torrenti moderati',
     months: 'Apr-Giu',
     bestConditions: 'Serate luminose e correnti lente',
-    notes: 'Perfetto per osservare gli insetti a pelo d’acqua senza attrito.',
-    image: null,
+    notes: 'Perfetto per osservare gli insetti a pelo dâ€™acqua senza attrito.',
+    image: 'flies/Parachute_Adams_Dry_Fly.jpg',
     matchTags: ['baetis', 'ephemera']
   },
   {
@@ -300,7 +380,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Dry Flies',
     imitatedInsect: 'Caddisfly emergent',
     lifeStage: 'Adult',
-    sizes: '#14–#18',
+    sizes: '#14â€“#18',
     color: 'Oliva',
     materials: 'CDC, corpo olive',
     difficulty: 'Facile',
@@ -309,7 +389,7 @@ const SCHIUSE_FLY_CATALOG = [
     months: 'Mag-Set',
     bestConditions: 'Acqua calma, luci diffuse',
     notes: 'Eccellente sul pelo per le sedge e le emergenti oliva.',
-    image: null,
+    image: 'flies/BWO_Olive_Fur_CDC_Wing.jpg',
     matchTags: ['trichoptera']
   },
   {
@@ -318,7 +398,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Nymphs',
     imitatedInsect: 'Mayfly nymph',
     lifeStage: 'Nymph',
-    sizes: '#14–#18',
+    sizes: '#14â€“#18',
     color: 'Marrone',
     materials: 'Piuma di fagiano, filo rame',
     difficulty: 'Intermedio',
@@ -326,26 +406,26 @@ const SCHIUSE_FLY_CATALOG = [
     waters: 'Fiumi chiari',
     months: 'Mar-Oct',
     bestConditions: 'Corrente moderata, acqua fredda',
-    notes: 'La ninfa più affidabile per le efemere classiche.',
-    image: null,
+    notes: 'La ninfa piÃ¹ affidabile per le efemere classiche.',
+    image: 'flies/PartridgeAndPheasantTail.jpg',
     matchTags: ['baetis']
   },
   {
     id: 'hare-ear',
-    title: 'Hare’s Ear',
+    title: 'Hareâ€™s Ear',
     category: 'Nymphs',
     imitatedInsect: 'Mayfly/Stonefly nymph',
     lifeStage: 'Nymph',
-    sizes: '#10–#16',
+    sizes: '#10â€“#16',
     color: 'Marrone',
     materials: 'Pelo di lepre, filo rame',
     difficulty: 'Facile',
     presentation: 'Lento sul fondo',
     waters: 'Fiumi e torrenti',
-    months: 'Tutto l’anno',
+    months: 'Tutto lâ€™anno',
     bestConditions: 'Acqua limpida, corrente moderata',
     notes: 'Versatile per diversi tipi di ninfa e condizioni di corrente.',
-    image: null,
+    image: 'flies/Gold_ribbed_hairs_ear_trout_fly.JPG',
     matchTags: ['baetis', 'trichoptera']
   },
   {
@@ -354,7 +434,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Dry Flies',
     imitatedInsect: 'Mayfly adult',
     lifeStage: 'Adult',
-    sizes: '#14–#18',
+    sizes: '#14â€“#18',
     color: 'Oliva/Grigio',
     materials: 'CDC, corona di gallo',
     difficulty: 'Intermedio',
@@ -362,8 +442,8 @@ const SCHIUSE_FLY_CATALOG = [
     waters: 'Torrenti chiari',
     months: 'Apr-Lug',
     bestConditions: 'Giornate calme e acqua chiara',
-    notes: 'Eccellente quando le trote cercano l’impostazione della superficie.',
-    image: null,
+    notes: 'Eccellente quando le trote cercano lâ€™impostazione della superficie.',
+    image: 'flies/comparadun-fly-pattern.jpg',
     matchTags: ['baetis']
   },
   {
@@ -372,16 +452,16 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Emergers',
     imitatedInsect: 'Mayfly emerger',
     lifeStage: 'Emerger',
-    sizes: '#14–#18',
+    sizes: '#14â€“#18',
     color: 'Oliva/Beige',
     materials: 'CDC, dubbing trasparente',
     difficulty: 'Intermedio',
     presentation: 'Sopra e sotto la superficie',
     waters: 'Fiumi e torrenti',
     months: 'Mag-Lug',
-    bestConditions: 'Attività di schiusa medio-alta',
-    notes: 'Ideale per chi desidera mostrare il corpo dell’emergente e la zampa fuori dall’acqua.',
-    image: null,
+    bestConditions: 'AttivitÃ  di schiusa medio-alta',
+    notes: 'Ideale per chi desidera mostrare il corpo dellâ€™emergente e la zampa fuori dallâ€™acqua.',
+    image: 'flies/Klinkhammer_Special_Dry_Fly.jpg',
     matchTags: ['baetis', 'ephemera']
   },
   {
@@ -390,7 +470,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Dry Flies',
     imitatedInsect: 'Caddisfly adult',
     lifeStage: 'Adult',
-    sizes: '#12–#16',
+    sizes: '#12â€“#16',
     color: 'Marrone',
     materials: 'Pelo di alce, corpo in dubbing',
     difficulty: 'Facile',
@@ -399,7 +479,7 @@ const SCHIUSE_FLY_CATALOG = [
     months: 'Mag-Set',
     bestConditions: 'Serate e correnti lente',
     notes: 'Pattern classico per le sedge; galleggia bene su acque mosse.',
-    image: null,
+    image: 'flies/Elk-Hair-Caddis-JPG.JPG',
     matchTags: ['trichoptera']
   },
   {
@@ -408,7 +488,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Dry Flies',
     imitatedInsect: 'Generic adult insect',
     lifeStage: 'Adult',
-    sizes: '#12–#16',
+    sizes: '#12â€“#16',
     color: 'Rosso/Viola',
     materials: 'CDC, piume sintetiche',
     difficulty: 'Facile',
@@ -416,8 +496,8 @@ const SCHIUSE_FLY_CATALOG = [
     waters: 'Fiumi e torrenti',
     months: 'Apr-Oct',
     bestConditions: 'Acqua alta o torbida',
-    notes: 'Pattern visibile e attraente quando la trota è selettiva.',
-    image: null,
+    notes: 'Pattern visibile e attraente quando la trota Ã¨ selettiva.',
+    image: 'flies/Royal_Wulff.jpg',
     matchTags: ['terrestrial', 'baetis']
   },
   {
@@ -426,7 +506,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Nymphs',
     imitatedInsect: 'Chironomid',
     lifeStage: 'Pupa',
-    sizes: '#16–#20',
+    sizes: '#16â€“#20',
     color: 'Nero/Argento',
     materials: 'Filo lustrato, testa dorata',
     difficulty: 'Facile',
@@ -435,7 +515,7 @@ const SCHIUSE_FLY_CATALOG = [
     months: 'Mar-Set',
     bestConditions: 'Acqua piatta e trasparente',
     notes: 'Ottimo quando le trote si nutrono di chironomidi in acque lente.',
-    image: null,
+    image: 'flies/zebra-midge.jpg',
     matchTags: ['chironomid']
   },
   {
@@ -444,16 +524,16 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Streamers',
     imitatedInsect: 'Larvae / small fish',
     lifeStage: 'Nymph/Streamer',
-    sizes: '#6–#12',
+    sizes: '#6â€“#12',
     color: 'Nero/Oliva',
     materials: 'Pelo di lepre, piume di gallo',
     difficulty: 'Facile',
     presentation: 'Retrieve lento',
     waters: 'Laghi e fiumi lenti',
-    months: 'Tutto l’anno',
+    months: 'Tutto lâ€™anno',
     bestConditions: 'Acqua fredda e nuvolosa',
     notes: 'Versatile per scodinzoli, sculpin e piccoli gamberetti.',
-    image: null,
+    image: 'flies/BlackandBrownBeadheadWoollyBugger.jpg',
     matchTags: ['smallfish', 'gammarus']
   },
   {
@@ -462,7 +542,7 @@ const SCHIUSE_FLY_CATALOG = [
     category: 'Streamers',
     imitatedInsect: 'Small fish / sculpin',
     lifeStage: 'Streamer',
-    sizes: '#2–#6',
+    sizes: '#2â€“#6',
     color: 'Oliva/Marrone',
     materials: 'Pelo di coniglio, piume sintetiche',
     difficulty: 'Intermedio',
@@ -471,7 +551,9 @@ const SCHIUSE_FLY_CATALOG = [
     months: 'Autunno/Primavera',
     bestConditions: 'Acqua profonda e corrente',
     notes: 'Perfetta nelle buche rocciose dove le trote cercano rospi e sculpin.',
-    image: null,
+    image: 'flies/sculpin.jpg',
     matchTags: ['smallfish']
   }
 ];
+
+

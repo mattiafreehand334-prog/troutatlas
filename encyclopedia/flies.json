@@ -1,0 +1,162 @@
+[
+  {
+    "id": "adams",
+    "type": "fly",
+    "name": "Adams",
+    "flyType": "Dry",
+    "targetInsects": ["baetis", "ephemera-danica"],
+    "recommendedHookSizes": "#12-#18",
+    "bestSeasons": "Primavera, autunno",
+    "bestWaterConditions": "Acqua limpida con trote in attivita superficiale",
+    "bestRivers": ["Sesia", "Cervo", "Orco"],
+    "presentationTechniques": "Deriva naturale senza drag in correnti regolari",
+    "whenToAvoid": "Acqua molto torbida o pesci totalmente sul fondo",
+    "atlasAiAdvice": "Ottima scelta jolly quando non hai schiuse nette ma trote in superficie.",
+    "coverImage": "flies/adams.jpg",
+    "images": ["flies/adams.jpg"],
+    "links": {
+      "insects": ["baetis", "ephemera-danica"],
+      "fish": ["trota-fario", "temolo"]
+    }
+  },
+  {
+    "id": "parachute-adams",
+    "type": "fly",
+    "name": "Parachute Adams",
+    "flyType": "Dry",
+    "targetInsects": ["baetis", "ephemera-danica"],
+    "recommendedHookSizes": "#12-#18",
+    "bestSeasons": "Primavera, estate",
+    "bestWaterConditions": "Superficie mossa leggera, buona visibilita della mosca",
+    "bestRivers": ["Sesia", "Mastallone", "Lys"],
+    "presentationTechniques": "Lancio a monte con finali sottili e controllo della deriva",
+    "whenToAvoid": "Vento forte con drag costante",
+    "atlasAiAdvice": "Preferiscila quando serve galleggiabilita stabile in passaggi turbolenti.",
+    "coverImage": "flies/Parachute_Adams_Dry_Fly.jpg",
+    "images": ["flies/Parachute_Adams_Dry_Fly.jpg"],
+    "links": {
+      "insects": ["baetis", "ephemera-danica"],
+      "fish": ["trota-fario"]
+    }
+  },
+  {
+    "id": "cdc-olive",
+    "type": "fly",
+    "name": "CDC Olive",
+    "flyType": "Emerger",
+    "targetInsects": ["baetis", "trichoptera"],
+    "recommendedHookSizes": "#14-#18",
+    "bestSeasons": "Primavera, estate",
+    "bestWaterConditions": "Acqua limpida e schiuse intermittenti",
+    "bestRivers": ["Cervo", "Sessera", "Sermenza"],
+    "presentationTechniques": "Deriva corta controllata sui corridoi di bollata",
+    "whenToAvoid": "Acqua eccessivamente alta e torbida",
+    "atlasAiAdvice": "Funziona bene durante pause di schiusa quando i pesci restano selettivi.",
+    "coverImage": "flies/BWO_Olive_Fur_CDC_Wing.jpg",
+    "images": ["flies/BWO_Olive_Fur_CDC_Wing.jpg"],
+    "links": {
+      "insects": ["baetis", "trichoptera"],
+      "fish": ["trota-fario"]
+    }
+  },
+  {
+    "id": "pheasant-tail",
+    "type": "fly",
+    "name": "Pheasant Tail",
+    "flyType": "Nymph",
+    "targetInsects": ["baetis", "stonefly", "chironomidae"],
+    "recommendedHookSizes": "#14-#18",
+    "bestSeasons": "Tutto l'anno",
+    "bestWaterConditions": "Corrente moderata e buche con fondo ciottoloso",
+    "bestRivers": ["Orco", "Artogna", "Diveria"],
+    "presentationTechniques": "Ninfa a contatto o con indicatore in deriva profonda",
+    "whenToAvoid": "Superficie attiva con alimentazione esclusiva su adulti",
+    "atlasAiAdvice": "Pattern base per lettura rapida del fondo prima di passare a imitazioni piu specifiche.",
+    "coverImage": "flies/PartridgeAndPheasantTail.jpg",
+    "images": ["flies/PartridgeAndPheasantTail.jpg"],
+    "links": {
+      "insects": ["baetis", "stonefly", "chironomidae"],
+      "fish": ["trota-fario", "trota-marmorata"]
+    }
+  },
+  {
+    "id": "hare-ear",
+    "type": "fly",
+    "name": "Hare's Ear",
+    "flyType": "Nymph",
+    "targetInsects": ["trichoptera", "stonefly", "mayfly-nymph"],
+    "recommendedHookSizes": "#12-#16",
+    "bestSeasons": "Primavera, autunno",
+    "bestWaterConditions": "Acqua leggermente velata, correnti medie",
+    "bestRivers": ["Sesia", "Mastallone", "Ayasse"],
+    "presentationTechniques": "Derive rallentate lungo il bordo delle buche",
+    "whenToAvoid": "Pesci estremamente selettivi su prede minute",
+    "atlasAiAdvice": "Utile quando vuoi una sagoma naturale ma visibile in acqua mossa.",
+    "coverImage": "flies/Gold_ribbed_hairs_ear_trout_fly.JPG",
+    "images": ["flies/Gold_ribbed_hairs_ear_trout_fly.JPG"],
+    "links": {
+      "insects": ["trichoptera", "stonefly"],
+      "macroinvertebrates": ["mayfly-nymph"]
+    }
+  },
+  {
+    "id": "elk-hair-caddis",
+    "type": "fly",
+    "name": "Elk Hair Caddis",
+    "flyType": "Dry",
+    "targetInsects": ["trichoptera"],
+    "recommendedHookSizes": "#12-#16",
+    "bestSeasons": "Estate, inizio autunno",
+    "bestWaterConditions": "Schiuse serali con corrente sostenuta",
+    "bestRivers": ["Cervo", "Lys", "Egua"],
+    "presentationTechniques": "Deriva alta e visibile su raschi e corridoi veloci",
+    "whenToAvoid": "Acqua completamente piatta senza attivita in superficie",
+    "atlasAiAdvice": "Se noti tricotteri adulti sulle rive, questa e spesso la prima scelta.",
+    "coverImage": "flies/Elk-Hair-Caddis-JPG.JPG",
+    "images": ["flies/Elk-Hair-Caddis-JPG.JPG"],
+    "links": {
+      "insects": ["trichoptera"],
+      "fish": ["trota-fario", "temolo"]
+    }
+  },
+  {
+    "id": "zebra-midge",
+    "type": "fly",
+    "name": "Zebra Midge",
+    "flyType": "Nymph",
+    "targetInsects": ["chironomidae"],
+    "recommendedHookSizes": "#16-#20",
+    "bestSeasons": "Fine inverno, primavera, estate",
+    "bestWaterConditions": "Acque lente e profonde",
+    "bestRivers": ["Viverone", "Lago Nero", "Antrona"],
+    "presentationTechniques": "Micro-deriva lenta o sospesa in profondita",
+    "whenToAvoid": "Acqua rapida e alta con turbolenza forte",
+    "atlasAiAdvice": "Perfetta quando le trote ignorano pattern voluminosi e cercano prede piccole.",
+    "coverImage": "flies/zebra-midge.jpg",
+    "images": ["flies/zebra-midge.jpg"],
+    "links": {
+      "insects": ["chironomidae"],
+      "fish": ["trota-lacustre", "trota-iridea"]
+    }
+  },
+  {
+    "id": "woolly-bugger",
+    "type": "fly",
+    "name": "Woolly Bugger",
+    "flyType": "Streamer",
+    "targetInsects": ["stonefly", "caddis-larva", "gammarus"],
+    "recommendedHookSizes": "#6-#10",
+    "bestSeasons": "Primavera, autunno",
+    "bestWaterConditions": "Acqua velata o profonda",
+    "bestRivers": ["Orco", "Artogna", "Anza"],
+    "presentationTechniques": "Strip irregolari con pause in buca",
+    "whenToAvoid": "Pesci in piena selettivita su insetto emergente specifico",
+    "atlasAiAdvice": "Usala per cercare pesce attivo quando i pattern da superficie non producono.",
+    "coverImage": "flies/BlackandBrownBeadheadWoollyBugger.jpg",
+    "images": ["flies/BlackandBrownBeadheadWoollyBugger.jpg"],
+    "links": {
+      "macroinvertebrates": ["gammarus", "caddis-larva"],
+      "fish": ["trota-marmorata", "trota-fario"]
+    }
+  }
+]

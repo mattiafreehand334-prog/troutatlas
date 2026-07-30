@@ -1,0 +1,34 @@
+[
+  {"id":"baetis","type":"insect","title":"Baetis","aliases":["baetis","blue-winged olive","bwo"]},
+  {"id":"ephemera-danica","type":"insect","title":"Efemera maggiore","aliases":["ephemera","ephemera danica","green drake"]},
+  {"id":"trichoptera","type":"insect","title":"Tricottero","aliases":["trichoptera","caddis","sedge"]},
+  {"id":"chironomidae","type":"insect","title":"Chironomide","aliases":["chironomide","chironomid","midge"]},
+  {"id":"stonefly","type":"insect","title":"Plecottero","aliases":["stonefly","plecottero"]},
+
+  {"id":"adams","type":"fly","title":"Adams","aliases":["adams"]},
+  {"id":"parachute-adams","type":"fly","title":"Parachute Adams","aliases":["parachute adams"]},
+  {"id":"cdc-olive","type":"fly","title":"CDC Olive","aliases":["cdc olive"]},
+  {"id":"pheasant-tail","type":"fly","title":"Pheasant Tail","aliases":["pheasant tail","ptn"]},
+  {"id":"hare-ear","type":"fly","title":"Hare's Ear","aliases":["hare's ear","hare ear"]},
+  {"id":"elk-hair-caddis","type":"fly","title":"Elk Hair Caddis","aliases":["elk hair caddis"]},
+  {"id":"zebra-midge","type":"fly","title":"Zebra Midge","aliases":["zebra midge"]},
+  {"id":"woolly-bugger","type":"fly","title":"Woolly Bugger","aliases":["woolly bugger"]},
+
+  {"id":"trota-fario","type":"fish","title":"Trota Fario","aliases":["trota fario","salmo trutta fario"]},
+  {"id":"trota-iridea","type":"fish","title":"Trota Iridea","aliases":["trota iridea","oncorhynchus mykiss"]},
+  {"id":"temolo","type":"fish","title":"Temolo","aliases":["temolo","thymallus thymallus"]},
+  {"id":"trota-marmorata","type":"fish","title":"Trota Marmorata","aliases":["trota marmorata","salmo marmoratus"]},
+  {"id":"trota-lacustre","type":"fish","title":"Trota Lacustre","aliases":["trota lacustre","salmo trutta lacustris"]},
+
+  {"id":"gammarus","type":"macroinvertebrate","title":"Gammarus","aliases":["gammarus"]},
+  {"id":"freshwater-shrimp","type":"macroinvertebrate","title":"Gamberetto d'acqua dolce","aliases":["freshwater shrimp","gamberetto d'acqua dolce"]},
+  {"id":"caddis-larva","type":"macroinvertebrate","title":"Larva di tricottero","aliases":["caddis larva","larva di tricottero"]},
+  {"id":"stonefly-larva","type":"macroinvertebrate","title":"Larva di plecottero","aliases":["stonefly larva","larva di plecottero"]},
+  {"id":"mayfly-nymph","type":"macroinvertebrate","title":"Ninfa di efemera","aliases":["mayfly nymph","ninfa di efemera"]},
+  {"id":"dobsonfly-larva","type":"macroinvertebrate","title":"Larva di dobsonfly","aliases":["dobsonfly larva","larva di dobsonfly"]},
+
+  {"id":"ranunculus-aquatilis","type":"plant","title":"Ranuncolo d'acqua","aliases":["ranuncolo d'acqua","ranunculus aquatilis"]},
+  {"id":"potamogeton","type":"plant","title":"Potamogeton","aliases":["potamogeton"]},
+  {"id":"chara","type":"plant","title":"Chara","aliases":["chara"]},
+  {"id":"carex-riparia","type":"plant","title":"Carice riparia","aliases":["carice riparia","carex riparia"]}
+]

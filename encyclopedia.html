@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enciclopedia — TroutAtlas</title>
+  <link rel="stylesheet" href="style.css?v=22">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <h1>📚 Enciclopedia</h1>
+    <p>Base di conoscenza centrale di TroutAtlas</p>
+  </div>
+</div>
+
+<main class="page-main" id="ency-main">
+  <section class="detail-section">
+    <h2>🔎 Ricerca rapida</h2>
+    <div class="search-wrap" style="margin-top: 8px;">
+      <span class="search-icon">🔍</span>
+      <input id="ency-search" type="text" placeholder="Cerca insetto, mosca, pesce, macroinvertebrato, pianta...">
+    </div>
+    <p class="schiuse-note">Filtraggio istantaneo su tutta l'enciclopedia.</p>
+  </section>
+
+  <section class="detail-section">
+    <h2>📚 Categorie</h2>
+    <div id="ency-category-grid" class="ency-category-grid"></div>
+  </section>
+
+  <section class="detail-section">
+    <div class="ency-results-head">
+      <h2 id="ency-results-title">Voci disponibili</h2>
+      <span id="ency-results-count" class="chip"></span>
+    </div>
+    <div id="ency-entry-grid" class="ency-entry-grid"></div>
+  </section>
+</main>
+
+<div class="ency-modal-overlay" id="ency-modal-overlay" aria-hidden="true">
+  <div class="ency-modal" role="dialog" aria-modal="true" aria-labelledby="ency-modal-title">
+    <div class="ency-modal-head">
+      <h3 id="ency-modal-title">Voce enciclopedia</h3>
+      <button class="modal-close" id="ency-modal-close" type="button" aria-label="Chiudi">✕</button>
+    </div>
+    <div class="ency-modal-body" id="ency-modal-body"></div>
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a class="bnav-item" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
+  <a class="bnav-item" href="trote.html"><span class="bnav-icon">🐟</span>Trote</a>
+  <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi</a>
+  <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
+  <a class="bnav-item" href="mappa.html"><span class="bnav-icon">🗺️</span>Mappa</a>
+  <a class="bnav-item active" href="encyclopedia.html"><span class="bnav-icon">📚</span>Enciclopedia</a>
+  <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
+</nav>
+
+<script src="encyclopedia.js?v=1"></script>
+<script src="sw-register.js?v=22"></script>
+</body>
+</html>

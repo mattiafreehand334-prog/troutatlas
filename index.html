@@ -23,6 +23,14 @@
       <span class="search-icon">🔍</span>
       <input id="search" type="text" placeholder="Cerca torrente, zona…">
     </div>
+    <button class="feature-card trip-home-banner" id="trip-home-banner" type="button" aria-haspopup="dialog" aria-controls="trip-planner-overlay">
+      <div class="feature-card-copy trip-home-banner-copy">
+        <span class="feature-chip">Premium</span>
+        <h2 id="trip-banner-title">🎣 Pianifica la tua uscita</h2>
+        <p id="trip-banner-subtitle">Crea un piano di pesca completo con Atlas AI.</p>
+      </div>
+      <span class="trip-home-banner-arrow" aria-hidden="true">→</span>
+    </button>
   </div>
 </header>
 
@@ -33,20 +41,29 @@
     <button class="tab" data-tab="lago">🏔️ Laghi</button>
     <button class="tab" data-tab="fly">🪰 A mosca</button>
   </div>
-
-  <div class="feature-card">
-    <div class="feature-card-copy">
-      <span class="feature-chip">Premium</span>
-      <h2>🦟 Schiuse</h2>
-      <p>Accedi al nuovo Hatch Tracker per consigli sulle migliori schiuse e i pattern da usare.</p>
-    </div>
-    <a class="btn btn-primary feature-cta" href="schiuse.html">Apri Hatch Tracker</a>
-  </div>
 </div>
 
 <main>
   <div id="river-list"></div>
 </main>
+
+<div class="trip-planner-overlay" id="trip-planner-overlay" aria-hidden="true">
+  <div class="trip-planner-modal" role="dialog" aria-modal="true" aria-labelledby="trip-step-title">
+    <div class="trip-planner-head">
+      <div class="trip-planner-kicker">Pianificatore di uscita Atlas AI</div>
+      <button class="modal-close" id="trip-close-btn" type="button" aria-label="Chiudi planner">✕</button>
+    </div>
+    <div class="trip-planner-title-wrap">
+      <h3 class="trip-step-title" id="trip-step-title">Scegli il torrente</h3>
+      <p class="trip-step-subtitle" id="trip-step-subtitle">Seleziona il corso d'acqua da pianificare.</p>
+    </div>
+    <div class="trip-planner-body" id="trip-step-content"></div>
+    <div class="trip-planner-footer">
+      <button class="btn btn-outline" id="trip-back-btn" type="button">Indietro</button>
+      <button class="btn btn-primary" id="trip-next-btn" type="button">Continua</button>
+    </div>
+  </div>
+</div>
 
 <nav class="bottom-nav">
   <a class="bnav-item active" href="index.html"><span class="bnav-icon">🎣</span>Torrenti</a>
@@ -54,10 +71,13 @@
   <a class="bnav-item" href="knots.html"><span class="bnav-icon">🪰</span>Nodi</a>
   <a class="bnav-item" href="negozi.html"><span class="bnav-icon">🏪</span>Negozi</a>
   <a class="bnav-item" href="mappa.html"><span class="bnav-icon">🗺️</span>Mappa</a>
+  <a class="bnav-item" href="encyclopedia.html"><span class="bnav-icon">📚</span>Enciclopedia</a>
   <a class="bnav-item" href="atlas.html"><span class="bnav-icon">🤖</span>Atlas AI</a>
 </nav>
 
-<script src="app.js?v=19"></script>
+<script src="schiuse-data.js?v=22"></script>
+<script src="encyclopedia-integration.js?v=1"></script>
+<script src="app.js?v=22"></script>
 <script>
   window.addEventListener('online',  () => document.body.classList.remove('offline'));
   window.addEventListener('offline', () => document.body.classList.add('offline'));

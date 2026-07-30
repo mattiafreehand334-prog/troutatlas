@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ranunculus-aquatilis",
+    "type": "plant",
+    "name": "Ranuncolo d'acqua",
+    "scientificName": "Ranunculus aquatilis",
+    "ecologicalRole": "Ossigena e stabilizza microhabitat bentonici",
+    "importanceForTroutHabitat": "Crea rifugi per avannotti e concentra macroinvertebrati",
+    "habitat": "Tratti lenti o moderati con buona luce",
+    "distribution": "Fiumi e canali di pianura e collina",
+    "interestingFacts": "Le foglie sommerse riducono velocita locale della corrente.",
+    "atlasAiAdvice": "Pesca i bordi della macchia vegetale, dove le trote intercettano prede in deriva.",
+    "coverImage": "assets/images/trichoptera.jpg",
+    "images": ["assets/images/trichoptera.jpg"],
+    "links": {
+      "macroinvertebrates": ["gammarus", "chironomidae"],
+      "fish": ["trota-fario"]
+    }
+  },
+  {
+    "id": "potamogeton",
+    "type": "plant",
+    "name": "Potamogeton",
+    "scientificName": "Potamogeton spp.",
+    "ecologicalRole": "Produzione primaria e supporto alla catena trofica",
+    "importanceForTroutHabitat": "Favorisce aree di alimentazione in acque lente",
+    "habitat": "Zone lacustri e tratti fluviali a corrente debole",
+    "distribution": "Laghi prealpini e anse tranquille",
+    "interestingFacts": "Le foglie sommerse ospitano biofilm ricco di invertebrati.",
+    "atlasAiAdvice": "In prossimita dei banchi vegetati alterna recuperi lenti e pause.",
+    "coverImage": "assets/images/chironomid.jpg",
+    "images": ["assets/images/chironomid.jpg"],
+    "links": {
+      "macroinvertebrates": ["freshwater-shrimp", "chironomidae"],
+      "fish": ["trota-lacustre"]
+    }
+  },
+  {
+    "id": "chara",
+    "type": "plant",
+    "name": "Chara",
+    "scientificName": "Chara spp.",
+    "ecologicalRole": "Indicatrice di acque limpide e minerali",
+    "importanceForTroutHabitat": "Migliora trasparenza e supporta microfauna",
+    "habitat": "Fondali di laghi limpidi e sorgenti",
+    "distribution": "Bacini oligotrofici prealpini",
+    "interestingFacts": "Spesso chiamata alga pietrificante per i depositi calcarei.",
+    "atlasAiAdvice": "Con alta visibilita usa finali sottili e presentazioni naturali.",
+    "coverImage": "assets/images/baetis.jpg",
+    "images": ["assets/images/baetis.jpg"],
+    "links": {
+      "macroinvertebrates": ["gammarus"],
+      "fish": ["trota-lacustre", "trota-fario"]
+    }
+  },
+  {
+    "id": "carex-riparia",
+    "type": "plant",
+    "name": "Carice riparia",
+    "scientificName": "Carex riparia",
+    "ecologicalRole": "Consolida le sponde e riduce erosione",
+    "importanceForTroutHabitat": "Offre ombra e rifugio lungo i margini",
+    "habitat": "Rive umide di torrenti e canali",
+    "distribution": "Diffusa in aree ripariali alpine e collinari",
+    "interestingFacts": "Le radici intrappolano detriti creando nicchie alimentari.",
+    "atlasAiAdvice": "Le trote sostano spesso sotto le rive vegetate nelle ore calde.",
+    "coverImage": "assets/images/ephemera.jpg",
+    "images": ["assets/images/ephemera.jpg"],
+    "links": {
+      "insects": ["trichoptera", "baetis"],
+      "fish": ["trota-fario"]
+    }
+  }
+]

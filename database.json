@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "sesia",
     "name": "Sesia",
@@ -12,7 +12,7 @@
       "Temolo"
     ],
     "difficulty": 3,
-    "recommendedRod": "1.68 m — 0.2/5 g",
+    "recommendedRod": "1.68 m â€” 0.2/5 g",
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
     "recommendedLures": [
       "Spoon 2 g",
@@ -31,7 +31,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte + Segnaline zona Valsesia",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "rules": [
         "Limite giornaliero: 5 trote",
@@ -75,35 +75,35 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia al Mulino Vecchio (sterrato gratuito, 10 posti)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il sentiero lungo il canale verso il fiume (5 min)"
           },
           {
             "step": 3,
-            "emoji": "🌉",
+            "emoji": "ðŸŒ‰",
             "text": "Supera la passerella in legno sul canale secondario"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "Sei alla Buca del Mulino — posizionati sulla riva sinistra a monte della buca"
+            "emoji": "ðŸŽ£",
+            "text": "Sei alla Buca del Mulino â€” posizionati sulla riva sinistra a monte della buca"
           }
         ],
         "markers": [
           {
             "type": "bridge",
-            "emoji": "🌉",
+            "emoji": "ðŸŒ‰",
             "name": "Passerella del Mulino",
             "description": "Piccola passerella in legno sul canale di derivazione"
           },
           {
             "type": "service",
-            "emoji": "🚻",
+            "emoji": "ðŸš»",
             "name": "Fontana pubblica",
             "description": "Fontana con acqua potabile nei pressi del parcheggio"
           }
@@ -143,40 +143,40 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia in centro a Scopello (gratuito, asfalto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Scendi verso il fiume seguendo la scalinata di pietra (10 min)"
           },
           {
             "step": 3,
-            "emoji": "🌊",
+            "emoji": "ðŸŒŠ",
             "text": "Guada il canale secondario (stivali obbligatori)"
           },
           {
             "step": 4,
-            "emoji": "📸",
-            "text": "Al punto panoramico — prosegui altri 10 min a monte lungo la riva"
+            "emoji": "ðŸ“¸",
+            "text": "Al punto panoramico â€” prosegui altri 10 min a monte lungo la riva"
           },
           {
             "step": 5,
-            "emoji": "🎣",
-            "text": "Sei al Riffle di Scopello — inizia dal basso e risali"
+            "emoji": "ðŸŽ£",
+            "text": "Sei al Riffle di Scopello â€” inizia dal basso e risali"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Belvedere sul Sesia",
             "description": "Vista panoramica sul paese di Scopello e la vallata"
           },
           {
             "type": "trail",
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "name": "Sentiero Riva Destra",
             "description": "Sentiero segnato che segue il Sesia per 3 km"
           }
@@ -191,7 +191,7 @@
           "lat": 45.83,
           "lng": 8.222
         },
-        "description": "Profonda buca in gola rocciosa. Le trote più grosse del Sesia si nascondono qui. Solo per esperti.",
+        "description": "Profonda buca in gola rocciosa. Le trote piÃ¹ grosse del Sesia si nascondono qui. Solo per esperti.",
         "fishingScore": 91,
         "techniques": [
           "ninfa",
@@ -216,48 +216,48 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia alla Piazzola del Sacro Monte (800 m)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Scendi il sentiero non segnato verso la gola (30 min, ripido)"
           },
           {
             "step": 3,
-            "emoji": "⚠️",
-            "text": "Attenzione: tratto in gola, rocce scivolose — waders feltro o gomma scolpita"
+            "emoji": "âš ï¸",
+            "text": "Attenzione: tratto in gola, rocce scivolose â€” waders feltro o gomma scolpita"
           },
           {
             "step": 4,
-            "emoji": "💧",
+            "emoji": "ðŸ’§",
             "text": "Superata la cascatella, sei nell'ansa principale della gola"
           },
           {
             "step": 5,
-            "emoji": "🎣",
-            "text": "La buca è nella parte più profonda dell'ansa — lancia da valle verso monte"
+            "emoji": "ðŸŽ£",
+            "text": "La buca Ã¨ nella parte piÃ¹ profonda dell'ansa â€” lancia da valle verso monte"
           }
         ],
         "markers": [
           {
             "type": "waterfall",
-            "emoji": "💧",
+            "emoji": "ðŸ’§",
             "name": "Cascata della Gola",
             "description": "Piccola cascata che precede la buca principale"
           },
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Punto panoramico sulla gola",
             "description": "Vista spettacolare dall'alto sulla gola rocciosa"
           },
           {
             "type": "warning",
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "name": "Zona pericolosa",
-            "description": "Rocce scivolose — non addentrarsi senza attrezzatura adeguata"
+            "description": "Rocce scivolose â€” non addentrarsi senza attrezzatura adeguata"
           }
         ]
       }
@@ -333,12 +333,12 @@
           "lat": 45.745,
           "lng": 8.279
         },
-        "description": "Bassa Valsesia. Sesia più ampio, spinning e spinning."
+        "description": "Bassa Valsesia. Sesia piÃ¹ ampio, spinning e spinning."
       }
     ],
     "permits": {
       "management": "Riserva turistica FIPSAS + tratti liberi",
-      "entity": "FIPSAS Vercelli – Sezione Valsesia",
+      "entity": "FIPSAS Vercelli â€“ Sezione Valsesia",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS + segnaline zona Valsesia",
       "dailyCost": "Informazione non disponibile",
@@ -458,7 +458,7 @@
         "id": "sesia-lm3",
         "type": "pool",
         "name": "Buca del Temolo",
-        "description": "Lama profonda 3–4 m, corrente lenta. Storico rifugio per i temoli in primavera.",
+        "description": "Lama profonda 3â€“4 m, corrente lenta. Storico rifugio per i temoli in primavera.",
         "coordinates": {
           "lat": 45.835,
           "lng": 8.097
@@ -469,7 +469,7 @@
         "id": "sesia-lm4",
         "type": "trail",
         "name": "Sentiero Val Vogna",
-        "description": "Sentiero CAI n° 6. Scende al fiume in 15 min da Riva Valdobbia. Ottimo accesso ai tratti alti.",
+        "description": "Sentiero CAI nÂ° 6. Scende al fiume in 15 min da Riva Valdobbia. Ottimo accesso ai tratti alti.",
         "coordinates": {
           "lat": 45.847,
           "lng": 8.015
@@ -523,7 +523,7 @@
       "Trota Fario"
     ],
     "difficulty": 2,
-    "recommendedRod": "1.68 m — 0.2/5 g",
+    "recommendedRod": "1.68 m â€” 0.2/5 g",
     "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.14",
     "recommendedLures": [
       "Minnow 45 mm",
@@ -542,7 +542,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm",
       "rules": [
         "Limite giornaliero: 5 trote",
@@ -586,30 +586,30 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia al Parco Rivetti (ampio, gratuito, asfalto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Percorri il vialetto del parco verso il fiume (3 min)"
           },
           {
             "step": 3,
-            "emoji": "🎣",
-            "text": "Sei al Raschio dei Platani — riva accessibile e sicura"
+            "emoji": "ðŸŽ£",
+            "text": "Sei al Raschio dei Platani â€” riva accessibile e sicura"
           }
         ],
         "markers": [
           {
             "type": "stocking",
-            "emoji": "🐟",
+            "emoji": "ðŸŸ",
             "name": "Zona di immissione",
             "description": "Area ripopolata con Trota Fario da marzo"
           },
           {
             "type": "service",
-            "emoji": "🚻",
+            "emoji": "ðŸš»",
             "name": "Servizi Parco",
             "description": "WC e fontana nel parco, aperto stagionalmente"
           }
@@ -649,29 +649,29 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia alla piazzola sterrata di Via del Mulino (5 auto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il sentiero che costeggia il canale (10 min)"
           },
           {
             "step": 3,
-            "emoji": "🌊",
+            "emoji": "ðŸŒŠ",
             "text": "Scendi alla riva dove le rocce formano un'ansa naturale"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "La buca è sotto le rocce — lancia da riva destra verso la parete"
+            "emoji": "ðŸŽ£",
+            "text": "La buca Ã¨ sotto le rocce â€” lancia da riva destra verso la parete"
           }
         ],
         "markers": [
           {
             "type": "pool",
-            "emoji": "🌊",
+            "emoji": "ðŸŒŠ",
             "name": "Ansa Rocciosa",
             "description": "Profonda buca naturale ai piedi delle rocce"
           }
@@ -727,7 +727,7 @@
     ],
     "permits": {
       "management": "Tratto libero con licenza regionale",
-      "entity": "Regione Piemonte – Provincia di Biella",
+      "entity": "Regione Piemonte â€“ Provincia di Biella",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
       "dailyCost": "Informazione non disponibile",
@@ -800,7 +800,7 @@
         "id": "cervo-lm2",
         "type": "waterfall",
         "name": "Cascata del Cervo",
-        "description": "Salto di 4 m con buca profonda. La zona a valle è chiusa da anni per rigenerazione — verificare il regolamento attuale.",
+        "description": "Salto di 4 m con buca profonda. La zona a valle Ã¨ chiusa da anni per rigenerazione â€” verificare il regolamento attuale.",
         "coordinates": {
           "lat": 45.651,
           "lng": 8.078
@@ -854,7 +854,7 @@
       "Trota Fario"
     ],
     "difficulty": 2,
-    "recommendedRod": "1.53 m — 0.5/4 g",
+    "recommendedRod": "1.53 m â€” 0.5/4 g",
     "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.12",
     "recommendedLures": [
       "Minnow 40 mm",
@@ -873,7 +873,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm",
       "rules": [
         "Limite giornaliero: 3 trote",
@@ -904,7 +904,7 @@
         "bigFish": false,
         "familyFriendly": true,
         "stocking": false,
-        "notes": "Lo spot più fotografato del Sessera. La cascata crea una bolla d'aria che nasconde il pescatore.",
+        "notes": "Lo spot piÃ¹ fotografato del Sessera. La cascata crea una bolla d'aria che nasconde il pescatore.",
         "parking": {
           "name": "Piazzola di Vallanzengo",
           "description": "Sterrato per 6 auto vicino al borgo di Vallanzengo",
@@ -917,35 +917,35 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia alla piazzola di Vallanzengo (6 auto, gratuito)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il sentiero verso il torrente attraverso il bosco (8 min)"
           },
           {
             "step": 3,
-            "emoji": "💧",
-            "text": "Senti il rumore della cascatella — scendi verso il suono"
+            "emoji": "ðŸ’§",
+            "text": "Senti il rumore della cascatella â€” scendi verso il suono"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "Posizionati sotto la cascatella — il rumore copre i tuoi movimenti"
+            "emoji": "ðŸŽ£",
+            "text": "Posizionati sotto la cascatella â€” il rumore copre i tuoi movimenti"
           }
         ],
         "markers": [
           {
             "type": "waterfall",
-            "emoji": "💧",
+            "emoji": "ðŸ’§",
             "name": "Cascatella di Vallanzengo",
             "description": "Piccolo salto di 3 m, crea bolla d'ossigeno ottima per le trote"
           },
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Punto panoramico",
             "description": "Vista sul borgo storico di Vallanzengo dall'alto"
           }
@@ -985,30 +985,30 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia in centro a Portula (asfalto, gratuito)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui le indicazioni per il torrente (5 min a piedi)"
           },
           {
             "step": 3,
-            "emoji": "🎣",
-            "text": "Pool accessibile da entrambe le rive — ideale per bambini"
+            "emoji": "ðŸŽ£",
+            "text": "Pool accessibile da entrambe le rive â€” ideale per bambini"
           }
         ],
         "markers": [
           {
             "type": "stocking",
-            "emoji": "🐟",
+            "emoji": "ðŸŸ",
             "name": "Zona ripopolata",
             "description": "Immissioni regolari da marzo a luglio"
           },
           {
             "type": "bar",
-            "emoji": "🍴",
+            "emoji": "ðŸ´",
             "name": "Bar Portula",
             "description": "Bar con panini a 2 min a piedi dal torrente"
           }
@@ -1064,7 +1064,7 @@
     ],
     "permits": {
       "management": "Tratto libero con licenza regionale",
-      "entity": "Regione Piemonte – Provincia di Biella",
+      "entity": "Regione Piemonte â€“ Provincia di Biella",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
       "dailyCost": "Informazione non disponibile",
@@ -1092,7 +1092,7 @@
           0,
           4
         ],
-        "description": "Pesca libera con licenza. Portata ridotta — approccio rispettoso obbligatorio."
+        "description": "Pesca libera con licenza. Portata ridotta â€” approccio rispettoso obbligatorio."
       }
     ],
     "polyline": [
@@ -1126,7 +1126,7 @@
         "id": "sessera-lm1",
         "type": "bridge",
         "name": "Ponte della Sessera",
-        "description": "Ponte in cemento armato sulla SS 229. Accesso al tratto centrale. Zona a libero con buona densità di fario.",
+        "description": "Ponte in cemento armato sulla SS 229. Accesso al tratto centrale. Zona a libero con buona densitÃ  di fario.",
         "coordinates": {
           "lat": 45.703,
           "lng": 8.143
@@ -1181,7 +1181,7 @@
       "Trota Iridea"
     ],
     "difficulty": 1,
-    "recommendedRod": "1.80 m — 3/14 g",
+    "recommendedRod": "1.80 m â€” 3/14 g",
     "recommendedLine": "Monofilo 0.20 + Fluorocarbon 0.18",
     "recommendedLures": [
       "Spoon 3 g",
@@ -1200,7 +1200,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm | Trota Iridea: 25 cm",
       "rules": [
         "Limite giornaliero: 5 trote",
@@ -1230,7 +1230,7 @@
         "bigFish": false,
         "familyFriendly": true,
         "stocking": true,
-        "notes": "Punto di pesca urbano, perfetto per i più giovani. Trote iridee immesse regolarmente.",
+        "notes": "Punto di pesca urbano, perfetto per i piÃ¹ giovani. Trote iridee immesse regolarmente.",
         "parking": {
           "name": "Parcheggio Zona Industriale",
           "description": "Parcheggio asfaltato capiente, gratuito",
@@ -1243,24 +1243,24 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia nella zona industriale (ampio, gratuito, asfalto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il percorso sterrato lungo l'argine (2 min)"
           },
           {
             "step": 3,
-            "emoji": "🎣",
-            "text": "Sei al Piano — riva accessibile, ottima per bambini"
+            "emoji": "ðŸŽ£",
+            "text": "Sei al Piano â€” riva accessibile, ottima per bambini"
           }
         ],
         "markers": [
           {
             "type": "stocking",
-            "emoji": "🐟",
+            "emoji": "ðŸŸ",
             "name": "Zona immissione Iridea",
             "description": "Trote iridee e fario immesse con cadenza mensile"
           }
@@ -1287,13 +1287,13 @@
         "description": "Zona di immissione. Piano di Biella."
       },
       {
-        "name": "Cavaglià",
+        "name": "CavagliÃ ",
         "order": 3,
         "coordinates": {
           "lat": 45.476,
           "lng": 8.191
         },
-        "description": "Pianura biellese. Elvo più lento."
+        "description": "Pianura biellese. Elvo piÃ¹ lento."
       },
       {
         "name": "Carisio",
@@ -1307,7 +1307,7 @@
     ],
     "permits": {
       "management": "Tratto libero con licenza regionale",
-      "entity": "Regione Piemonte – Provincia di Biella",
+      "entity": "Regione Piemonte â€“ Provincia di Biella",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
       "dailyCost": "Informazione non disponibile",
@@ -1424,7 +1424,7 @@
       "Temolo"
     ],
     "difficulty": 2,
-    "recommendedRod": "1.68 m — 0.5/5 g",
+    "recommendedRod": "1.68 m â€” 0.5/5 g",
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
     "recommendedLures": [
       "Spoon 2 g",
@@ -1443,7 +1443,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "rules": [
         "Limite giornaliero: 5 trote",
@@ -1487,29 +1487,29 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia in Via Roma, Mosso (piazzola sterrata, 5 auto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Scendi verso il torrente seguendo il vicolo di pietra (10 min)"
           },
           {
             "step": 3,
-            "emoji": "🌉",
+            "emoji": "ðŸŒ‰",
             "text": "Attraversa il Ponte Romano per raggiungere la riva opposta"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "La buca è subito a valle del ponte — lancia dalla riva destra"
+            "emoji": "ðŸŽ£",
+            "text": "La buca Ã¨ subito a valle del ponte â€” lancia dalla riva destra"
           }
         ],
         "markers": [
           {
             "type": "bridge",
-            "emoji": "🌉",
+            "emoji": "ðŸŒ‰",
             "name": "Ponte Romano",
             "description": "Storico ponte medievale in pietra, punto di riferimento dello spot"
           }
@@ -1551,12 +1551,12 @@
           "lat": 45.618,
           "lng": 8.363
         },
-        "description": "Bassa valle, acque più lente."
+        "description": "Bassa valle, acque piÃ¹ lente."
       }
     ],
     "permits": {
       "management": "Tratto con regolamentazione mista",
-      "entity": "FIPSAS Biella – Sezione locale",
+      "entity": "FIPSAS Biella â€“ Sezione locale",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
       "dailyCost": "Informazione non disponibile",
@@ -1638,7 +1638,7 @@
         "id": "strona-lm2",
         "type": "waterfall",
         "name": "Salto del Mulino",
-        "description": "Antico mulino con salto artificiale di 2 m. La buca sottostante è uno spot storico per la fario.",
+        "description": "Antico mulino con salto artificiale di 2 m. La buca sottostante Ã¨ uno spot storico per la fario.",
         "coordinates": {
           "lat": 45.69,
           "lng": 8.115
@@ -1682,7 +1682,7 @@
       "Temolo"
     ],
     "difficulty": 4,
-    "recommendedRod": "1.68 m — 0.2/7 g",
+    "recommendedRod": "1.68 m â€” 0.2/7 g",
     "recommendedLine": "Trecciato PE 0.6 + Fluorocarbon 0.20",
     "recommendedLures": [
       "Spoon 4 g",
@@ -1701,7 +1701,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte + Segnaline zona Valsesia",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm | Temolo: rilascio obbligatorio",
       "rules": [
         "Limite giornaliero: 5 trote",
@@ -1745,29 +1745,29 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia alla piazzola sterrata prima del ponte (500 m)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il sentiero non segnato lungo il Mastallone (20 min)"
           },
           {
             "step": 3,
-            "emoji": "🌊",
-            "text": "Arrivi alla confluenza — rimani sulla riva sinistra del Mastallone"
+            "emoji": "ðŸŒŠ",
+            "text": "Arrivi alla confluenza â€” rimani sulla riva sinistra del Mastallone"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "La buca principale è proprio nel punto di incontro dei due fiumi"
+            "emoji": "ðŸŽ£",
+            "text": "La buca principale Ã¨ proprio nel punto di incontro dei due fiumi"
           }
         ],
         "markers": [
           {
             "type": "pool",
-            "emoji": "🌊",
+            "emoji": "ðŸŒŠ",
             "name": "Buca della Confluenza",
             "description": "Grande buca creata dall'incontro delle due correnti"
           }
@@ -1782,7 +1782,7 @@
           "lat": 45.878,
           "lng": 8.109
         },
-        "description": "Profondissima buca in gola isolata. Le trote fario più grandi del Mastallone vivono qui.",
+        "description": "Profondissima buca in gola isolata. Le trote fario piÃ¹ grandi del Mastallone vivono qui.",
         "fishingScore": 89,
         "techniques": [
           "ninfa",
@@ -1807,48 +1807,48 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia a Carcoforo (8 posti, asfalto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il sentiero CAI verso la gola (45 min, ripido)"
           },
           {
             "step": 3,
-            "emoji": "⚠️",
-            "text": "Zona senza segnale cellulare — informa qualcuno del percorso"
+            "emoji": "âš ï¸",
+            "text": "Zona senza segnale cellulare â€” informa qualcuno del percorso"
           },
           {
             "step": 4,
-            "emoji": "💧",
+            "emoji": "ðŸ’§",
             "text": "Scenata la cascata principale, entra in gola con cautela"
           },
           {
             "step": 5,
-            "emoji": "🎣",
-            "text": "Il gorgo è nella curva più stretta — lancia controcorrente dalla roccia piatta"
+            "emoji": "ðŸŽ£",
+            "text": "Il gorgo Ã¨ nella curva piÃ¹ stretta â€” lancia controcorrente dalla roccia piatta"
           }
         ],
         "markers": [
           {
             "type": "waterfall",
-            "emoji": "💧",
+            "emoji": "ðŸ’§",
             "name": "Cascata del Gorgo",
             "description": "Cascata di 8 m che precede la buca principale"
           },
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Balcone sulla Gola",
             "description": "Vista mozzafiato dall'alto sul Gorgo"
           },
           {
             "type": "warning",
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "name": "No segnale cellulare",
-            "description": "Zona senza copertura — andare sempre in coppia"
+            "description": "Zona senza copertura â€” andare sempre in coppia"
           }
         ]
       }
@@ -1902,7 +1902,7 @@
     ],
     "permits": {
       "management": "Riserva turistica FIPSAS",
-      "entity": "FIPSAS Vercelli – Sezione Valsesia",
+      "entity": "FIPSAS Vercelli â€“ Sezione Valsesia",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS + segnaline zona Valsesia",
       "dailyCost": "Informazione non disponibile",
@@ -1990,7 +1990,7 @@
         "id": "mastallone-lm3",
         "type": "confluence",
         "name": "Confluenza Sesia",
-        "description": "Confluenza con il Fiume Sesia. Zona mista con fario e temolo. Distanza di pesca obbligatoria dalla confluenza: 50 m — verificare norme locali.",
+        "description": "Confluenza con il Fiume Sesia. Zona mista con fario e temolo. Distanza di pesca obbligatoria dalla confluenza: 50 m â€” verificare norme locali.",
         "coordinates": {
           "lat": 45.818,
           "lng": 8.265
@@ -2001,7 +2001,7 @@
         "id": "mastallone-lm4",
         "type": "pool",
         "name": "Buca del Granito",
-        "description": "Pozzo profondo tra due massi granitici. Accesso via ferrata non segnata — equipaggiamento necessario. Fario trofeo.",
+        "description": "Pozzo profondo tra due massi granitici. Accesso via ferrata non segnata â€” equipaggiamento necessario. Fario trofeo.",
         "coordinates": {
           "lat": 45.85,
           "lng": 8.11
@@ -2034,7 +2034,7 @@
       "Trota Iridea"
     ],
     "difficulty": 3,
-    "recommendedRod": "1.80 m — 2/10 g",
+    "recommendedRod": "1.80 m â€” 2/10 g",
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.18",
     "recommendedLures": [
       "Spoon 3 g",
@@ -2053,7 +2053,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 20 cm | Trota Iridea: 25 cm",
       "rules": [
         "Limite giornaliero: 5 trote",
@@ -2097,35 +2097,35 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Sosta nell'area sterrata lungo la SP46 (450 m)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Scendi a piedi verso l'Orco lungo il sentiero dell'argine (15 min)"
           },
           {
             "step": 3,
-            "emoji": "📸",
-            "text": "Punto panoramico con vista sulle Alpi — prosegui verso l'ansa"
+            "emoji": "ðŸ“¸",
+            "text": "Punto panoramico con vista sulle Alpi â€” prosegui verso l'ansa"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "L'ansa è riconoscibile dalla curva marcata — posizionati all'uscita della corrente"
+            "emoji": "ðŸŽ£",
+            "text": "L'ansa Ã¨ riconoscibile dalla curva marcata â€” posizionati all'uscita della corrente"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Vista Alpi Canavese",
             "description": "Panorama sulle vette del Gran Paradiso"
           },
           {
             "type": "trail",
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "name": "Sentiero Argine Orco",
             "description": "Sentiero non segnato che segue il fiume per 2 km"
           }
@@ -2161,13 +2161,13 @@
         "description": "Confluenza Soana. Zona mista."
       },
       {
-        "name": "Cuorgnè",
+        "name": "CuorgnÃ¨",
         "order": 4,
         "coordinates": {
           "lat": 45.39,
           "lng": 7.646
         },
-        "description": "Bassa Valle. Orco più ampio."
+        "description": "Bassa Valle. Orco piÃ¹ ampio."
       },
       {
         "name": "Rivarolo Canavese",
@@ -2252,7 +2252,7 @@
         "id": "orco-lm1",
         "type": "dam",
         "name": "Diga di Ceresole",
-        "description": "Grande sbarramento artificiale. Il piede della diga è zona di rispetto — nessuna pesca. Accesso al tratto a valle dalla SP 460.",
+        "description": "Grande sbarramento artificiale. Il piede della diga Ã¨ zona di rispetto â€” nessuna pesca. Accesso al tratto a valle dalla SP 460.",
         "coordinates": {
           "lat": 45.432,
           "lng": 7.214
@@ -2263,7 +2263,7 @@
         "id": "orco-lm2",
         "type": "waterfall",
         "name": "Cascate del Rio Piantonetto",
-        "description": "Cascate dell'affluente Piantonetto in area Parco Nazionale Gran Paradiso. Area protetta — pesca vietata nel tratto in parco.",
+        "description": "Cascate dell'affluente Piantonetto in area Parco Nazionale Gran Paradiso. Area protetta â€” pesca vietata nel tratto in parco.",
         "coordinates": {
           "lat": 45.49,
           "lng": 7.54
@@ -2274,7 +2274,7 @@
         "id": "orco-lm3",
         "type": "bridge",
         "name": "Ponte Romano di Pont",
-        "description": "Antico ponte in pietra a Pont Canavese. Area con buca ampia sotto gli archi. Tratto libero con buona densità di pesci.",
+        "description": "Antico ponte in pietra a Pont Canavese. Area con buca ampia sotto gli archi. Tratto libero con buona densitÃ  di pesci.",
         "coordinates": {
           "lat": 45.422,
           "lng": 7.631
@@ -2285,7 +2285,7 @@
         "id": "orco-lm4",
         "type": "pool",
         "name": "Buca della Cascina",
-        "description": "Ansa con corrente lenta e fondo di ghiaia. Zona di riproduzione naturale — rispettare i nidi in ottobre-novembre.",
+        "description": "Ansa con corrente lenta e fondo di ghiaia. Zona di riproduzione naturale â€” rispettare i nidi in ottobre-novembre.",
         "coordinates": {
           "lat": 45.45,
           "lng": 7.59
@@ -2317,7 +2317,7 @@
       "Trota Fario"
     ],
     "difficulty": 4,
-    "recommendedRod": "2.10 m — 3/10 g",
+    "recommendedRod": "2.10 m â€” 3/10 g",
     "recommendedLine": "Monofilo 0.18 + Fluorocarbon 0.14",
     "recommendedLures": [
       "Spoon 2 g",
@@ -2336,7 +2336,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "1° luglio – 30 settembre (accesso estivo)",
+      "season": "1Â° luglio â€“ 30 settembre (accesso estivo)",
       "minSize": "Trota Fario: 20 cm",
       "rules": [
         "Lago d'alta quota: massimo 3 trote al giorno",
@@ -2380,48 +2380,48 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia al Santuario di Oropa (a pagamento, ampio)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
-            "text": "Segui il sentiero CAI n°727 verso il Mucrone (2 ore, dislivello 700 m)"
+            "emoji": "ðŸ¥¾",
+            "text": "Segui il sentiero CAI nÂ°727 verso il Mucrone (2 ore, dislivello 700 m)"
           },
           {
             "step": 3,
-            "emoji": "🏕️",
+            "emoji": "ðŸ•ï¸",
             "text": "Pausa al Rifugio Mucrone per rifocillarti prima della pesca"
           },
           {
             "step": 4,
-            "emoji": "📸",
-            "text": "Panorama spettacolare a 1900 m — continua verso la riva nord-est"
+            "emoji": "ðŸ“¸",
+            "text": "Panorama spettacolare a 1900 m â€” continua verso la riva nord-est"
           },
           {
             "step": 5,
-            "emoji": "🎣",
-            "text": "Pesca dalle rocce della riva nord-est — approccio furtivo obbligatorio"
+            "emoji": "ðŸŽ£",
+            "text": "Pesca dalle rocce della riva nord-est â€” approccio furtivo obbligatorio"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Vista Alpi Biellesi",
-            "description": "Panorama a 360° sulle Alpi dal Mucrone a quota 1900 m"
+            "description": "Panorama a 360Â° sulle Alpi dal Mucrone a quota 1900 m"
           },
           {
             "type": "bar",
-            "emoji": "🍴",
+            "emoji": "ðŸ´",
             "name": "Rifugio Mucrone",
             "description": "Rifugio alpino aperto in estate, pasti e pernottamento"
           },
           {
             "type": "warning",
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "name": "Meteo alpino",
-            "description": "Temporali improvvisi — consultare le previsioni prima di salire"
+            "description": "Temporali improvvisi â€” consultare le previsioni prima di salire"
           }
         ]
       }
@@ -2448,7 +2448,7 @@
     ],
     "permits": {
       "management": "Tratto libero (alta quota)",
-      "entity": "Regione Piemonte – Provincia di Biella",
+      "entity": "Regione Piemonte â€“ Provincia di Biella",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
       "dailyCost": "Informazione non disponibile",
@@ -2502,7 +2502,7 @@
         "id": "mucrone-lm1",
         "type": "dam",
         "name": "Diga del Mucrone",
-        "description": "Diga dell'Enel che alimenta il lago. L'area attorno alla diga è zona di rispetto con accesso limitato.",
+        "description": "Diga dell'Enel che alimenta il lago. L'area attorno alla diga Ã¨ zona di rispetto con accesso limitato.",
         "coordinates": {
           "lat": 45.76,
           "lng": 8.032
@@ -2547,7 +2547,7 @@
       "Persico"
     ],
     "difficulty": 1,
-    "recommendedRod": "2.70 m — 10/30 g",
+    "recommendedRod": "2.70 m â€” 10/30 g",
     "recommendedLine": "Trecciato PE 0.8 + Fluorocarbon 0.25",
     "recommendedLures": [
       "Rapalas 7 cm",
@@ -2609,36 +2609,36 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia al Lido di Viverone (100 m dal pontile)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui la passeggiata lungo il lago verso il pontile (2 min)"
           },
           {
             "step": 3,
-            "emoji": "🎣",
-            "text": "Pontile pubblico — pesca dal bordo, profondità 2-4 m"
+            "emoji": "ðŸŽ£",
+            "text": "Pontile pubblico â€” pesca dal bordo, profonditÃ  2-4 m"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Vista Lago di Viverone",
             "description": "Panorama sul lago e sulle Alpi sullo sfondo"
           },
           {
             "type": "stocking",
-            "emoji": "🐟",
+            "emoji": "ðŸŸ",
             "name": "Zona immissione",
             "description": "Iridee e lacustri immesse mensilmente"
           },
           {
             "type": "service",
-            "emoji": "🚻",
+            "emoji": "ðŸš»",
             "name": "Servizi Lido",
             "description": "WC, bar e noleggio barche al Lido"
           }
@@ -2792,7 +2792,7 @@
       "Trota Marmorata"
     ],
     "difficulty": 4,
-    "recommendedRod": "1.53 m — 0.5/5 g",
+    "recommendedRod": "1.53 m â€” 0.5/5 g",
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
     "recommendedLures": [
       "Minnow 50 mm",
@@ -2811,10 +2811,10 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "2ª domenica di marzo – 30 settembre",
+      "season": "2Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 22 cm | Trota Marmorata: 60 cm (max 1 esemplare/anno)",
       "rules": [
-        "Trota Marmorata: È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
+        "Trota Marmorata: Ãˆ consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
         "Limite: 3 trote fario al giorno",
         "Guado obbligatorio con waders",
         "Vietate le esche naturali di origine animale"
@@ -2842,7 +2842,7 @@
         "bigFish": true,
         "familyFriendly": false,
         "stocking": false,
-        "notes": "Habitat protetto della Marmorata. Approccio furtivo obbligatorio. È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
+        "notes": "Habitat protetto della Marmorata. Approccio furtivo obbligatorio. Ãˆ consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
         "parking": {
           "name": "Piazzola Artogna Valle",
           "description": "Piazzola sterrata all'ingresso della valle, 6 auto",
@@ -2855,46 +2855,46 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia alla piazzola all'ingresso della valle (6 auto)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Sentiero in salita lungo il torrente (30 min, attenzione alle rocce)"
           },
           {
             "step": 3,
-            "emoji": "💧",
-            "text": "Senti il rumore del Salto del Diavolo — prosegui ancora 5 min"
+            "emoji": "ðŸ’§",
+            "text": "Senti il rumore del Salto del Diavolo â€” prosegui ancora 5 min"
           },
           {
             "step": 4,
-            "emoji": "📸",
-            "text": "Vista spettacolare sul salto di 12 m — scendi con cautela verso la buca"
+            "emoji": "ðŸ“¸",
+            "text": "Vista spettacolare sul salto di 12 m â€” scendi con cautela verso la buca"
           },
           {
             "step": 5,
-            "emoji": "🎣",
-            "text": "Pesca dalla riva sinistra — approccio furtivo, zero ombre sull'acqua"
+            "emoji": "ðŸŽ£",
+            "text": "Pesca dalla riva sinistra â€” approccio furtivo, zero ombre sull'acqua"
           }
         ],
         "markers": [
           {
             "type": "waterfall",
-            "emoji": "💧",
+            "emoji": "ðŸ’§",
             "name": "Salto del Diavolo",
-            "description": "Cascata naturale di 12 m, una delle più spettacolari dell'Ossola"
+            "description": "Cascata naturale di 12 m, una delle piÃ¹ spettacolari dell'Ossola"
           },
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Belvedere Ossola",
             "description": "Vista panoramica sulla Valle Ossola"
           },
           {
             "type": "warning",
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "name": "Zona protetta Marmorata",
             "description": "Regolamento specifico Marmorata: massimo un esemplare all'anno, solo se pari o superiore a 60 cm"
           }
@@ -2932,7 +2932,7 @@
     ],
     "permits": {
       "management": "Tratto libero con protezione Trota Marmorata",
-      "entity": "Regione Piemonte – Provincia del VCO",
+      "entity": "Regione Piemonte â€“ Provincia del VCO",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
       "dailyCost": "Informazione non disponibile",
@@ -2942,7 +2942,7 @@
       "catchLimit": "3 trote fario al giorno",
       "minSize": "Trota Fario: 22 cm",
       "catchAndRelease": false,
-      "notes": "Trota Marmorata: È consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
+      "notes": "Trota Marmorata: Ãˆ consentito trattenere un solo esemplare all'anno, esclusivamente se di lunghezza pari o superiore a 60 cm, nel rispetto del regolamento vigente.",
       "pointsOfSale": [
         {
           "name": "Negozi di pesca VCO",
@@ -3012,7 +3012,7 @@
         "id": "artogna-lm3",
         "type": "confluence",
         "name": "Confluenza Toce",
-        "description": "Immissione nel Fiume Toce. Zona produttiva per lasche e cavedani. La fario è rara nel tratto terminale.",
+        "description": "Immissione nel Fiume Toce. Zona produttiva per lasche e cavedani. La fario Ã¨ rara nel tratto terminale.",
         "coordinates": {
           "lat": 46.052,
           "lng": 8.298
@@ -3034,7 +3034,7 @@
       "Trota Iridea"
     ],
     "difficulty": 3,
-    "recommendedRod": "2.10 m — 5/15 g",
+    "recommendedRod": "2.10 m â€” 5/15 g",
     "recommendedLine": "Monofilo 0.20 + Fluorocarbon 0.16",
     "recommendedLures": [
       "Spoon 3 g",
@@ -3053,7 +3053,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "1° giugno – 30 settembre",
+      "season": "1Â° giugno â€“ 30 settembre",
       "minSize": "Trota: 22 cm",
       "rules": [
         "Accesso tramite sentiero: 45 min da Antronapiana",
@@ -3096,35 +3096,35 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia ad Antronapiana (gratuito, paese)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
-            "text": "Sentiero segnato verso il lago, 45 min (CAI n°57)"
+            "emoji": "ðŸ¥¾",
+            "text": "Sentiero segnato verso il lago, 45 min (CAI nÂ°57)"
           },
           {
             "step": 3,
-            "emoji": "🏕️",
-            "text": "Area di sosta con tavoli al bordo del lago — ottima per una pausa"
+            "emoji": "ðŸ•ï¸",
+            "text": "Area di sosta con tavoli al bordo del lago â€” ottima per una pausa"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "Pesca nell'area di immissione del torrente — le trote si concentrano qui"
+            "emoji": "ðŸŽ£",
+            "text": "Pesca nell'area di immissione del torrente â€” le trote si concentrano qui"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Vista Lago Antrona",
             "description": "Lago alpino incassato tra le pareti rocciose, visuale spettacolare"
           },
           {
             "type": "rest",
-            "emoji": "🏕️",
+            "emoji": "ðŸ•ï¸",
             "name": "Area di sosta alpina",
             "description": "Tavoli e panche in legno per la pausa pranzo"
           }
@@ -3161,7 +3161,7 @@
       }
     ],
     "permits": {
-      "management": "Area Parco Naturale – regolamento speciale",
+      "management": "Area Parco Naturale â€“ regolamento speciale",
       "entity": "Parco Naturale Alpe Veglia e Alpe Devero + Regione Piemonte",
       "licenseRequired": true,
       "licenseType": "Licenza regionale Piemonte + tesserino FIPSAS",
@@ -3216,7 +3216,7 @@
         "id": "antrona-lm1",
         "type": "dam",
         "name": "Diga di Antrona",
-        "description": "Grande diga artificiale del 1941. Area di rispetto nella fascia a 300 m. Il lago è gestito da ENEL con permesso specifico.",
+        "description": "Grande diga artificiale del 1941. Area di rispetto nella fascia a 300 m. Il lago Ã¨ gestito da ENEL con permesso specifico.",
         "coordinates": {
           "lat": 46.063,
           "lng": 8.127
@@ -3227,7 +3227,7 @@
         "id": "antrona-lm2",
         "type": "access",
         "name": "Frana del 1642",
-        "description": "Sito storico: enorme frana che ostruì la valle creando un lago effimero. Punto di interest geologico con pannello esplicativo.",
+        "description": "Sito storico: enorme frana che ostruÃ¬ la valle creando un lago effimero. Punto di interest geologico con pannello esplicativo.",
         "coordinates": {
           "lat": 46.07,
           "lng": 8.13
@@ -3260,7 +3260,7 @@
       "Temolo"
     ],
     "difficulty": 4,
-    "recommendedRod": "1.68 m — 0.5/5 g",
+    "recommendedRod": "1.68 m â€” 0.5/5 g",
     "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
     "recommendedLures": [
       "Spoon 2 g",
@@ -3279,7 +3279,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza Valle d'Aosta (diversa da Piemonte!)",
-      "season": "3ª domenica di marzo – 30 settembre",
+      "season": "3Âª domenica di marzo â€“ 30 settembre",
       "minSize": "Trota Fario: 20 cm | Temolo: rilascio obbligatorio",
       "rules": [
         "Attenzione: licenza VALDOSTANA separata da quella piemontese",
@@ -3323,35 +3323,35 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia a Gressoney-Saint-Jean (tariffa estiva)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Segui il percorso pedonale lungo il Lys verso nord (5 min)"
           },
           {
             "step": 3,
-            "emoji": "📸",
-            "text": "Vista panoramica sul Monte Rosa — prosegui verso l'ansa"
+            "emoji": "ðŸ“¸",
+            "text": "Vista panoramica sul Monte Rosa â€” prosegui verso l'ansa"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "L'ansa è riconoscibile dal larice inclinato sull'acqua — pesca da riva sinistra"
+            "emoji": "ðŸŽ£",
+            "text": "L'ansa Ã¨ riconoscibile dal larice inclinato sull'acqua â€” pesca da riva sinistra"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Vista Monte Rosa",
             "description": "Panorama sul ghiacciaio del Monte Rosa dalla riva del Lys"
           },
           {
             "type": "shop",
-            "emoji": "🏪",
+            "emoji": "ðŸª",
             "name": "Negozio pesca Gressoney",
             "description": "Negozio di pesca locale con licenze valdostane"
           }
@@ -3378,7 +3378,7 @@
         "bigFish": false,
         "familyFriendly": false,
         "stocking": false,
-        "notes": "Tratto meno frequentato. Corrente forte — waders indispensabili. Fario selvatiche reattive.",
+        "notes": "Tratto meno frequentato. Corrente forte â€” waders indispensabili. Fario selvatiche reattive.",
         "parking": {
           "name": "Piazzola Gaby",
           "description": "Sterrato vicino alla strada provinciale, 5 auto",
@@ -3391,38 +3391,38 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia alla piazzola sterrata vicino a Gaby (600 m)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "text": "Discesa non segnata verso il Lys (20 min, attenzione alla pendenza)"
           },
           {
             "step": 3,
-            "emoji": "🌊",
-            "text": "Corrente forte — entra in acqua con cautela, calcola il guado"
+            "emoji": "ðŸŒŠ",
+            "text": "Corrente forte â€” entra in acqua con cautela, calcola il guado"
           },
           {
             "step": 4,
-            "emoji": "🎣",
-            "text": "Il raschio si estende per 300 m — pesca risalendo da valle verso monte"
+            "emoji": "ðŸŽ£",
+            "text": "Il raschio si estende per 300 m â€” pesca risalendo da valle verso monte"
           }
         ],
         "markers": [
           {
             "type": "trail",
-            "emoji": "🥾",
+            "emoji": "ðŸ¥¾",
             "name": "Sentiero non segnato",
-            "description": "Discesa ripida verso il Lys — attenzione in caso di pioggia"
+            "description": "Discesa ripida verso il Lys â€” attenzione in caso di pioggia"
           }
         ]
       }
     ],
     "localities": [
       {
-        "name": "Gressoney-la-Trinité",
+        "name": "Gressoney-la-TrinitÃ©",
         "order": 1,
         "coordinates": {
           "lat": 45.836,
@@ -3469,7 +3469,7 @@
     ],
     "permits": {
       "management": "Regolamentazione Valle d'Aosta (diversa dal Piemonte!)",
-      "entity": "Regione Autonoma Valle d'Aosta – Assessorato Agricoltura",
+      "entity": "Regione Autonoma Valle d'Aosta â€“ Assessorato Agricoltura",
       "licenseRequired": true,
       "licenseType": "Licenza VALDOSTANA (separata dalla licenza piemontese) + tesserino FIPSAS VdA",
       "dailyCost": "Informazione non disponibile",
@@ -3479,7 +3479,7 @@
       "catchLimit": "5 trote al giorno (Temolo: rilascio obbligatorio)",
       "minSize": "Trota Fario: 20 cm | Temolo: rilascio obbligatorio",
       "catchAndRelease": false,
-      "notes": "⚠️ ATTENZIONE: La licenza piemontese NON è valida in Valle d'Aosta. Occorre la licenza valdostana separata. I pescatori piemontesi spesso dimenticano questa distinzione.",
+      "notes": "âš ï¸ ATTENZIONE: La licenza piemontese NON Ã¨ valida in Valle d'Aosta. Occorre la licenza valdostana separata. I pescatori piemontesi spesso dimenticano questa distinzione.",
       "pointsOfSale": [
         {
           "name": "Negozio pesca Gressoney",
@@ -3503,7 +3503,7 @@
           0,
           4
         ],
-        "description": "Pesca libera con licenza valdostana (NON piemontese). Stagione: 3ª domenica marzo–30 settembre."
+        "description": "Pesca libera con licenza valdostana (NON piemontese). Stagione: 3Âª domenica marzoâ€“30 settembre."
       }
     ],
     "polyline": [
@@ -3545,7 +3545,7 @@
         "id": "lys-lm1",
         "type": "bridge",
         "name": "Ponte Romano di Pont-Saint-Martin",
-        "description": "Magnifico arco romano del I sec. a.C. Monumento storico. Zona di pesca a valle — accesso dalla sponda sinistra.",
+        "description": "Magnifico arco romano del I sec. a.C. Monumento storico. Zona di pesca a valle â€” accesso dalla sponda sinistra.",
         "coordinates": {
           "lat": 45.6,
           "lng": 7.796
@@ -3556,7 +3556,7 @@
         "id": "lys-lm2",
         "type": "waterfall",
         "name": "Cascata di Fontainemore",
-        "description": "Cascata principale della bassa valle. La buca a valle è uno spot storico per la fario. Accesso da piazzola sulla SS 26.",
+        "description": "Cascata principale della bassa valle. La buca a valle Ã¨ uno spot storico per la fario. Accesso da piazzola sulla SS 26.",
         "coordinates": {
           "lat": 45.683,
           "lng": 7.847
@@ -3594,7 +3594,7 @@
           "lat": 45.782,
           "lng": 7.858
         },
-        "locality": "Gressoney-La-Trinité"
+        "locality": "Gressoney-La-TrinitÃ©"
       }
     ]
   },
@@ -3610,7 +3610,7 @@
       "Trota Fario"
     ],
     "difficulty": 5,
-    "recommendedRod": "1.80 m — 1/7 g",
+    "recommendedRod": "1.80 m â€” 1/7 g",
     "recommendedLine": "Monofilo 0.16 + Fluorocarbon 0.12",
     "recommendedLures": [
       "Spoon 1.5 g",
@@ -3627,7 +3627,7 @@
     },
     "regulations": {
       "license": "Tesserino FIPSAS + Licenza regionale Piemonte",
-      "season": "1° luglio – 15 settembre (solo estate)",
+      "season": "1Â° luglio â€“ 15 settembre (solo estate)",
       "minSize": "Trota Fario: 18 cm",
       "rules": [
         "Lago d'alta quota: massimo 2 trote al giorno",
@@ -3671,48 +3671,48 @@
         "path": [
           {
             "step": 1,
-            "emoji": "🅿️",
+            "emoji": "ðŸ…¿ï¸",
             "text": "Parcheggia a Campiglia Soana (gratuito)"
           },
           {
             "step": 2,
-            "emoji": "🥾",
-            "text": "Sentiero GTA verso il Lago Nero — 3 ore, dislivello 950 m"
+            "emoji": "ðŸ¥¾",
+            "text": "Sentiero GTA verso il Lago Nero â€” 3 ore, dislivello 950 m"
           },
           {
             "step": 3,
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "text": "Zona Gran Paradiso: no cani, no fuochi, niente disturbi alla fauna"
           },
           {
             "step": 4,
-            "emoji": "📸",
-            "text": "Arrivi al lago a 2157 m — vista sulle cime del Gran Paradiso"
+            "emoji": "ðŸ“¸",
+            "text": "Arrivi al lago a 2157 m â€” vista sulle cime del Gran Paradiso"
           },
           {
             "step": 5,
-            "emoji": "🎣",
-            "text": "Pesca dalla riva nord — le trote si concentrano al mattino presto in estate"
+            "emoji": "ðŸŽ£",
+            "text": "Pesca dalla riva nord â€” le trote si concentrano al mattino presto in estate"
           }
         ],
         "markers": [
           {
             "type": "scenic",
-            "emoji": "📸",
+            "emoji": "ðŸ“¸",
             "name": "Panorama Gran Paradiso",
-            "description": "Vista a 360° sulle cime del Parco Nazionale Gran Paradiso"
+            "description": "Vista a 360Â° sulle cime del Parco Nazionale Gran Paradiso"
           },
           {
             "type": "warning",
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "name": "Parco Nazionale",
-            "description": "Area protetta — regole severe, rispettare segnaletica e fauna"
+            "description": "Area protetta â€” regole severe, rispettare segnaletica e fauna"
           },
           {
             "type": "warning",
-            "emoji": "⚠️",
+            "emoji": "âš ï¸",
             "name": "Meteo imprevedibile",
-            "description": "Temporali rapidi ad alta quota — partire presto la mattina"
+            "description": "Temporali rapidi ad alta quota â€” partire presto la mattina"
           }
         ]
       }
@@ -3749,7 +3749,7 @@
       "catchLimit": "2 trote al giorno",
       "minSize": "Trota Fario: 18 cm",
       "catchAndRelease": false,
-      "notes": "Zona Parco Nazionale Gran Paradiso. Regole severe — rispettare tutta la fauna e la flora. Accesso solo a piedi (3 ore). Stagione: 1 luglio–15 settembre.",
+      "notes": "Zona Parco Nazionale Gran Paradiso. Regole severe â€” rispettare tutta la fauna e la flora. Accesso solo a piedi (3 ore). Stagione: 1 luglioâ€“15 settembre.",
       "pointsOfSale": [
         {
           "name": "Centro Visitatori Gran Paradiso",
@@ -3812,5 +3812,1698 @@
         "locality": "Campiglia Soana"
       }
     ]
+  },
+  {
+    "id": "egua",
+    "name": "Torrente Egua",
+    "waterType": "torrente di montagna",
+    "region": "Piemonte",
+    "province": "Vercelli",
+    "zone": "Val d'Egua - Valsesia",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.65 m - 0.5/5 g",
+    "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.14",
+    "recommendedLures": [
+      "Ninfa Pheasant Tail #16",
+      "Spoon 2 g",
+      "Minnow 45 mm affondante"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Egua_a_Carcoforo.jpeg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/TorrenteEgua.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/VAL_SERMENZA_-_CARCOFORO1772.jpg"
+    ],
+    "coordinates": {
+      "lat": 45.8589,
+      "lng": 8.0642
+    },
+    "regulations": {
+      "license": "Licenza pesca acque interne e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico provinciale aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Consultare sempre regolamento locale aggiornato prima dell'uscita",
+        "Tratti montani con piene rapide dopo temporali",
+        "Preferire guadi solo con livelli stabili",
+        "Ami senza ardiglione consigliati"
+      ]
+    },
+    "spots": [
+      {
+        "id": "egua-carcoforo-cascade",
+        "name": "Cascatelle di Carcoforo",
+        "type": "salto",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 45.914,
+          "lng": 8.051
+        },
+        "description": "Tratto torrentizio freddo e ossigenato con salti, buche brevi e corridoi in ombra.",
+        "fishingScore": 83,
+        "techniques": [
+          "ninfa",
+          "secca"
+        ],
+        "walkingMinutes": 25,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": false,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Per esperti: approccio corto e preciso nelle lame veloci. Per principianti: lavorare solo i bordi lenti e le piccole buche protette.",
+        "parking": {
+          "name": "Parcheggio Carcoforo",
+          "description": "Parcheggio comunale in paese",
+          "distanceMeters": 450,
+          "coordinates": {
+            "lat": 45.9132,
+            "lng": 8.0485
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia nel centro di Carcoforo"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Segui il sentiero lungo il torrente verso monte"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸ’§",
+            "text": "Raggiungi il primo salto con buca profonda"
+          },
+          {
+            "step": 4,
+            "emoji": "ðŸŽ£",
+            "text": "Pesca risalendo da valle con lanci corti"
+          }
+        ],
+        "markers": [
+          {
+            "type": "waterfall",
+            "emoji": "ðŸ’§",
+            "name": "Salti di Carcoforo",
+            "description": "Serie di salti naturali e corridoi stretti"
+          },
+          {
+            "type": "trail",
+            "emoji": "ðŸ¥¾",
+            "name": "Sentiero Val d'Egua",
+            "description": "Accesso principale ai tratti alti"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Pizzo Tignaga",
+        "order": 1,
+        "coordinates": {
+          "lat": 45.93,
+          "lng": 8.045
+        },
+        "description": "Area sorgentizia alta della valle."
+      },
+      {
+        "name": "Carcoforo",
+        "order": 2,
+        "coordinates": {
+          "lat": 45.913,
+          "lng": 8.049
+        },
+        "description": "Tratto montano con salti e buche brevi."
+      },
+      {
+        "name": "Rimasco",
+        "order": 3,
+        "coordinates": {
+          "lat": 45.852,
+          "lng": 8.067
+        },
+        "description": "Confluenza nel sistema del Sermenza presso il lago di Rimasco."
+      }
+    ],
+    "permits": {
+      "management": "Corso d'acqua alpino con regolamentazione locale",
+      "entity": "Enti locali competenti e sezione pesca provinciale",
+      "licenseRequired": true,
+      "licenseType": "Licenza pesca valida + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.fipsas.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni operative: tarda primavera, estate e inizio autunno con acqua stabile. Condizioni ideali: livelli medio-bassi e buona trasparenza.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Valsesia",
+          "address": "Area Valsesia",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Egua",
+        "segment": [
+          0,
+          4
+        ],
+        "description": "Verificare sul posto eventuali sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        45.93,
+        8.045
+      ],
+      [
+        45.914,
+        8.051
+      ],
+      [
+        45.89,
+        8.056
+      ],
+      [
+        45.872,
+        8.061
+      ],
+      [
+        45.852,
+        8.067
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "egua-lm1",
+        "type": "waterfall",
+        "name": "Cascatella dell'Egua",
+        "description": "Punto scenico con salto e ossigenazione elevata.",
+        "coordinates": {
+          "lat": 45.914,
+          "lng": 8.051
+        },
+        "locality": "Carcoforo"
+      },
+      {
+        "id": "egua-lm2",
+        "type": "confluence",
+        "name": "Immissione nel bacino di Rimasco",
+        "description": "Tratto terminale con correnti miste e margini profondi.",
+        "coordinates": {
+          "lat": 45.852,
+          "lng": 8.067
+        },
+        "locality": "Rimasco"
+      }
+    ]
+  },
+  {
+    "id": "sermenza",
+    "name": "Torrente Sermenza",
+    "waterType": "torrente di montagna",
+    "region": "Piemonte",
+    "province": "Vercelli",
+    "zone": "Val Sermenza - Valsesia",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 3,
+    "recommendedRod": "1.70 m - 0.5/7 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": [
+      "Parachute Adams #16",
+      "Spoon 2.5 g",
+      "Minnow 50 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte_sul_Sermenza_-_Rimasco_(Foto_Luca_Giarelli).jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Piaggiona_mai_2006_0069.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cerva,_villages_in_Rossa,_Italy.jpg"
+    ],
+    "coordinates": {
+      "lat": 45.8167,
+      "lng": 8.1382
+    },
+    "regulations": {
+      "license": "Licenza pesca acque interne e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico provinciale aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Il torrente e storicamente noto per la pesca alla trota",
+        "Regime pluvio-nivale con variazioni rapide in caso di temporali",
+        "Evitare guadi con acqua velata o in crescita",
+        "Controllare sempre avvisi locali"
+      ]
+    },
+    "spots": [
+      {
+        "id": "sermenza-rimasco-run",
+        "name": "Run di Rimasco",
+        "type": "raschio",
+        "difficulty": 3,
+        "coordinates": {
+          "lat": 45.852,
+          "lng": 8.067
+        },
+        "description": "Lame correnti alternate a buche medie, ottime per ninfa e spinning leggero.",
+        "fishingScore": 80,
+        "techniques": [
+          "ninfa",
+          "spinning"
+        ],
+        "walkingMinutes": 10,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": false,
+        "familyFriendly": true,
+        "stocking": false,
+        "notes": "Per principianti: lavorare i raschi laterali. Per esperti: cercare le inversioni di corrente sotto i massi maggiori.",
+        "parking": {
+          "name": "Parcheggio Rimasco",
+          "description": "Parcheggio vicino al ponte",
+          "distanceMeters": 220,
+          "coordinates": {
+            "lat": 45.851,
+            "lng": 8.069
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia vicino al ponte di Rimasco"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Segui il sentiero spondale per 10 minuti"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Inizia dal raschio basso e risali"
+          }
+        ],
+        "markers": [
+          {
+            "type": "bridge",
+            "emoji": "ðŸŒ‰",
+            "name": "Ponte di Rimasco",
+            "description": "Riferimento di accesso al tratto"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Rima",
+        "order": 1,
+        "coordinates": {
+          "lat": 45.889,
+          "lng": 8.137
+        },
+        "description": "Area sorgentizia alta del Sermenza."
+      },
+      {
+        "name": "Rimasco",
+        "order": 2,
+        "coordinates": {
+          "lat": 45.852,
+          "lng": 8.067
+        },
+        "description": "Contributo dell'Egua e passaggio nel lago di Rimasco."
+      },
+      {
+        "name": "Balmuccia",
+        "order": 3,
+        "coordinates": {
+          "lat": 45.818,
+          "lng": 8.141
+        },
+        "description": "Confluenza nel Sesia."
+      }
+    ],
+    "permits": {
+      "management": "Corso montano regolamentato localmente",
+      "entity": "Enti locali competenti e sezione pesca provinciale",
+      "licenseRequired": true,
+      "licenseType": "Licenza pesca valida + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.fipsas.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni: primavera avanzata e inizio autunno. Migliori condizioni: acqua in leggera velatura e portata stabile.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Valsesia",
+          "address": "Area Valsesia",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Sermenza",
+        "segment": [
+          0,
+          5
+        ],
+        "description": "Verificare sul posto eventuali sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        45.889,
+        8.137
+      ],
+      [
+        45.871,
+        8.119
+      ],
+      [
+        45.852,
+        8.067
+      ],
+      [
+        45.838,
+        8.102
+      ],
+      [
+        45.826,
+        8.124
+      ],
+      [
+        45.818,
+        8.141
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "sermenza-lm1",
+        "type": "bridge",
+        "name": "Ponte storico di Rimasco",
+        "description": "Accesso comodo ai tratti medi del torrente.",
+        "coordinates": {
+          "lat": 45.851,
+          "lng": 8.069
+        },
+        "locality": "Rimasco"
+      },
+      {
+        "id": "sermenza-lm2",
+        "type": "confluence",
+        "name": "Confluenza con il Sesia",
+        "description": "Correnti miste e raschi terminali.",
+        "coordinates": {
+          "lat": 45.818,
+          "lng": 8.141
+        },
+        "locality": "Balmuccia"
+      }
+    ]
+  },
+  {
+    "id": "landwasser",
+    "name": "Torrente Landwasser",
+    "waterType": "torrente di montagna",
+    "region": "Svizzera",
+    "province": "Grigioni",
+    "zone": "Davos - Landwassertal",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.80 m - 1/8 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": [
+      "Ninfa Hare's Ear #14",
+      "Streamer Woolly Bugger #8",
+      "Minnow 50 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Landwasser_-_Davos,_Switzerland_-_August_12,_2025_01.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Landwasser,_Davos.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Landwasser_from_viewpoint_south_Landwasserviadukt_2022-09-25_01.jpg"
+    ],
+    "coordinates": {
+      "lat": 46.8025,
+      "lng": 9.836
+    },
+    "regulations": {
+      "license": "Licenza e permessi cantonali svizzeri secondo normativa locale",
+      "season": "Verificare periodi e finestre cantonali aggiornate",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Corso alpino nivo-alpino con forti variazioni di portata",
+        "Controllare regolamenti del Cantone Grigioni prima della pesca",
+        "Tratti incassati: massima attenzione in guado",
+        "Preferire pesca con ami senza ardiglione"
+      ]
+    },
+    "spots": [
+      {
+        "id": "landwasser-frauenkirch",
+        "name": "Run di Frauenkirch",
+        "type": "raschio",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 46.772,
+          "lng": 9.79
+        },
+        "description": "Lungo run alpino con raschi veloci e buche profonde lungo la gola.",
+        "fishingScore": 82,
+        "techniques": [
+          "ninfa",
+          "streamer"
+        ],
+        "walkingMinutes": 18,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": true,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Per esperti: pesca a ninfa pesante in correnti veloci. Per principianti: limitarsi alle sponde meno incassate e mai entrare in acqua alta.",
+        "parking": {
+          "name": "Parcheggio Frauenkirch",
+          "description": "Parcheggio lungo la valle",
+          "distanceMeters": 350,
+          "coordinates": {
+            "lat": 46.771,
+            "lng": 9.788
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia a Frauenkirch"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Segui il sentiero spondale verso il run"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Lavora prima i margini e poi la vena centrale"
+          }
+        ],
+        "markers": [
+          {
+            "type": "bridge",
+            "emoji": "ðŸŒ‰",
+            "name": "Ponti ferroviari del Landwasser",
+            "description": "Tratto iconico lungo la valle"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Davos Dorf",
+        "order": 1,
+        "coordinates": {
+          "lat": 46.81,
+          "lng": 9.844
+        },
+        "description": "Origine del corso principale nel sistema di Davos."
+      },
+      {
+        "name": "Frauenkirch",
+        "order": 2,
+        "coordinates": {
+          "lat": 46.772,
+          "lng": 9.79
+        },
+        "description": "Run medio con correnti forti."
+      },
+      {
+        "name": "Filisur",
+        "order": 3,
+        "coordinates": {
+          "lat": 46.676,
+          "lng": 9.694
+        },
+        "description": "Area del viadotto e tratto terminale verso l'Albula."
+      }
+    ],
+    "permits": {
+      "management": "Regolamentazione cantonale svizzera",
+      "entity": "Autorita cantonali competenti (GR)",
+      "licenseRequired": true,
+      "licenseType": "Licenza/permesso cantonale svizzero",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.gr.ch",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limiti vigenti",
+      "minSize": "Verificare taglie vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni: estate e inizio autunno. Migliori condizioni: portata stabile e acqua leggermente velata dopo piena in calo.",
+      "pointsOfSale": [
+        {
+          "name": "Uffici e portali cantonali",
+          "address": "Cantone Grigioni",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Landwasser",
+        "segment": [
+          0,
+          5
+        ],
+        "description": "Verificare suddivisioni e zone speciali sui portali cantonali ufficiali."
+      }
+    ],
+    "polyline": [
+      [
+        46.81,
+        9.844
+      ],
+      [
+        46.79,
+        9.82
+      ],
+      [
+        46.772,
+        9.79
+      ],
+      [
+        46.73,
+        9.74
+      ],
+      [
+        46.699,
+        9.708
+      ],
+      [
+        46.676,
+        9.694
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "landwasser-lm1",
+        "type": "bridge",
+        "name": "Landwasserviadukt",
+        "description": "Viadotto iconico sopra la valle del Landwasser.",
+        "coordinates": {
+          "lat": 46.676,
+          "lng": 9.68
+        },
+        "locality": "Filisur"
+      },
+      {
+        "id": "landwasser-lm2",
+        "type": "confluence",
+        "name": "Confluenza con Albula",
+        "description": "Tratto terminale con correnti convergenti.",
+        "coordinates": {
+          "lat": 46.669,
+          "lng": 9.665
+        },
+        "locality": "Filisur"
+      }
+    ]
+  },
+  {
+    "id": "sorba",
+    "name": "Torrente Sorba",
+    "waterType": "torrente di montagna",
+    "region": "Piemonte",
+    "province": "Vercelli",
+    "zone": "Val Sorba - Valsesia",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.65 m - 0.5/5 g",
+    "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.14",
+    "recommendedLures": [
+      "Elk Hair Caddis #14",
+      "Spoon 2 g",
+      "Minnow 45 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rassa_Torrente_Sorba_1.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rassa_Torrente_Sorba_2.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Rassa_Torrente_Sorba_3.jpg"
+    ],
+    "coordinates": {
+      "lat": 45.7738,
+      "lng": 8.0469
+    },
+    "regulations": {
+      "license": "Licenza pesca acque interne e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico provinciale aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Torrente montano con forte dinamica in piena",
+        "Gole strette: richiede approccio prudente",
+        "Verificare sempre regolamenti locali aggiornati",
+        "Consigliato rilascio del pescato"
+      ]
+    },
+    "spots": [
+      {
+        "id": "sorba-rassa-gorge",
+        "name": "Gola di Rassa",
+        "type": "buca",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 45.771,
+          "lng": 8.052
+        },
+        "description": "Buca incassata tra pareti rocciose con correnti di ritorno e acqua ossigenata.",
+        "fishingScore": 84,
+        "techniques": [
+          "ninfa",
+          "streamer"
+        ],
+        "walkingMinutes": 20,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": true,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Per principianti: evitare il guado centrale e pescare solo i bordi. Per esperti: lavorare le correnti di rientro sotto i salti.",
+        "parking": {
+          "name": "Parcheggio Rassa",
+          "description": "Parcheggio comunale",
+          "distanceMeters": 380,
+          "coordinates": {
+            "lat": 45.773,
+            "lng": 8.048
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia in centro a Rassa"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Percorri il sentiero verso la gola"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Entra sul tratto dalla riva interna"
+          }
+        ],
+        "markers": [
+          {
+            "type": "bridge",
+            "emoji": "ðŸŒ‰",
+            "name": "Ponte medievale di Rassa",
+            "description": "Punto scenico e riferimento di accesso"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Colle del Loo",
+        "order": 1,
+        "coordinates": {
+          "lat": 45.79,
+          "lng": 8.01
+        },
+        "description": "Area sorgentizia alta della Val Sorba."
+      },
+      {
+        "name": "Rassa",
+        "order": 2,
+        "coordinates": {
+          "lat": 45.773,
+          "lng": 8.048
+        },
+        "description": "Tratto centrale con gole, salti e buche."
+      },
+      {
+        "name": "Piode",
+        "order": 3,
+        "coordinates": {
+          "lat": 45.771,
+          "lng": 8.081
+        },
+        "description": "Confluenza nel Sesia poco a monte del paese."
+      }
+    ],
+    "permits": {
+      "management": "Corso montano regolamentato localmente",
+      "entity": "Enti locali competenti e sezione pesca provinciale",
+      "licenseRequired": true,
+      "licenseType": "Licenza pesca valida + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.fipsas.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni: tarda primavera e estate. Condizioni ottimali: livello medio con buona ossigenazione e acqua non eccessivamente torbida.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Valsesia",
+          "address": "Area Valsesia",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Sorba",
+        "segment": [
+          0,
+          4
+        ],
+        "description": "Verificare sul posto eventuali sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        45.79,
+        8.01
+      ],
+      [
+        45.782,
+        8.026
+      ],
+      [
+        45.773,
+        8.048
+      ],
+      [
+        45.772,
+        8.064
+      ],
+      [
+        45.771,
+        8.081
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "sorba-lm1",
+        "type": "bridge",
+        "name": "Ponte medievale",
+        "description": "Ponte storico sopra il corso del Sorba.",
+        "coordinates": {
+          "lat": 45.7735,
+          "lng": 8.0478
+        },
+        "locality": "Rassa"
+      },
+      {
+        "id": "sorba-lm2",
+        "type": "confluence",
+        "name": "Confluenza col Sesia",
+        "description": "Tratto terminale con correnti convergenti.",
+        "coordinates": {
+          "lat": 45.771,
+          "lng": 8.081
+        },
+        "locality": "Piode"
+      }
+    ]
+  },
+  {
+    "id": "anza",
+    "name": "Torrente Anza",
+    "waterType": "torrente di montagna",
+    "region": "Piemonte",
+    "province": "Verbano-Cusio-Ossola",
+    "zone": "Valle Anzasca",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.80 m - 1/8 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": [
+      "Ninfa Stonefly #12",
+      "Spoon 3 g",
+      "Minnow 50 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Torrente_Anza.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sorgente_dell%27Anza.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Anza_in_Macugnaga.jpg"
+    ],
+    "coordinates": {
+      "lat": 46.0188,
+      "lng": 8.2823
+    },
+    "regulations": {
+      "license": "Licenza pesca acque interne e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico provinciale aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Torrente glaciale con bruschi aumenti estivi di portata",
+        "Valutare sempre sicurezza del guado",
+        "Consultare regolamenti locali aggiornati",
+        "Rispettare eventuali tratti speciali segnalati in loco"
+      ]
+    },
+    "spots": [
+      {
+        "id": "anza-macugnaga-pocket",
+        "name": "Pocket water di Macugnaga",
+        "type": "salto",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 45.969,
+          "lng": 7.969
+        },
+        "description": "Sequenza di correntini, massi e buche corte tipica di torrente alpino.",
+        "fishingScore": 81,
+        "techniques": [
+          "ninfa",
+          "secca"
+        ],
+        "walkingMinutes": 15,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": false,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Principianti: approccio da riva e niente guadi profondi. Esperti: drift corti nelle tasche dietro i massi.",
+        "parking": {
+          "name": "Parcheggio Macugnaga",
+          "description": "Parcheggio paese in area impianti",
+          "distanceMeters": 300,
+          "coordinates": {
+            "lat": 45.968,
+            "lng": 7.967
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia nell'area impianti di Macugnaga"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Scendi al torrente seguendo il percorso pedonale"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Pesca a risalire nelle pocket water"
+          }
+        ],
+        "markers": [
+          {
+            "type": "scenic",
+            "emoji": "ðŸ“¸",
+            "name": "Vista Monte Rosa",
+            "description": "Panorama sulla testata della valle"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Ghiacciaio del Belvedere",
+        "order": 1,
+        "coordinates": {
+          "lat": 45.934,
+          "lng": 7.9
+        },
+        "description": "Area sorgentizia del torrente."
+      },
+      {
+        "name": "Macugnaga",
+        "order": 2,
+        "coordinates": {
+          "lat": 45.969,
+          "lng": 7.968
+        },
+        "description": "Tratto alto vallivo con correnti fredde."
+      },
+      {
+        "name": "Piedimulera",
+        "order": 3,
+        "coordinates": {
+          "lat": 46.024,
+          "lng": 8.258
+        },
+        "description": "Confluenza nel Toce."
+      }
+    ],
+    "permits": {
+      "management": "Corso montano regolamentato localmente",
+      "entity": "Enti locali competenti e sezione pesca provinciale",
+      "licenseRequired": true,
+      "licenseType": "Licenza pesca valida + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.fipsas.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni: estate e inizio autunno. Condizioni ideali: portata in calo dopo fusione o pioggia.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Ossola",
+          "address": "Area Verbano-Cusio-Ossola",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Anza",
+        "segment": [
+          0,
+          4
+        ],
+        "description": "Verificare sul posto eventuali sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        45.934,
+        7.9
+      ],
+      [
+        45.952,
+        7.934
+      ],
+      [
+        45.969,
+        7.968
+      ],
+      [
+        45.99,
+        8.08
+      ],
+      [
+        46.024,
+        8.258
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "anza-lm1",
+        "type": "waterfall",
+        "name": "Salti alti della valle",
+        "description": "Serie di salti e correntini in alta Anzasca.",
+        "coordinates": {
+          "lat": 45.959,
+          "lng": 7.949
+        },
+        "locality": "Macugnaga"
+      },
+      {
+        "id": "anza-lm2",
+        "type": "confluence",
+        "name": "Confluenza nel Toce",
+        "description": "Tratto terminale con correnti miste.",
+        "coordinates": {
+          "lat": 46.024,
+          "lng": 8.258
+        },
+        "locality": "Piedimulera"
+      }
+    ]
+  },
+  {
+    "id": "ovesca",
+    "name": "Torrente Ovesca",
+    "waterType": "torrente di montagna",
+    "region": "Piemonte",
+    "province": "Verbano-Cusio-Ossola",
+    "zone": "Valle Antrona",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.70 m - 0.5/7 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": [
+      "Ninfa Caddis #14",
+      "Spoon 2.5 g",
+      "Minnow 45 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Valle_Antrona.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/LagoAntrona0001.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Villadossola_veduta.jpg"
+    ],
+    "coordinates": {
+      "lat": 46.0679,
+      "lng": 8.2818
+    },
+    "regulations": {
+      "license": "Licenza pesca acque interne e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico provinciale aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Soggetto a piene improvvise in caso di pioggia persistente",
+        "Alveo mobile con massi e legname in piena",
+        "Guado solo con livelli stabili",
+        "Verificare regolamenti locali aggiornati"
+      ]
+    },
+    "spots": [
+      {
+        "id": "ovesca-cresti-run",
+        "name": "Run di Cresti",
+        "type": "raschio",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 46.084,
+          "lng": 8.248
+        },
+        "description": "Tratto medio con raschi veloci e buche sotto sponda rocciosa.",
+        "fishingScore": 79,
+        "techniques": [
+          "ninfa",
+          "spinning"
+        ],
+        "walkingMinutes": 22,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": false,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Per principianti: concentrarsi sui raschi marginali. Per esperti: lavorare le buche in ingresso e uscita corrente.",
+        "parking": {
+          "name": "Parcheggio Montescheno",
+          "description": "Piazzola lungo strada valliva",
+          "distanceMeters": 500,
+          "coordinates": {
+            "lat": 46.085,
+            "lng": 8.245
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia alla piazzola di Montescheno"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Scendi sul sentiero verso il run"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Pesca risalendo da valle"
+          }
+        ],
+        "markers": [
+          {
+            "type": "waterfall",
+            "emoji": "ðŸ’§",
+            "name": "Strette della valle",
+            "description": "Tratto incassato con forti accelerazioni"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Lago di Antrona",
+        "order": 1,
+        "coordinates": {
+          "lat": 46.062,
+          "lng": 8.143
+        },
+        "description": "Origine del corso principale nella valle."
+      },
+      {
+        "name": "Montescheno",
+        "order": 2,
+        "coordinates": {
+          "lat": 46.085,
+          "lng": 8.245
+        },
+        "description": "Tratto medio con pendenze e correnti sostenute."
+      },
+      {
+        "name": "Villadossola",
+        "order": 3,
+        "coordinates": {
+          "lat": 46.067,
+          "lng": 8.281
+        },
+        "description": "Confluenza nel Toce."
+      }
+    ],
+    "permits": {
+      "management": "Corso montano regolamentato localmente",
+      "entity": "Enti locali competenti e sezione pesca provinciale",
+      "licenseRequired": true,
+      "licenseType": "Licenza pesca valida + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.fipsas.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni: primavera avanzata e estate. Migliori condizioni: acqua in calo dopo piena, livelli medi e trasparenza discreta.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Ossola",
+          "address": "Area Verbano-Cusio-Ossola",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Ovesca",
+        "segment": [
+          0,
+          4
+        ],
+        "description": "Verificare sul posto eventuali sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        46.062,
+        8.143
+      ],
+      [
+        46.074,
+        8.197
+      ],
+      [
+        46.084,
+        8.248
+      ],
+      [
+        46.076,
+        8.266
+      ],
+      [
+        46.067,
+        8.281
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "ovesca-lm1",
+        "type": "access",
+        "name": "Accesso valle stretta",
+        "description": "Ingresso al tratto inciso a monte di Villadossola.",
+        "coordinates": {
+          "lat": 46.075,
+          "lng": 8.262
+        },
+        "locality": "Montescheno"
+      },
+      {
+        "id": "ovesca-lm2",
+        "type": "confluence",
+        "name": "Confluenza nel Toce",
+        "description": "Tratto terminale con correnti convergenti.",
+        "coordinates": {
+          "lat": 46.067,
+          "lng": 8.281
+        },
+        "locality": "Villadossola"
+      }
+    ]
+  },
+  {
+    "id": "diveria",
+    "name": "Torrente Diveria",
+    "waterType": "torrente di montagna",
+    "region": "Piemonte",
+    "province": "Verbano-Cusio-Ossola",
+    "zone": "Val Divedro",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.80 m - 1/8 g",
+    "recommendedLine": "Trecciato PE 0.4 + Fluorocarbon 0.16",
+    "recommendedLures": [
+      "Ninfa Baetis #16",
+      "Spoon 3 g",
+      "Minnow 50 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/TorrenteDiveria.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Picswiss_VS-81-09.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Picswiss_VS-81-10.jpg"
+    ],
+    "coordinates": {
+      "lat": 46.1452,
+      "lng": 8.3076
+    },
+    "regulations": {
+      "license": "Licenza pesca acque interne e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico provinciale aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Torrente alpino transfrontaliero con tratti in gola",
+        "Correnti forti e fondali mobili dopo piogge",
+        "Verificare regolamenti locali aggiornati",
+        "Guado solo in condizioni di massima sicurezza"
+      ]
+    },
+    "spots": [
+      {
+        "id": "diveria-iselle-gorge",
+        "name": "Gola di Iselle",
+        "type": "buca",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 46.17,
+          "lng": 8.211
+        },
+        "description": "Tratto inciso con correnti rapide, buche profonde e acqua fredda ben ossigenata.",
+        "fishingScore": 80,
+        "techniques": [
+          "ninfa",
+          "streamer"
+        ],
+        "walkingMinutes": 28,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": true,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Per principianti: evitare la gola nei periodi di portata alta. Per esperti: presentazioni profonde in ingresso e uscita buca.",
+        "parking": {
+          "name": "Parcheggio Iselle",
+          "description": "Piccolo parcheggio presso abitato",
+          "distanceMeters": 520,
+          "coordinates": {
+            "lat": 46.173,
+            "lng": 8.212
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia presso Iselle"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Percorri il sentiero in discesa verso la gola"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Pesca da valle verso monte con soste frequenti"
+          }
+        ],
+        "markers": [
+          {
+            "type": "waterfall",
+            "emoji": "ðŸ’§",
+            "name": "Strette di Iselle",
+            "description": "Tratto con forte accelerazione di corrente"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Passo del Sempione",
+        "order": 1,
+        "coordinates": {
+          "lat": 46.247,
+          "lng": 8.028
+        },
+        "description": "Area sorgentizia del torrente nella zona del Sempione."
+      },
+      {
+        "name": "Iselle",
+        "order": 2,
+        "coordinates": {
+          "lat": 46.173,
+          "lng": 8.212
+        },
+        "description": "Tratto vallivo con gole e correnti sostenute."
+      },
+      {
+        "name": "Crevoladossola",
+        "order": 3,
+        "coordinates": {
+          "lat": 46.145,
+          "lng": 8.307
+        },
+        "description": "Confluenza nel Toce."
+      }
+    ],
+    "permits": {
+      "management": "Corso montano regolamentato localmente",
+      "entity": "Enti locali competenti e sezione pesca provinciale",
+      "licenseRequired": true,
+      "licenseType": "Licenza pesca valida + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.fipsas.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Migliori stagioni: estate e inizio autunno. Condizioni migliori: livello in calo e acqua con buona visibilita.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Ossola",
+          "address": "Area Verbano-Cusio-Ossola",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Diveria",
+        "segment": [
+          0,
+          5
+        ],
+        "description": "Verificare sul posto eventuali sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        46.247,
+        8.028
+      ],
+      [
+        46.211,
+        8.141
+      ],
+      [
+        46.173,
+        8.212
+      ],
+      [
+        46.158,
+        8.258
+      ],
+      [
+        46.145,
+        8.307
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "diveria-lm1",
+        "type": "bridge",
+        "name": "Ponte di Varzo",
+        "description": "Riferimento di accesso ai tratti medi del torrente.",
+        "coordinates": {
+          "lat": 46.205,
+          "lng": 8.254
+        },
+        "locality": "Varzo"
+      },
+      {
+        "id": "diveria-lm2",
+        "type": "confluence",
+        "name": "Confluenza nel Toce",
+        "description": "Immissione nel Toce in area di correnti miste.",
+        "coordinates": {
+          "lat": 46.145,
+          "lng": 8.307
+        },
+        "locality": "Crevoladossola"
+      }
+    ]
+  },
+  {
+    "id": "ayasse",
+    "name": "Torrente Ayasse",
+    "waterType": "torrente di montagna",
+    "region": "Valle d'Aosta",
+    "province": "Aosta",
+    "zone": "Valle di Champorcher",
+    "altitude": null,
+    "species": [
+      "Trota Fario"
+    ],
+    "difficulty": 4,
+    "recommendedRod": "1.70 m - 0.5/6 g",
+    "recommendedLine": "Trecciato PE 0.3 + Fluorocarbon 0.14",
+    "recommendedLures": [
+      "CDC Caddis #16",
+      "Spoon 2 g",
+      "Minnow 45 mm"
+    ],
+    "flyFriendly": true,
+    "images": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Torrente_ayasse_pontboset.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pontboset_abcd_02.JPG",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ayasse_valley_from_Bard_(2).jpg"
+    ],
+    "coordinates": {
+      "lat": 45.6095,
+      "lng": 7.7412
+    },
+    "regulations": {
+      "license": "Licenza pesca Valle d'Aosta e permesso locale ove richiesto",
+      "season": "Verificare il calendario ittico regionale valdostano aggiornato",
+      "minSize": "Verificare misure minime vigenti",
+      "rules": [
+        "Presenza documentata di riserva di pesca alla trota",
+        "Controllare delimitazioni riserva e tratti liberi",
+        "Regime alpino con variazioni estive di portata",
+        "Verificare regolamenti locali aggiornati"
+      ]
+    },
+    "spots": [
+      {
+        "id": "ayasse-pontboset-pocket",
+        "name": "Pocket water di Pontboset",
+        "type": "salto",
+        "difficulty": 4,
+        "coordinates": {
+          "lat": 45.607,
+          "lng": 7.685
+        },
+        "description": "Sequenza di salti, buche e corridoi stretti nella parte media della valle.",
+        "fishingScore": 85,
+        "techniques": [
+          "ninfa",
+          "secca"
+        ],
+        "walkingMinutes": 18,
+        "scenicView": true,
+        "crowded": false,
+        "bigFish": true,
+        "familyFriendly": false,
+        "stocking": false,
+        "notes": "Principianti: concentrarsi sulle buche esterne ai salti. Esperti: approccio tecnico in pocket water e derivazioni corte.",
+        "parking": {
+          "name": "Parcheggio Pontboset",
+          "description": "Parcheggio comunale vicino al ponte",
+          "distanceMeters": 260,
+          "coordinates": {
+            "lat": 45.606,
+            "lng": 7.684
+          }
+        },
+        "path": [
+          {
+            "step": 1,
+            "emoji": "ðŸ…¿ï¸",
+            "text": "Parcheggia presso Pontboset"
+          },
+          {
+            "step": 2,
+            "emoji": "ðŸ¥¾",
+            "text": "Segui il sentiero sul torrente per 15-20 minuti"
+          },
+          {
+            "step": 3,
+            "emoji": "ðŸŽ£",
+            "text": "Pesca risalendo dalle buche basse verso i salti"
+          }
+        ],
+        "markers": [
+          {
+            "type": "bridge",
+            "emoji": "ðŸŒ‰",
+            "name": "Ponte antico di Pontboset",
+            "description": "Landmark storico sopra l'Ayasse"
+          }
+        ]
+      }
+    ],
+    "localities": [
+      {
+        "name": "Lago Miserin",
+        "order": 1,
+        "coordinates": {
+          "lat": 45.692,
+          "lng": 7.643
+        },
+        "description": "Origine del torrente in alta quota."
+      },
+      {
+        "name": "Champorcher",
+        "order": 2,
+        "coordinates": {
+          "lat": 45.621,
+          "lng": 7.621
+        },
+        "description": "Valle centrale con alternanza raschi-buche."
+      },
+      {
+        "name": "Pontboset",
+        "order": 3,
+        "coordinates": {
+          "lat": 45.607,
+          "lng": 7.684
+        },
+        "description": "Tratto tecnico con salti e correntini."
+      },
+      {
+        "name": "Hone",
+        "order": 4,
+        "coordinates": {
+          "lat": 45.613,
+          "lng": 7.739
+        },
+        "description": "Confluenza nella Dora Baltea."
+      }
+    ],
+    "permits": {
+      "management": "Regolamentazione Valle d'Aosta",
+      "entity": "Enti regionali valdostani competenti",
+      "licenseRequired": true,
+      "licenseType": "Licenza valida in Valle d'Aosta + eventuale permesso locale",
+      "dailyCost": "Da verificare con ente locale",
+      "seasonCost": "Da verificare con ente locale",
+      "buyUrl": "https://www.regione.vda.it",
+      "regulationUrl": null,
+      "catchLimit": "Verificare limite giornaliero vigente",
+      "minSize": "Verificare taglie minime vigenti",
+      "catchAndRelease": false,
+      "notes": "Presenza di riserva di pesca alla trota documentata. Migliori stagioni: fine primavera-estate. Condizioni ideali: portata media e acqua limpida.",
+      "pointsOfSale": [
+        {
+          "name": "Rivendite autorizzate in Valle d'Aosta",
+          "address": "Area Champorcher - Aosta",
+          "phone": "Informazione non disponibile",
+          "hours": "Informazione non disponibile"
+        }
+      ]
+    },
+    "zones": [
+      {
+        "type": "libero",
+        "name": "Tratto Ayasse",
+        "segment": [
+          0,
+          5
+        ],
+        "description": "Verificare sul posto eventuali riserve o sottozone specifiche e regolamenti aggiornati."
+      }
+    ],
+    "polyline": [
+      [
+        45.692,
+        7.643
+      ],
+      [
+        45.648,
+        7.628
+      ],
+      [
+        45.621,
+        7.621
+      ],
+      [
+        45.607,
+        7.684
+      ],
+      [
+        45.613,
+        7.739
+      ]
+    ],
+    "landmarks": [
+      {
+        "id": "ayasse-lm1",
+        "type": "bridge",
+        "name": "Ponte di Pontboset",
+        "description": "Ponte storico e accesso scenico al torrente.",
+        "coordinates": {
+          "lat": 45.606,
+          "lng": 7.684
+        },
+        "locality": "Pontboset"
+      },
+      {
+        "id": "ayasse-lm2",
+        "type": "confluence",
+        "name": "Confluenza Dora Baltea",
+        "description": "Immissione finale dell'Ayasse nella Dora Baltea.",
+        "coordinates": {
+          "lat": 45.613,
+          "lng": 7.739
+        },
+        "locality": "Hone"
+      }
+    ]
   }
 ]
+

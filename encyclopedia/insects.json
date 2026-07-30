@@ -1,0 +1,122 @@
+[
+  {
+    "id": "baetis",
+    "type": "insect",
+    "italianName": "Baetis",
+    "scientificName": "Baetis spp.",
+    "taxonomicClassification": "Insecta > Ephemeroptera",
+    "family": "Baetidae",
+    "typicalSize": "5-12 mm",
+    "habitat": "Riffle e correnti moderate con acqua ossigenata",
+    "distribution": "Alpi e Prealpi piemontesi, corsi d'acqua limpidi",
+    "activeMonths": "Marzo - Giugno",
+    "emergencePeriod": "Tarda mattina e ore centrali",
+    "behaviour": "Ninfe mobili, schiusa rapida in superficie",
+    "troutFeedingImportance": "Molto alta in primavera",
+    "interestingFacts": "Le schiuse possono essere massicce dopo un lieve rialzo termico.",
+    "atlasAiAdvice": "In acqua limpida usa secche piccole #16-18 e derive lunghe senza drag.",
+    "coverImage": "assets/images/baetis.jpg",
+    "images": ["assets/images/baetis.jpg"],
+    "flyPatterns": ["adams", "parachute-adams", "cdc-olive", "comparadun"],
+    "links": {
+      "flies": ["adams", "parachute-adams", "cdc-olive", "comparadun"],
+      "fish": ["trota-fario", "temolo"]
+    }
+  },
+  {
+    "id": "ephemera-danica",
+    "type": "insect",
+    "italianName": "Efemera maggiore",
+    "scientificName": "Ephemera danica",
+    "taxonomicClassification": "Insecta > Ephemeroptera",
+    "family": "Ephemeridae",
+    "typicalSize": "12-25 mm",
+    "habitat": "Fiumi medio-grandi con fondo ghiaioso",
+    "distribution": "Tratti medi e bassi dei fiumi alpini",
+    "activeMonths": "Aprile - Giugno",
+    "emergencePeriod": "Fine pomeriggio e sera",
+    "behaviour": "Schiusa evidente e voli lenti sopra il pelo dell'acqua",
+    "troutFeedingImportance": "Alta durante le finestre di schiusa",
+    "interestingFacts": "Le trote salgono con decisione durante la schiusa serale.",
+    "atlasAiAdvice": "Quando vedi spent-wing in acqua calma, preferisci imitazioni con silhouette ampia.",
+    "coverImage": "assets/images/ephemera.jpg",
+    "images": ["assets/images/ephemera.jpg"],
+    "flyPatterns": ["adams", "parachute-adams", "comparadun"],
+    "links": {
+      "flies": ["adams", "parachute-adams", "comparadun"],
+      "fish": ["trota-fario", "trota-marmorata"]
+    }
+  },
+  {
+    "id": "trichoptera",
+    "type": "insect",
+    "italianName": "Tricottero (Sedge)",
+    "scientificName": "Trichoptera spp.",
+    "taxonomicClassification": "Insecta > Trichoptera",
+    "family": "Hydropsychidae / Rhyacophilidae",
+    "typicalSize": "8-18 mm",
+    "habitat": "Corsi veloci, zone con massi e vegetazione riparia",
+    "distribution": "Diffuso in torrenti e fiumi alpini",
+    "activeMonths": "Maggio - Agosto",
+    "emergencePeriod": "Sera e crepuscolo",
+    "behaviour": "Adulti nervosi in superficie, larve su fondo roccioso",
+    "troutFeedingImportance": "Molto alta nelle ore serali",
+    "interestingFacts": "Molte larve costruiscono astucci protettivi con detriti.",
+    "atlasAiAdvice": "Con vento debole al tramonto prova emergenti e secche in passate diagonali.",
+    "coverImage": "assets/images/trichoptera.jpg",
+    "images": ["assets/images/trichoptera.jpg"],
+    "flyPatterns": ["elk-hair-caddis", "klinkhammer", "cdc-olive"],
+    "links": {
+      "flies": ["elk-hair-caddis", "klinkhammer", "cdc-olive"],
+      "macroinvertebrates": ["caddis-larva"]
+    }
+  },
+  {
+    "id": "chironomidae",
+    "type": "insect",
+    "italianName": "Chironomide",
+    "scientificName": "Chironomidae",
+    "taxonomicClassification": "Insecta > Diptera",
+    "family": "Chironomidae",
+    "typicalSize": "3-10 mm",
+    "habitat": "Acque lente, laghi e raschi profondi",
+    "distribution": "Presenza ampia su tutto il territorio",
+    "activeMonths": "Marzo - Settembre",
+    "emergencePeriod": "Mattina presto e sera",
+    "behaviour": "Schiuse ripetute e concentrazioni locali",
+    "troutFeedingImportance": "Costante, soprattutto in laghi e buche lente",
+    "interestingFacts": "Le larve sono spesso chiamate bloodworm per la colorazione rossa.",
+    "atlasAiAdvice": "In condizioni stabili usa pattern midge piccoli con presentazione lenta.",
+    "coverImage": "assets/images/chironomid.jpg",
+    "images": ["assets/images/chironomid.jpg"],
+    "flyPatterns": ["zebra-midge", "pheasant-tail"],
+    "links": {
+      "flies": ["zebra-midge", "pheasant-tail"],
+      "macroinvertebrates": ["mayfly-nymph"]
+    }
+  },
+  {
+    "id": "stonefly",
+    "type": "insect",
+    "italianName": "Plecottero",
+    "scientificName": "Plecoptera spp.",
+    "taxonomicClassification": "Insecta > Plecoptera",
+    "family": "Perlidae / Nemouridae",
+    "typicalSize": "10-30 mm",
+    "habitat": "Torrenti freddi ad alta ossigenazione",
+    "distribution": "Zone montane e subalpine",
+    "activeMonths": "Aprile - Luglio",
+    "emergencePeriod": "Fine giornata",
+    "behaviour": "Ninfe aderenti al fondo, adulti vicino a sponde e pietre",
+    "troutFeedingImportance": "Alta nei torrenti veloci",
+    "interestingFacts": "La presenza di plecotteri indica ottima qualita dell'acqua.",
+    "atlasAiAdvice": "Ninfe scure appesantite in buca e ingresso di corrente.",
+    "coverImage": "assets/images/trichoptera.jpg",
+    "images": ["assets/images/trichoptera.jpg"],
+    "flyPatterns": ["pheasant-tail", "hare-ear", "woolly-bugger"],
+    "links": {
+      "flies": ["pheasant-tail", "hare-ear", "woolly-bugger"],
+      "macroinvertebrates": ["stonefly-larva"]
+    }
+  }
+]
